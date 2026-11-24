@@ -1,0 +1,92 @@
+{
+  "run_id": "134f9c78-1113-4829-a37e-e171a21c388a",
+  "started_at": "2026-10-24T19:05:00.235587+00:00",
+  "input": "eval/cases/directory_10.html",
+  "input_sha256": "1f462e3b851b7ced6c43076d1ba7982045c092b4cf0abe69285c09ccf2ec7f6a",
+  "source": "sha256:1f462e3b851b7ced6c43076d1ba7982045c092b4cf0abe69285c09ccf2ec7f6a",
+  "source_url": "https://icar.org.in/en/node/15044",
+  "agent": "directory",
+  "source_type": "Document",
+  "status": "complete",
+  "records": [
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "katni",
+      "period": "MISSING:not_applicable",
+      "locator": "table:1/row:2",
+      "evidence": "10. Krishi Vigyan Kendra, PO. Katangi Kala,Village Padaria, Distt. Katni- Vice-Chancellor, Jawaharlal Nehru Krishi Viswavidyalaya, Jabalpur-482 004 2005 SAU",
+      "record_id": "10",
+      "variable": "address",
+      "value": "Krishi Vigyan Kendra, PO. Katangi Kala,Village Padaria, Distt. Katni-",
+      "unit": "text",
+      "value_kind": "text",
+      "source": "sha256:1f462e3b851b7ced6c43076d1ba7982045c092b4cf0abe69285c09ccf2ec7f6a",
+      "source_type": "Document",
+      "agent": "directory",
+      "run_id": "134f9c78-1113-4829-a37e-e171a21c388a",
+      "parent_file": "data/raw/icar_kvk.html",
+      "validation_errors": [],
+      "validation_status": "valid"
+    },
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "katni",
+      "period": "MISSING:not_applicable",
+      "locator": "table:1/row:2",
+      "evidence": "10. Krishi Vigyan Kendra, PO. Katangi Kala,Village Padaria, Distt. Katni- Vice-Chancellor, Jawaharlal Nehru Krishi Viswavidyalaya, Jabalpur-482 004 2005 SAU",
+      "record_id": "10",
+      "variable": "host_organization",
+      "value": "Vice-Chancellor, Jawaharlal Nehru Krishi Viswavidyalaya, Jabalpur-482 004",
+      "unit": "text",
+      "value_kind": "text",
+      "source": "sha256:1f462e3b851b7ced6c43076d1ba7982045c092b4cf0abe69285c09ccf2ec7f6a",
+      "source_type": "Document",
+      "agent": "directory",
+      "run_id": "134f9c78-1113-4829-a37e-e171a21c388a",
+      "parent_file": "data/raw/icar_kvk.html",
+      "validation_errors": [],
+      "validation_status": "valid"
+    },
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "katni",
+      "period": "MISSING:not_applicable",
+      "locator": "table:1/row:2",
+      "evidence": "10. Krishi Vigyan Kendra, PO. Katangi Kala,Village Padaria, Distt. Katni- Vice-Chancellor, Jawaharlal Nehru Krishi Viswavidyalaya, Jabalpur-482 004 2005 SAU",
+      "record_id": "10",
+      "variable": "sanction_year",
+      "value": "2005",
+      "unit": "year",
+      "value_kind": "integer",
+      "source": "sha256:1f462e3b851b7ced6c43076d1ba7982045c092b4cf0abe69285c09ccf2ec7f6a",
+      "source_type": "Document",
+      "agent": "directory",
+      "run_id": "134f9c78-1113-4829-a37e-e171a21c388a",
+      "parent_file": "data/raw/icar_kvk.html",
+      "validation_errors": [],
+      "validation_status": "valid"
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "trajectory": [
+    {
+      "tool": "beautifulsoup4",
+      "arguments": {
+        "input_sha256": "1f462e3b851b7ced6c43076d1ba7982045c092b4cf0abe69285c09ccf2ec7f6a",
+        "schema": "observation-v1",
+        "max_pages": null
+      }
+    }
+  ],
+  "retries": 0,
+  "manual_interventions": 0,
+  "inventory_source": "S21",
+  "storage": {
+    "inserted": 0,
+    "duplicates": 3
+  },
+  "latency_seconds": 0.016672800004016608,
+  "tool_calls": 1,
+  "reference_calls": 1
+}

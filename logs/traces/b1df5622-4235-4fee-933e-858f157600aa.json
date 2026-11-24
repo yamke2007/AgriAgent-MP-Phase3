@@ -1,0 +1,73 @@
+{
+  "run_id": "b1df5622-4235-4fee-933e-858f157600aa",
+  "started_at": "2026-10-27T15:56:24.523571+00:00",
+  "input": "eval/cases/statistics_02.csv",
+  "input_sha256": "70e8417cc6b8846b36322c32fffbf8bcdc613753d6743a1e6af4417772724ce6",
+  "source": "sha256:70e8417cc6b8846b36322c32fffbf8bcdc613753d6743a1e6af4417772724ce6",
+  "source_url": "https://aiggpa.mp.gov.in/uploads/project/MPES_2022-23_Highlights_English.pdf",
+  "agent": "statistics",
+  "source_type": "Database",
+  "status": "complete",
+  "records": [
+    {
+      "crop": "wheat",
+      "location": "madhya pradesh",
+      "period": "2013-14",
+      "variable": "production",
+      "value": "174.8",
+      "unit": "lakh tonnes",
+      "value_kind": "decimal",
+      "qualifier": "historical",
+      "origin_locator": "page:7",
+      "origin_source": "data/raw/mp_economic_survey.pdf",
+      "evidence": "wheat | Madhya Pradesh | 2013-14 | production | 174.8 | lakh tonnes | decimal | historical | page:7 | data/raw/mp_economic_survey.pdf",
+      "locator": "csv:line:2",
+      "agent": "statistics",
+      "source": "sha256:70e8417cc6b8846b36322c32fffbf8bcdc613753d6743a1e6af4417772724ce6",
+      "source_type": "Database",
+      "run_id": "b1df5622-4235-4fee-933e-858f157600aa",
+      "parent_file": "data/raw/mp_economic_survey.pdf",
+      "validation_errors": [],
+      "validation_status": "valid"
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "trajectory": [
+    {
+      "tool": "csv.DictReader",
+      "arguments": {
+        "input_sha256": "70e8417cc6b8846b36322c32fffbf8bcdc613753d6743a1e6af4417772724ce6",
+        "schema": "observation-v1",
+        "max_pages": null
+      }
+    }
+  ],
+  "retries": 0,
+  "manual_interventions": 0,
+  "inventory_source": "S23",
+  "agent_trace": [
+    {
+      "agent": "statistics",
+      "tool": "csv.DictReader",
+      "ok": true,
+      "summary": "tuple[2]",
+      "seconds": 0.0
+    }
+  ],
+  "handoffs": [],
+  "agents": [
+    "statistics"
+  ],
+  "llm_calls": 0,
+  "notes": [],
+  "orchestrator": "sequential",
+  "useful_calls": 1,
+  "storage": {
+    "inserted": 0,
+    "duplicates": 1
+  },
+  "latency_seconds": 0.0024428010001429357,
+  "tool_calls": 1,
+  "reference_calls": 1
+}

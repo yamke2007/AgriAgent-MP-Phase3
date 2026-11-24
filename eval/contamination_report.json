@@ -1,0 +1,7 @@
+{
+  "training_files": 73,
+  "case_files": 52,
+  "overlaps": [],
+  "status": "no_exact_hash_overlap",
+  "limitation": "Exact-hash check of every training file against evaluation inputs and raw parent sources. Training examples (if any) come from separately collected sources/years. Hashes cannot detect paraphrase/semantic overlap or unknown pretrained corpora."
+}

@@ -1,0 +1,54 @@
+{
+  "run_id": "7c5c896b-4699-400c-b3b4-7b938bdd80e9",
+  "started_at": "2026-10-24T18:55:19.752895+00:00",
+  "input": "C:\\Users\\aashi\\OneDrive\\Dokumen\\ChatGPT\\p\\AgriAgent_MadhyaPradesh\\eval\\cases\\statistics_01.csv",
+  "input_sha256": "54d7b6661fcb7caf96d4f77221959c0970066733f190e1736c12ee43ca2b699f",
+  "source": "sha256:54d7b6661fcb7caf96d4f77221959c0970066733f190e1736c12ee43ca2b699f",
+  "source_url": "unknown",
+  "agent": "statistics",
+  "source_type": "Database",
+  "status": "complete",
+  "records": [
+    {
+      "crop": "wheat",
+      "location": "madhya pradesh",
+      "period": "2022-23",
+      "variable": "production",
+      "value": "352.7",
+      "unit": "lakh tonnes",
+      "value_kind": "decimal",
+      "qualifier": "advance estimate",
+      "origin_locator": "page:7",
+      "origin_source": "data/raw/mp_economic_survey.pdf",
+      "evidence": "wheat | Madhya Pradesh | 2022-23 | production | 352.7 | lakh tonnes | decimal | advance estimate | page:7 | data/raw/mp_economic_survey.pdf",
+      "locator": "csv:line:2",
+      "source": "sha256:54d7b6661fcb7caf96d4f77221959c0970066733f190e1736c12ee43ca2b699f",
+      "source_type": "Database",
+      "agent": "statistics",
+      "run_id": "7c5c896b-4699-400c-b3b4-7b938bdd80e9",
+      "validation_errors": [],
+      "validation_status": "valid"
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "trajectory": [
+    {
+      "tool": "csv.DictReader",
+      "arguments": {
+        "input_sha256": "54d7b6661fcb7caf96d4f77221959c0970066733f190e1736c12ee43ca2b699f",
+        "schema": "observation-v1",
+        "max_pages": null
+      }
+    }
+  ],
+  "retries": 0,
+  "manual_interventions": 0,
+  "storage": {
+    "inserted": 1,
+    "duplicates": 0
+  },
+  "latency_seconds": 0.01396409998415038,
+  "tool_calls": 1,
+  "reference_calls": 1
+}

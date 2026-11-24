@@ -1,0 +1,2 @@
+crop,location,period,variable,value,unit,value_kind,qualifier,origin_locator,origin_source
+wheat,Madhya Pradesh,2013-14,production,174.8,lakh tonnes,decimal,historical,page:7,data/raw/mp_economic_survey.pdf

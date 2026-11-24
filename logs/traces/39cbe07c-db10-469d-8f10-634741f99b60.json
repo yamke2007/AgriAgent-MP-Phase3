@@ -1,0 +1,134 @@
+{
+  "run_id": "39cbe07c-db10-469d-8f10-634741f99b60",
+  "started_at": "2026-10-27T15:55:07.770033+00:00",
+  "input": "data/raw/e_mandi_manual.pdf",
+  "input_sha256": "a84a4517a92a02c0f0980f01b9450be2025e39fceb623d0721571b3721b0bc08",
+  "source": "sha256:a84a4517a92a02c0f0980f01b9450be2025e39fceb623d0721571b3721b0bc08",
+  "source_url": "https://eanugya.mp.gov.in/HR/Doc/User_ManualForMandiSecretary.pdf",
+  "agent": "unrouted",
+  "source_type": "Document",
+  "status": "failed",
+  "records": [],
+  "errors": [
+    "ExtractionError: statistics: No supported production sentences; text pages=35; tables/OCR are left to the tables agent; tables: Table agent found no table values it could map (crop/place/period/value)"
+  ],
+  "warnings": [],
+  "trajectory": [
+    {
+      "tool": "pypdf",
+      "arguments": {
+        "input_sha256": "a84a4517a92a02c0f0980f01b9450be2025e39fceb623d0721571b3721b0bc08",
+        "schema": "observation-v1",
+        "max_pages": 300
+      }
+    },
+    {
+      "tool": "pdfplumber.pages",
+      "arguments": {
+        "input_sha256": "a84a4517a92a02c0f0980f01b9450be2025e39fceb623d0721571b3721b0bc08",
+        "schema": "observation-v1",
+        "max_pages": 300
+      }
+    },
+    {
+      "tool": "pdfplumber.extract_tables",
+      "arguments": {
+        "input_sha256": "a84a4517a92a02c0f0980f01b9450be2025e39fceb623d0721571b3721b0bc08",
+        "schema": "observation-v1",
+        "pages": [
+          1,
+          2,
+          3,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      }
+    },
+    {
+      "tool": "tesseract.ocr_tables",
+      "arguments": {
+        "input_sha256": "a84a4517a92a02c0f0980f01b9450be2025e39fceb623d0721571b3721b0bc08",
+        "schema": "observation-v1",
+        "pages": [
+          4,
+          12
+        ],
+        "lang": "eng+hin"
+      }
+    },
+    {
+      "tool": "tesseract.ocr_tables",
+      "arguments": {
+        "input_sha256": "a84a4517a92a02c0f0980f01b9450be2025e39fceb623d0721571b3721b0bc08",
+        "schema": "observation-v1",
+        "pages": [
+          1,
+          2,
+          3
+        ],
+        "lang": "eng+hin"
+      }
+    }
+  ],
+  "retries": 0,
+  "manual_interventions": 0,
+  "inventory_source": "S04",
+  "agents": [
+    "statistics",
+    "tables"
+  ],
+  "handoffs": [
+    "statistics -> next agent: No supported production sentences; text pages=35; tables/OCR are left to the tables agent",
+    "tables -> none: Table agent found no table values it could map (crop/place/period/value)"
+  ],
+  "agent_trace": [
+    {
+      "agent": "statistics",
+      "tool": "pypdf",
+      "ok": false,
+      "summary": "ExtractionError: No supported production sentences; text pages=35; tables/OCR are left to the tables agent",
+      "seconds": 0.793
+    },
+    {
+      "agent": "tables",
+      "tool": "pdfplumber.pages",
+      "ok": true,
+      "summary": "list[35]",
+      "seconds": 2.651
+    },
+    {
+      "agent": "tables",
+      "tool": "pdfplumber.extract_tables",
+      "ok": true,
+      "summary": "list[1]",
+      "seconds": 0.862
+    },
+    {
+      "agent": "tables",
+      "tool": "tesseract.ocr_tables",
+      "ok": true,
+      "summary": "list[2]",
+      "seconds": 6.87
+    },
+    {
+      "agent": "tables",
+      "tool": "tesseract.ocr_tables",
+      "ok": true,
+      "summary": "list[3]",
+      "seconds": 2.812
+    }
+  ],
+  "orchestrator": "sequential",
+  "storage": {
+    "inserted": 0,
+    "duplicates": 0
+  },
+  "latency_seconds": 14.370737427999984,
+  "tool_calls": 5,
+  "reference_calls": 0
+}

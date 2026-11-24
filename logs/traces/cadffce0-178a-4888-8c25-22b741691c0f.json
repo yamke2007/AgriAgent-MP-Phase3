@@ -1,0 +1,126 @@
+{
+  "run_id": "cadffce0-178a-4888-8c25-22b741691c0f",
+  "started_at": "2026-10-27T15:55:43.956449+00:00",
+  "input": "data/raw/mp_economic_survey.pdf",
+  "input_sha256": "3457d6dc615a35d4ee1c61b338845d58deee2e31f67f8dce55f7611e1a5302f4",
+  "source": "sha256:3457d6dc615a35d4ee1c61b338845d58deee2e31f67f8dce55f7611e1a5302f4",
+  "source_url": "https://aiggpa.mp.gov.in/uploads/project/MPES_2022-23_Highlights_English.pdf",
+  "agent": "statistics",
+  "source_type": "Document",
+  "status": "partial",
+  "records": [
+    {
+      "crop": "wheat",
+      "location": "madhya pradesh",
+      "period": "2022-23",
+      "variable": "production",
+      "value": "352.7",
+      "unit": "lakh tonnes",
+      "value_kind": "decimal",
+      "locator": "page:7/char:66-112",
+      "evidence": "produced 352.7 lakh tonnes of wheat in 2022-23",
+      "qualifier": "source wording; estimates may be provisional",
+      "agent": "statistics",
+      "source": "sha256:3457d6dc615a35d4ee1c61b338845d58deee2e31f67f8dce55f7611e1a5302f4",
+      "source_type": "Document",
+      "run_id": "cadffce0-178a-4888-8c25-22b741691c0f",
+      "validation_errors": [],
+      "validation_status": "valid"
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    "Partial PDF grammar: only explicit 'produced X tonnes of CROP in YEAR' sentences; omitted facts are not inferred"
+  ],
+  "trajectory": [
+    {
+      "tool": "pypdf",
+      "arguments": {
+        "input_sha256": "3457d6dc615a35d4ee1c61b338845d58deee2e31f67f8dce55f7611e1a5302f4",
+        "schema": "observation-v1",
+        "max_pages": 300
+      }
+    },
+    {
+      "tool": "pdfplumber.pages",
+      "arguments": {
+        "input_sha256": "3457d6dc615a35d4ee1c61b338845d58deee2e31f67f8dce55f7611e1a5302f4",
+        "schema": "observation-v1",
+        "max_pages": 300
+      }
+    },
+    {
+      "tool": "pdfplumber.extract_tables",
+      "arguments": {
+        "input_sha256": "3457d6dc615a35d4ee1c61b338845d58deee2e31f67f8dce55f7611e1a5302f4",
+        "schema": "observation-v1",
+        "pages": [
+          1,
+          3,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      }
+    }
+  ],
+  "retries": 0,
+  "manual_interventions": 0,
+  "inventory_source": "S23",
+  "agent_trace": [
+    {
+      "agent": "statistics",
+      "tool": "pypdf",
+      "ok": true,
+      "summary": "tuple[2]",
+      "seconds": 1.115
+    },
+    {
+      "agent": "tables",
+      "tool": "pdfplumber.pages",
+      "ok": true,
+      "summary": "list[20]",
+      "seconds": 2.817
+    },
+    {
+      "agent": "tables",
+      "tool": "pdfplumber.extract_tables",
+      "ok": true,
+      "summary": "list[9]",
+      "seconds": 1.737
+    }
+  ],
+  "handoffs": [
+    "tables -> none: Table agent found no table values it could map (crop/place/period/value)"
+  ],
+  "agents": [
+    "statistics",
+    "tables"
+  ],
+  "llm_calls": 0,
+  "notes": [
+    "tables: llm.header_mapping skipped: local model not running; unknown headers ignored: marizes the major statistical data and achievements of t It is hoped that it will prove to be very useful for th",
+    "tables: llm.header_mapping skipped: local model not running; unknown headers ignored: 2,17,313 cror, e (RE) up by",
+    "tables: llm.header_mapping skipped: local model not running; unknown headers ignored: treasuries of Mad Reserve Bank of In, hya Prade dia and a, e been op rated suc, ened in the cessfully.",
+    "tables: llm.header_mapping skipped: local model not running; unknown headers ignored: 1., s pro mat, duced es) as c, 352.7 la ompare, kh tonnes d to 174.8, of w lakh, heat in 2022-23 tonnes in 2013-",
+    "tables: llm.header_mapping skipped: local model not running; unknown headers ignored: 11., 2021-22, the nd, copper or, first in the anese ore,",
+    "tables: llm.header_mapping skipped: local model not running; unknown headers ignored: 1., Madhya Pradesh Vya Pradesh Trade Promot, par Samvardh ion Council), an Par with th, isha e o, d (Madhya bjective of",
+    "tables: llm.header_mapping skipped: local model not running; unknown headers ignored: 7., 2021 in Madhya in the number, Pradesh, the of tourists, re has been in religious",
+    "tables: llm.header_mapping skipped: local model not running; unknown headers ignored: 027. Science, Te, chn, ology and Innova, tion Policy",
+    "tables: llm.header_mapping skipped: local model not running; unknown headers ignored: Madhya Prades , 429 sub-sarpan, h. Out of chs, 381, 78 panchs, mbers and"
+  ],
+  "orchestrator": "sequential",
+  "useful_calls": 1,
+  "storage": {
+    "inserted": 0,
+    "duplicates": 1
+  },
+  "latency_seconds": 5.693330475000039,
+  "tool_calls": 3,
+  "reference_calls": 1
+}

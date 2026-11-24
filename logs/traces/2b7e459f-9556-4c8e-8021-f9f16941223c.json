@@ -1,0 +1,36 @@
+{
+  "run_id": "2b7e459f-9556-4c8e-8021-f9f16941223c",
+  "started_at": "2026-10-24T19:08:59.221015+00:00",
+  "input": "data/raw/e_mandi_manual.pdf",
+  "input_sha256": "a84a4517a92a02c0f0980f01b9450be2025e39fceb623d0721571b3721b0bc08",
+  "source": "sha256:a84a4517a92a02c0f0980f01b9450be2025e39fceb623d0721571b3721b0bc08",
+  "source_url": "https://eanugya.mp.gov.in/HR/Doc/User_ManualForMandiSecretary.pdf",
+  "agent": "statistics",
+  "source_type": "Document",
+  "status": "failed",
+  "records": [],
+  "errors": [
+    "ExtractionError: No supported production sentences; text pages=35; OCR and general PDF tables pending"
+  ],
+  "warnings": [],
+  "trajectory": [
+    {
+      "tool": "pypdf",
+      "arguments": {
+        "input_sha256": "a84a4517a92a02c0f0980f01b9450be2025e39fceb623d0721571b3721b0bc08",
+        "schema": "observation-v1",
+        "max_pages": 300
+      }
+    }
+  ],
+  "retries": 0,
+  "manual_interventions": 0,
+  "inventory_source": "S04",
+  "storage": {
+    "inserted": 0,
+    "duplicates": 0
+  },
+  "latency_seconds": 1.3322461000061594,
+  "tool_calls": 1,
+  "reference_calls": 1
+}

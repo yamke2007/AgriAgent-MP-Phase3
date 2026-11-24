@@ -1,0 +1,68 @@
+{
+  "run_id": "497e4e68-1ee9-47b0-8b4e-76a90ebaf76e",
+  "started_at": "2026-10-25T06:39:25.902630+00:00",
+  "input": "eval/cases/scheme_09.html",
+  "input_sha256": "a1686be317ff3cbae7abc9c46b4a2d3f62956504db22dcb445b5d216a723ad65",
+  "source": "sha256:a1686be317ff3cbae7abc9c46b4a2d3f62956504db22dcb445b5d216a723ad65",
+  "source_url": "https://cmhelpline.mp.gov.in/Schmedetail.aspx?Schemeid=112",
+  "agent": "scheme",
+  "source_type": "Document",
+  "status": "failed",
+  "records": [
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "MISSING:not_in_source",
+      "period": "MISSING:not_in_source",
+      "variable": "आवेदन शुल्क",
+      "value": "निःशुल्क है",
+      "unit": "text",
+      "value_kind": "text",
+      "locator": "table:1/row:1",
+      "evidence": "आवेदन शुल्क निःशुल्क है",
+      "agent": "scheme",
+      "source": "sha256:a1686be317ff3cbae7abc9c46b4a2d3f62956504db22dcb445b5d216a723ad65",
+      "source_type": "Document",
+      "run_id": "497e4e68-1ee9-47b0-8b4e-76a90ebaf76e",
+      "parent_file": "data/raw/msp_scheme.html",
+      "validation_errors": [],
+      "validation_status": "valid"
+    }
+  ],
+  "errors": [
+    "Storage: disk I/O error"
+  ],
+  "warnings": [],
+  "trajectory": [
+    {
+      "tool": "beautifulsoup4",
+      "arguments": {
+        "input_sha256": "a1686be317ff3cbae7abc9c46b4a2d3f62956504db22dcb445b5d216a723ad65",
+        "schema": "observation-v1",
+        "max_pages": null
+      }
+    }
+  ],
+  "retries": 0,
+  "manual_interventions": 0,
+  "inventory_source": "S06",
+  "agent_trace": [
+    {
+      "agent": "scheme",
+      "tool": "beautifulsoup4",
+      "ok": true,
+      "summary": "tuple[2]",
+      "seconds": 0.001
+    }
+  ],
+  "handoffs": [],
+  "agents": [
+    "scheme"
+  ],
+  "llm_calls": 0,
+  "notes": [],
+  "orchestrator": "langgraph",
+  "useful_calls": 1,
+  "latency_seconds": 0.008869834000506671,
+  "tool_calls": 1,
+  "reference_calls": 1
+}

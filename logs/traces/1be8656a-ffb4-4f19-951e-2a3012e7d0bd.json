@@ -1,0 +1,70 @@
+{
+  "run_id": "1be8656a-ffb4-4f19-951e-2a3012e7d0bd",
+  "started_at": "2026-10-27T15:59:18.914674+00:00",
+  "input": "eval/cases/scheme_04.html",
+  "input_sha256": "091b88bb118d032e8ce11f560e2e9c281c363e43bcc45028d69a2a9dce3d25f5",
+  "source": "sha256:091b88bb118d032e8ce11f560e2e9c281c363e43bcc45028d69a2a9dce3d25f5",
+  "source_url": "https://cmhelpline.mp.gov.in/Schmedetail.aspx?Schemeid=112",
+  "agent": "scheme",
+  "source_type": "Document",
+  "status": "complete",
+  "records": [
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "MISSING:not_in_source",
+      "period": "MISSING:not_in_source",
+      "variable": "अधिकार क्षेत्र",
+      "value": "राज्य प्रवर्तित योजना",
+      "unit": "text",
+      "value_kind": "text",
+      "locator": "table:1/row:1",
+      "evidence": "अधिकार क्षेत्र राज्य प्रवर्तित योजना",
+      "agent": "scheme",
+      "source": "sha256:091b88bb118d032e8ce11f560e2e9c281c363e43bcc45028d69a2a9dce3d25f5",
+      "source_type": "Document",
+      "run_id": "1be8656a-ffb4-4f19-951e-2a3012e7d0bd",
+      "parent_file": "data/raw/msp_scheme.html",
+      "validation_errors": [],
+      "validation_status": "valid"
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "trajectory": [
+    {
+      "tool": "beautifulsoup4",
+      "arguments": {
+        "input_sha256": "091b88bb118d032e8ce11f560e2e9c281c363e43bcc45028d69a2a9dce3d25f5",
+        "schema": "observation-v1",
+        "max_pages": null
+      }
+    }
+  ],
+  "retries": 0,
+  "manual_interventions": 0,
+  "inventory_source": "S06",
+  "agent_trace": [
+    {
+      "agent": "scheme",
+      "tool": "beautifulsoup4",
+      "ok": true,
+      "summary": "tuple[2]",
+      "seconds": 0.0
+    }
+  ],
+  "handoffs": [],
+  "agents": [
+    "scheme"
+  ],
+  "llm_calls": 0,
+  "notes": [],
+  "orchestrator": "sequential",
+  "useful_calls": 1,
+  "storage": {
+    "inserted": 0,
+    "duplicates": 1
+  },
+  "latency_seconds": 0.0027648510003928095,
+  "tool_calls": 1,
+  "reference_calls": 1
+}

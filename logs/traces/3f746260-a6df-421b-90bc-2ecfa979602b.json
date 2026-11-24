@@ -1,0 +1,54 @@
+{
+  "run_id": "3f746260-a6df-421b-90bc-2ecfa979602b",
+  "started_at": "2026-10-24T18:55:19.870378+00:00",
+  "input": "C:\\Users\\aashi\\OneDrive\\Dokumen\\ChatGPT\\p\\AgriAgent_MadhyaPradesh\\eval\\cases\\statistics_07.csv",
+  "input_sha256": "f7e249555b0c91d85045887f4cf80c9d6c697df585f94e8f18b5919a068c2764",
+  "source": "sha256:f7e249555b0c91d85045887f4cf80c9d6c697df585f94e8f18b5919a068c2764",
+  "source_url": "unknown",
+  "agent": "statistics",
+  "source_type": "Database",
+  "status": "complete",
+  "records": [
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "madhya pradesh",
+      "period": "2021-22",
+      "variable": "insured_farmers_lower_bound",
+      "value": "90",
+      "unit": "lakh farmers",
+      "value_kind": "decimal",
+      "qualifier": "more than",
+      "origin_locator": "page:7",
+      "origin_source": "data/raw/mp_economic_survey.pdf",
+      "evidence": "MISSING:not_applicable | Madhya Pradesh | 2021-22 | insured_farmers_lower_bound | 90 | lakh farmers | decimal | more than | page:7 | data/raw/mp_economic_survey.pdf",
+      "locator": "csv:line:2",
+      "source": "sha256:f7e249555b0c91d85045887f4cf80c9d6c697df585f94e8f18b5919a068c2764",
+      "source_type": "Database",
+      "agent": "statistics",
+      "run_id": "3f746260-a6df-421b-90bc-2ecfa979602b",
+      "validation_errors": [],
+      "validation_status": "valid"
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "trajectory": [
+    {
+      "tool": "csv.DictReader",
+      "arguments": {
+        "input_sha256": "f7e249555b0c91d85045887f4cf80c9d6c697df585f94e8f18b5919a068c2764",
+        "schema": "observation-v1",
+        "max_pages": null
+      }
+    }
+  ],
+  "retries": 0,
+  "manual_interventions": 0,
+  "storage": {
+    "inserted": 1,
+    "duplicates": 0
+  },
+  "latency_seconds": 0.014425699948333204,
+  "tool_calls": 1,
+  "reference_calls": 1
+}

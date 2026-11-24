@@ -1,0 +1,2 @@
+crop,location,period,variable,value,unit,value_kind,qualifier,origin_locator,origin_source
+MISSING:not_applicable,Madhya Pradesh,2022,irrigation_capacity_lower_bound,45,lakh hectare,decimal,more than,page:7,data/raw/mp_economic_survey.pdf

@@ -1,0 +1,27 @@
+{
+  "run_id": "8a0edb58-64c0-4b7d-a55d-571aa87db7a2",
+  "started_at": "2026-10-27T15:58:38.207761+00:00",
+  "input": "data/raw/icar_kvk.html",
+  "input_sha256": "4a2a2b4deb8d58cedc8d9bba5333c2db2f651480d4339e169c5a6eecaa940beb",
+  "source": "sha256:4a2a2b4deb8d58cedc8d9bba5333c2db2f651480d4339e169c5a6eecaa940beb",
+  "source_url": "https://icar.org.in/en/node/15044",
+  "agent": "unrouted",
+  "source_type": "unknown",
+  "status": "failed",
+  "records": [],
+  "errors": [
+    "ExtractionError: Injected extraction failure"
+  ],
+  "warnings": [],
+  "trajectory": [],
+  "retries": 0,
+  "manual_interventions": 0,
+  "inventory_source": "S21",
+  "storage": {
+    "inserted": 0,
+    "duplicates": 0
+  },
+  "latency_seconds": 0.01703858599967134,
+  "tool_calls": 0,
+  "reference_calls": 0
+}

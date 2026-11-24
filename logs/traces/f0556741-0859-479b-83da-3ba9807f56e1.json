@@ -1,0 +1,51 @@
+{
+  "run_id": "f0556741-0859-479b-83da-3ba9807f56e1",
+  "started_at": "2026-10-24T18:55:19.548586+00:00",
+  "input": "C:\\Users\\aashi\\OneDrive\\Dokumen\\ChatGPT\\p\\AgriAgent_MadhyaPradesh\\eval\\cases\\scheme_01.html",
+  "input_sha256": "c3eab98187cf5ca8bac2781d38d42b29a693136b95df2272eaa480d93dd3866c",
+  "source": "sha256:c3eab98187cf5ca8bac2781d38d42b29a693136b95df2272eaa480d93dd3866c",
+  "source_url": "unknown",
+  "agent": "scheme",
+  "source_type": "Document",
+  "status": "complete",
+  "records": [
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "MISSING:not_in_source",
+      "period": "MISSING:not_in_source",
+      "variable": "विभाग",
+      "value": "खाद्य नागरिक आपूर्ति एवं उपभोक्ता संरक्षण विभाग",
+      "unit": "text",
+      "value_kind": "text",
+      "locator": "table:1/row:1",
+      "evidence": "विभाग खाद्य नागरिक आपूर्ति एवं उपभोक्ता संरक्षण विभाग",
+      "source": "sha256:c3eab98187cf5ca8bac2781d38d42b29a693136b95df2272eaa480d93dd3866c",
+      "source_type": "Document",
+      "agent": "scheme",
+      "run_id": "f0556741-0859-479b-83da-3ba9807f56e1",
+      "validation_errors": [],
+      "validation_status": "valid"
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "trajectory": [
+    {
+      "tool": "beautifulsoup4",
+      "arguments": {
+        "input_sha256": "c3eab98187cf5ca8bac2781d38d42b29a693136b95df2272eaa480d93dd3866c",
+        "schema": "observation-v1",
+        "max_pages": null
+      }
+    }
+  ],
+  "retries": 0,
+  "manual_interventions": 0,
+  "storage": {
+    "inserted": 1,
+    "duplicates": 0
+  },
+  "latency_seconds": 0.018647800025064498,
+  "tool_calls": 1,
+  "reference_calls": 1
+}

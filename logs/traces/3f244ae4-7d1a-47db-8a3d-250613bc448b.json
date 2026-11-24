@@ -1,0 +1,53 @@
+{
+  "run_id": "3f244ae4-7d1a-47db-8a3d-250613bc448b",
+  "started_at": "2026-10-24T19:09:01.403278+00:00",
+  "input": "eval/cases/scheme_03.html",
+  "input_sha256": "2aea24238156ca6059567a5b69d038918a2177b2bfd856804546b9e92f19fc29",
+  "source": "sha256:2aea24238156ca6059567a5b69d038918a2177b2bfd856804546b9e92f19fc29",
+  "source_url": "https://cmhelpline.mp.gov.in/Schmedetail.aspx?Schemeid=112",
+  "agent": "scheme",
+  "source_type": "Document",
+  "status": "complete",
+  "records": [
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "MISSING:not_in_source",
+      "period": "MISSING:not_in_source",
+      "variable": "हितग्राही मूलक है या नही",
+      "value": "नहीं",
+      "unit": "text",
+      "value_kind": "text",
+      "locator": "table:1/row:1",
+      "evidence": "हितग्राही मूलक है या नही नहीं",
+      "source": "sha256:2aea24238156ca6059567a5b69d038918a2177b2bfd856804546b9e92f19fc29",
+      "source_type": "Document",
+      "agent": "scheme",
+      "run_id": "3f244ae4-7d1a-47db-8a3d-250613bc448b",
+      "parent_file": "data/raw/msp_scheme.html",
+      "validation_errors": [],
+      "validation_status": "valid"
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "trajectory": [
+    {
+      "tool": "beautifulsoup4",
+      "arguments": {
+        "input_sha256": "2aea24238156ca6059567a5b69d038918a2177b2bfd856804546b9e92f19fc29",
+        "schema": "observation-v1",
+        "max_pages": null
+      }
+    }
+  ],
+  "retries": 0,
+  "manual_interventions": 0,
+  "inventory_source": "S06",
+  "storage": {
+    "inserted": 0,
+    "duplicates": 1
+  },
+  "latency_seconds": 0.014943299989681691,
+  "tool_calls": 1,
+  "reference_calls": 1
+}

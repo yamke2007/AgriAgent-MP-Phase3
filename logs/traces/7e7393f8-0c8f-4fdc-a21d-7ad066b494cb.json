@@ -1,0 +1,56 @@
+{
+  "run_id": "7e7393f8-0c8f-4fdc-a21d-7ad066b494cb",
+  "started_at": "2026-10-24T19:05:00.476930+00:00",
+  "input": "eval/cases/statistics_02.csv",
+  "input_sha256": "70e8417cc6b8846b36322c32fffbf8bcdc613753d6743a1e6af4417772724ce6",
+  "source": "sha256:70e8417cc6b8846b36322c32fffbf8bcdc613753d6743a1e6af4417772724ce6",
+  "source_url": "https://aiggpa.mp.gov.in/uploads/project/MPES_2022-23_Highlights_English.pdf",
+  "agent": "statistics",
+  "source_type": "Database",
+  "status": "complete",
+  "records": [
+    {
+      "crop": "wheat",
+      "location": "madhya pradesh",
+      "period": "2013-14",
+      "variable": "production",
+      "value": "174.8",
+      "unit": "lakh tonnes",
+      "value_kind": "decimal",
+      "qualifier": "historical",
+      "origin_locator": "page:7",
+      "origin_source": "data/raw/mp_economic_survey.pdf",
+      "evidence": "wheat | Madhya Pradesh | 2013-14 | production | 174.8 | lakh tonnes | decimal | historical | page:7 | data/raw/mp_economic_survey.pdf",
+      "locator": "csv:line:2",
+      "source": "sha256:70e8417cc6b8846b36322c32fffbf8bcdc613753d6743a1e6af4417772724ce6",
+      "source_type": "Database",
+      "agent": "statistics",
+      "run_id": "7e7393f8-0c8f-4fdc-a21d-7ad066b494cb",
+      "parent_file": "data/raw/mp_economic_survey.pdf",
+      "validation_errors": [],
+      "validation_status": "valid"
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "trajectory": [
+    {
+      "tool": "csv.DictReader",
+      "arguments": {
+        "input_sha256": "70e8417cc6b8846b36322c32fffbf8bcdc613753d6743a1e6af4417772724ce6",
+        "schema": "observation-v1",
+        "max_pages": null
+      }
+    }
+  ],
+  "retries": 0,
+  "manual_interventions": 0,
+  "inventory_source": "S23",
+  "storage": {
+    "inserted": 0,
+    "duplicates": 1
+  },
+  "latency_seconds": 0.015600899991113693,
+  "tool_calls": 1,
+  "reference_calls": 1
+}

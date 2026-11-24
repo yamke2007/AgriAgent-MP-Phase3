@@ -1,0 +1,51 @@
+{
+  "run_id": "7abbee4f-727b-49be-86fb-930d4c263bce",
+  "started_at": "2026-10-24T18:55:19.591751+00:00",
+  "input": "C:\\Users\\aashi\\OneDrive\\Dokumen\\ChatGPT\\p\\AgriAgent_MadhyaPradesh\\eval\\cases\\scheme_03.html",
+  "input_sha256": "2aea24238156ca6059567a5b69d038918a2177b2bfd856804546b9e92f19fc29",
+  "source": "sha256:2aea24238156ca6059567a5b69d038918a2177b2bfd856804546b9e92f19fc29",
+  "source_url": "unknown",
+  "agent": "scheme",
+  "source_type": "Document",
+  "status": "complete",
+  "records": [
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "MISSING:not_in_source",
+      "period": "MISSING:not_in_source",
+      "variable": "हितग्राही मूलक है या नही",
+      "value": "नहीं",
+      "unit": "text",
+      "value_kind": "text",
+      "locator": "table:1/row:1",
+      "evidence": "हितग्राही मूलक है या नही नहीं",
+      "source": "sha256:2aea24238156ca6059567a5b69d038918a2177b2bfd856804546b9e92f19fc29",
+      "source_type": "Document",
+      "agent": "scheme",
+      "run_id": "7abbee4f-727b-49be-86fb-930d4c263bce",
+      "validation_errors": [],
+      "validation_status": "valid"
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "trajectory": [
+    {
+      "tool": "beautifulsoup4",
+      "arguments": {
+        "input_sha256": "2aea24238156ca6059567a5b69d038918a2177b2bfd856804546b9e92f19fc29",
+        "schema": "observation-v1",
+        "max_pages": null
+      }
+    }
+  ],
+  "retries": 0,
+  "manual_interventions": 0,
+  "storage": {
+    "inserted": 1,
+    "duplicates": 0
+  },
+  "latency_seconds": 0.0172385000041686,
+  "tool_calls": 1,
+  "reference_calls": 1
+}

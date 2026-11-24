@@ -1,0 +1,56 @@
+{
+  "run_id": "9ff215af-d0a1-4c53-afa2-52dfbdf4d3f1",
+  "started_at": "2026-10-24T19:05:00.497684+00:00",
+  "input": "eval/cases/statistics_03.csv",
+  "input_sha256": "7a6cde39466883149abc369d83ae02a0f110d190498534f10c8aa17ab9e5aab2",
+  "source": "sha256:7a6cde39466883149abc369d83ae02a0f110d190498534f10c8aa17ab9e5aab2",
+  "source_url": "https://aiggpa.mp.gov.in/uploads/project/MPES_2022-23_Highlights_English.pdf",
+  "agent": "statistics",
+  "source_type": "Database",
+  "status": "complete",
+  "records": [
+    {
+      "crop": "rice",
+      "location": "madhya pradesh",
+      "period": "2022-23",
+      "variable": "production",
+      "value": "131.8",
+      "unit": "lakh tonnes",
+      "value_kind": "decimal",
+      "qualifier": "during this period; context sentence 1",
+      "origin_locator": "page:7",
+      "origin_source": "data/raw/mp_economic_survey.pdf",
+      "evidence": "rice | Madhya Pradesh | 2022-23 | production | 131.8 | lakh tonnes | decimal | during this period; context sentence 1 | page:7 | data/raw/mp_economic_survey.pdf",
+      "locator": "csv:line:2",
+      "source": "sha256:7a6cde39466883149abc369d83ae02a0f110d190498534f10c8aa17ab9e5aab2",
+      "source_type": "Database",
+      "agent": "statistics",
+      "run_id": "9ff215af-d0a1-4c53-afa2-52dfbdf4d3f1",
+      "parent_file": "data/raw/mp_economic_survey.pdf",
+      "validation_errors": [],
+      "validation_status": "valid"
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "trajectory": [
+    {
+      "tool": "csv.DictReader",
+      "arguments": {
+        "input_sha256": "7a6cde39466883149abc369d83ae02a0f110d190498534f10c8aa17ab9e5aab2",
+        "schema": "observation-v1",
+        "max_pages": null
+      }
+    }
+  ],
+  "retries": 0,
+  "manual_interventions": 0,
+  "inventory_source": "S23",
+  "storage": {
+    "inserted": 0,
+    "duplicates": 1
+  },
+  "latency_seconds": 0.016125199967063963,
+  "tool_calls": 1,
+  "reference_calls": 1
+}

@@ -1,0 +1,88 @@
+{
+  "run_id": "f7739da6-5047-4884-856a-394d44609598",
+  "started_at": "2026-10-24T18:55:19.377338+00:00",
+  "input": "C:\\Users\\aashi\\OneDrive\\Dokumen\\ChatGPT\\p\\AgriAgent_MadhyaPradesh\\eval\\cases\\directory_05.html",
+  "input_sha256": "429c25f6f8e31edab63e8f8e992733f3aa9fa72ec6277e872d3cea9a39f9b370",
+  "source": "sha256:429c25f6f8e31edab63e8f8e992733f3aa9fa72ec6277e872d3cea9a39f9b370",
+  "source_url": "unknown",
+  "agent": "directory",
+  "source_type": "Document",
+  "status": "complete",
+  "records": [
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "mandla",
+      "period": "MISSING:not_applicable",
+      "locator": "table:1/row:2",
+      "evidence": "5. Krishi Vigyan Kendra, C/o S.K. Tripathi House No.207, Near Subha Motor, Katla, Distt. Mandla- Vice-Chancellor, Jawaharlal Nehru Krishi Viswavidyalaya, Jabalpur-482 004 2006 SAU",
+      "record_id": "5",
+      "variable": "address",
+      "value": "Krishi Vigyan Kendra, C/o S.K. Tripathi House No.207, Near Subha Motor, Katla, Distt. Mandla-",
+      "unit": "text",
+      "value_kind": "text",
+      "source": "sha256:429c25f6f8e31edab63e8f8e992733f3aa9fa72ec6277e872d3cea9a39f9b370",
+      "source_type": "Document",
+      "agent": "directory",
+      "run_id": "f7739da6-5047-4884-856a-394d44609598",
+      "validation_errors": [],
+      "validation_status": "valid"
+    },
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "mandla",
+      "period": "MISSING:not_applicable",
+      "locator": "table:1/row:2",
+      "evidence": "5. Krishi Vigyan Kendra, C/o S.K. Tripathi House No.207, Near Subha Motor, Katla, Distt. Mandla- Vice-Chancellor, Jawaharlal Nehru Krishi Viswavidyalaya, Jabalpur-482 004 2006 SAU",
+      "record_id": "5",
+      "variable": "host_organization",
+      "value": "Vice-Chancellor, Jawaharlal Nehru Krishi Viswavidyalaya, Jabalpur-482 004",
+      "unit": "text",
+      "value_kind": "text",
+      "source": "sha256:429c25f6f8e31edab63e8f8e992733f3aa9fa72ec6277e872d3cea9a39f9b370",
+      "source_type": "Document",
+      "agent": "directory",
+      "run_id": "f7739da6-5047-4884-856a-394d44609598",
+      "validation_errors": [],
+      "validation_status": "valid"
+    },
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "mandla",
+      "period": "MISSING:not_applicable",
+      "locator": "table:1/row:2",
+      "evidence": "5. Krishi Vigyan Kendra, C/o S.K. Tripathi House No.207, Near Subha Motor, Katla, Distt. Mandla- Vice-Chancellor, Jawaharlal Nehru Krishi Viswavidyalaya, Jabalpur-482 004 2006 SAU",
+      "record_id": "5",
+      "variable": "sanction_year",
+      "value": "2006",
+      "unit": "year",
+      "value_kind": "integer",
+      "source": "sha256:429c25f6f8e31edab63e8f8e992733f3aa9fa72ec6277e872d3cea9a39f9b370",
+      "source_type": "Document",
+      "agent": "directory",
+      "run_id": "f7739da6-5047-4884-856a-394d44609598",
+      "validation_errors": [],
+      "validation_status": "valid"
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "trajectory": [
+    {
+      "tool": "beautifulsoup4",
+      "arguments": {
+        "input_sha256": "429c25f6f8e31edab63e8f8e992733f3aa9fa72ec6277e872d3cea9a39f9b370",
+        "schema": "observation-v1",
+        "max_pages": null
+      }
+    }
+  ],
+  "retries": 0,
+  "manual_interventions": 0,
+  "storage": {
+    "inserted": 3,
+    "duplicates": 0
+  },
+  "latency_seconds": 0.018119300017133355,
+  "tool_calls": 1,
+  "reference_calls": 1
+}

@@ -1,0 +1,68 @@
+{
+  "run_id": "3c80fc68-2ac0-43e1-aaf4-5158d2afa4b2",
+  "started_at": "2026-10-25T06:39:45.397463+00:00",
+  "input": "eval/cases/scheme_02.html",
+  "input_sha256": "56481669ef6457971e301a29990c91e0c58cd918c9a7a873e1e80d88d3e227ec",
+  "source": "sha256:56481669ef6457971e301a29990c91e0c58cd918c9a7a873e1e80d88d3e227ec",
+  "source_url": "https://cmhelpline.mp.gov.in/Schmedetail.aspx?Schemeid=112",
+  "agent": "scheme",
+  "source_type": "Document",
+  "status": "failed",
+  "records": [
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "MISSING:not_in_source",
+      "period": "MISSING:not_in_source",
+      "variable": "योजना का नाम",
+      "value": "किसानों से समर्थन मूल्य पर खाद्यान्न का उपार्जन",
+      "unit": "text",
+      "value_kind": "text",
+      "locator": "table:1/row:1",
+      "evidence": "योजना का नाम किसानों से समर्थन मूल्य पर खाद्यान्न का उपार्जन",
+      "agent": "scheme",
+      "source": "sha256:56481669ef6457971e301a29990c91e0c58cd918c9a7a873e1e80d88d3e227ec",
+      "source_type": "Document",
+      "run_id": "3c80fc68-2ac0-43e1-aaf4-5158d2afa4b2",
+      "parent_file": "data/raw/msp_scheme.html",
+      "validation_errors": [],
+      "validation_status": "valid"
+    }
+  ],
+  "errors": [
+    "Storage: disk I/O error"
+  ],
+  "warnings": [],
+  "trajectory": [
+    {
+      "tool": "beautifulsoup4",
+      "arguments": {
+        "input_sha256": "56481669ef6457971e301a29990c91e0c58cd918c9a7a873e1e80d88d3e227ec",
+        "schema": "observation-v1",
+        "max_pages": null
+      }
+    }
+  ],
+  "retries": 0,
+  "manual_interventions": 0,
+  "inventory_source": "S06",
+  "agent_trace": [
+    {
+      "agent": "scheme",
+      "tool": "beautifulsoup4",
+      "ok": true,
+      "summary": "tuple[2]",
+      "seconds": 0.001
+    }
+  ],
+  "handoffs": [],
+  "agents": [
+    "scheme"
+  ],
+  "llm_calls": 0,
+  "notes": [],
+  "orchestrator": "langgraph",
+  "useful_calls": 1,
+  "latency_seconds": 0.008007458000065526,
+  "tool_calls": 1,
+  "reference_calls": 1
+}

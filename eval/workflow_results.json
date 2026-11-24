@@ -1,0 +1,129 @@
+[
+  {
+    "input": "data/raw/mp_economic_survey.pdf",
+    "expected_status": "partial",
+    "status": "partial",
+    "plan": [
+      "statistics",
+      "tables"
+    ],
+    "producers": "statistics",
+    "handoffs": [
+      "tables -> none: Table agent found no table values it could map (crop/place/period/value)"
+    ],
+    "retries": 0,
+    "fault": null,
+    "correct": true,
+    "synthetic": false,
+    "run_id": "d849fac0-6ddf-4eb7-8daf-2b093f009c5b"
+  },
+  {
+    "input": "data/raw/icar_kvk.html",
+    "expected_status": "complete",
+    "status": "complete",
+    "plan": [
+      "directory"
+    ],
+    "producers": "directory",
+    "handoffs": [],
+    "retries": 0,
+    "fault": null,
+    "correct": true,
+    "synthetic": false,
+    "run_id": "e581f414-a474-4ca8-8fc6-9a432dee42db"
+  },
+  {
+    "input": "data/raw/msp_scheme.html",
+    "expected_status": "partial",
+    "status": "partial",
+    "plan": [
+      "scheme"
+    ],
+    "producers": "scheme",
+    "handoffs": [],
+    "retries": 0,
+    "fault": null,
+    "correct": true,
+    "synthetic": false,
+    "run_id": "63bd1ef4-5a54-48b7-8959-e48549cf6261"
+  },
+  {
+    "input": "data/derived/survey_agriculture_transcription.csv",
+    "expected_status": "complete",
+    "status": "complete",
+    "plan": [
+      "statistics"
+    ],
+    "producers": "statistics",
+    "handoffs": [],
+    "retries": 0,
+    "fault": null,
+    "correct": true,
+    "synthetic": false,
+    "run_id": "50cda34d-0357-4861-ad50-acbe9fb9c7c4"
+  },
+  {
+    "input": "data/raw/evikas_calculator.html",
+    "expected_status": "failed",
+    "status": "failed",
+    "plan": null,
+    "producers": "unrouted",
+    "handoffs": [],
+    "retries": 0,
+    "fault": null,
+    "correct": true,
+    "synthetic": false,
+    "run_id": "0ea03444-38db-4aae-9c96-40402c6663a5"
+  },
+  {
+    "input": "tests/fixtures_tables/synthetic_district_apy.pdf",
+    "expected_status": "complete",
+    "status": "complete",
+    "plan": [
+      "statistics",
+      "tables"
+    ],
+    "producers": "tables",
+    "handoffs": [
+      "statistics -> next agent: No supported production sentences; text pages=1; tables/OCR are left to the tables agent"
+    ],
+    "retries": 0,
+    "fault": null,
+    "correct": true,
+    "synthetic": true,
+    "run_id": "cfa9a0e3-fff6-4e2d-bf43-522c25584653"
+  },
+  {
+    "input": "tests/fixtures_tables/synthetic_mandi_prices.xlsx",
+    "expected_status": "complete",
+    "status": "complete",
+    "plan": [
+      "tables"
+    ],
+    "producers": "tables",
+    "handoffs": [],
+    "retries": 0,
+    "fault": null,
+    "correct": true,
+    "synthetic": true,
+    "run_id": "0c0abaa0-395e-4830-8b8d-3f4f91d7a10f"
+  },
+  {
+    "input": "tests/fixtures_tables/synthetic_district_apy.pdf",
+    "expected_status": "complete",
+    "status": "complete",
+    "plan": [
+      "statistics",
+      "tables"
+    ],
+    "producers": "tables",
+    "handoffs": [
+      "statistics -> next agent: No supported production sentences; text pages=1; tables/OCR are left to the tables agent"
+    ],
+    "retries": 1,
+    "fault": "pdfplumber.extract_tables",
+    "correct": true,
+    "synthetic": true,
+    "run_id": "15bd72dd-5549-4228-8008-a57269526bb6"
+  }
+]

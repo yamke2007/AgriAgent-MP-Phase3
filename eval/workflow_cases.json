@@ -1,0 +1,10 @@
+[
+  {"input": "data/raw/mp_economic_survey.pdf", "expected_status": "partial", "expected_plan": ["statistics", "tables"], "note": "real S23 PDF: statistics grammar extracts the wheat sentence, tables agent finds no mappable table (hand-off recorded)"},
+  {"input": "data/raw/icar_kvk.html", "expected_status": "complete", "expected_plan": ["directory"], "note": "real S21 directory"},
+  {"input": "data/raw/msp_scheme.html", "expected_status": "partial", "expected_plan": ["scheme"], "note": "real S06 Hindi scheme page with empty fields"},
+  {"input": "data/derived/survey_agriculture_transcription.csv", "expected_status": "complete", "expected_plan": ["statistics"], "note": "manual transcription of S23 page 7"},
+  {"input": "data/raw/evikas_calculator.html", "expected_status": "failed", "expected_plan": [], "note": "unrendered template must be rejected, not guessed"},
+  {"input": "tests/fixtures_tables/synthetic_district_apy.pdf", "expected_status": "complete", "expected_plan": ["statistics", "tables"], "synthetic": true, "note": "SYNTHETIC: statistics -> tables hand-off"},
+  {"input": "tests/fixtures_tables/synthetic_mandi_prices.xlsx", "expected_status": "complete", "expected_plan": ["tables"], "synthetic": true},
+  {"input": "tests/fixtures_tables/synthetic_district_apy.pdf", "expected_status": "complete", "expected_plan": ["statistics", "tables"], "synthetic": true, "inject_tool": "pdfplumber.extract_tables", "note": "fault injection: transient tool failure must be retried"}
+]

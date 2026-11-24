@@ -1,0 +1,88 @@
+{
+  "run_id": "d83b0fc6-21cf-43ab-8818-1407a7b02012",
+  "started_at": "2026-10-24T18:55:19.452107+00:00",
+  "input": "C:\\Users\\aashi\\OneDrive\\Dokumen\\ChatGPT\\p\\AgriAgent_MadhyaPradesh\\eval\\cases\\directory_08.html",
+  "input_sha256": "637db4bffe96b6e864fa9ba2889d415140499bc559f6e35accb2a0123ced9866",
+  "source": "sha256:637db4bffe96b6e864fa9ba2889d415140499bc559f6e35accb2a0123ced9866",
+  "source_url": "unknown",
+  "agent": "directory",
+  "source_type": "Document",
+  "status": "complete",
+  "records": [
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "sheopur",
+      "period": "MISSING:not_applicable",
+      "locator": "table:1/row:2",
+      "evidence": "8. Krishi Vigyan Kendra, MP State Seeds and Farm Development Corporation, Vill-Baroda, Distt. Sheopur- Vice-Chancellor, Jawaharlal Nehru Krishi Viswavidyalaya, Jabalpur-482 004 2006 SAU",
+      "record_id": "8",
+      "variable": "address",
+      "value": "Krishi Vigyan Kendra, MP State Seeds and Farm Development Corporation, Vill-Baroda, Distt. Sheopur-",
+      "unit": "text",
+      "value_kind": "text",
+      "source": "sha256:637db4bffe96b6e864fa9ba2889d415140499bc559f6e35accb2a0123ced9866",
+      "source_type": "Document",
+      "agent": "directory",
+      "run_id": "d83b0fc6-21cf-43ab-8818-1407a7b02012",
+      "validation_errors": [],
+      "validation_status": "valid"
+    },
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "sheopur",
+      "period": "MISSING:not_applicable",
+      "locator": "table:1/row:2",
+      "evidence": "8. Krishi Vigyan Kendra, MP State Seeds and Farm Development Corporation, Vill-Baroda, Distt. Sheopur- Vice-Chancellor, Jawaharlal Nehru Krishi Viswavidyalaya, Jabalpur-482 004 2006 SAU",
+      "record_id": "8",
+      "variable": "host_organization",
+      "value": "Vice-Chancellor, Jawaharlal Nehru Krishi Viswavidyalaya, Jabalpur-482 004",
+      "unit": "text",
+      "value_kind": "text",
+      "source": "sha256:637db4bffe96b6e864fa9ba2889d415140499bc559f6e35accb2a0123ced9866",
+      "source_type": "Document",
+      "agent": "directory",
+      "run_id": "d83b0fc6-21cf-43ab-8818-1407a7b02012",
+      "validation_errors": [],
+      "validation_status": "valid"
+    },
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "sheopur",
+      "period": "MISSING:not_applicable",
+      "locator": "table:1/row:2",
+      "evidence": "8. Krishi Vigyan Kendra, MP State Seeds and Farm Development Corporation, Vill-Baroda, Distt. Sheopur- Vice-Chancellor, Jawaharlal Nehru Krishi Viswavidyalaya, Jabalpur-482 004 2006 SAU",
+      "record_id": "8",
+      "variable": "sanction_year",
+      "value": "2006",
+      "unit": "year",
+      "value_kind": "integer",
+      "source": "sha256:637db4bffe96b6e864fa9ba2889d415140499bc559f6e35accb2a0123ced9866",
+      "source_type": "Document",
+      "agent": "directory",
+      "run_id": "d83b0fc6-21cf-43ab-8818-1407a7b02012",
+      "validation_errors": [],
+      "validation_status": "valid"
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "trajectory": [
+    {
+      "tool": "beautifulsoup4",
+      "arguments": {
+        "input_sha256": "637db4bffe96b6e864fa9ba2889d415140499bc559f6e35accb2a0123ced9866",
+        "schema": "observation-v1",
+        "max_pages": null
+      }
+    }
+  ],
+  "retries": 0,
+  "manual_interventions": 0,
+  "storage": {
+    "inserted": 3,
+    "duplicates": 0
+  },
+  "latency_seconds": 0.044759699958376586,
+  "tool_calls": 1,
+  "reference_calls": 1
+}

@@ -1,0 +1,2 @@
+crop,location,period,variable,value,unit,value_kind,qualifier,origin_locator,origin_source
+rice,Madhya Pradesh,2022-23,production,131.8,lakh tonnes,decimal,during this period; context sentence 1,page:7,data/raw/mp_economic_survey.pdf

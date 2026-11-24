@@ -1,0 +1,73 @@
+{
+  "run_id": "439b7dec-12b2-416b-b055-3d7a060e0b95",
+  "started_at": "2026-10-27T15:59:18.977248+00:00",
+  "input": "eval/cases/statistics_08.csv",
+  "input_sha256": "109fa095635bfed59e598efc22a09a48797479dfd2fdc9952852c891682cc1ad",
+  "source": "sha256:109fa095635bfed59e598efc22a09a48797479dfd2fdc9952852c891682cc1ad",
+  "source_url": "https://aiggpa.mp.gov.in/uploads/project/MPES_2022-23_Highlights_English.pdf",
+  "agent": "statistics",
+  "source_type": "Database",
+  "status": "complete",
+  "records": [
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "madhya pradesh",
+      "period": "MISSING:not_applicable",
+      "variable": "irrigation_capacity_growth",
+      "value": "585",
+      "unit": "percent",
+      "value_kind": "decimal",
+      "qualifier": "period not explicit in same clause",
+      "origin_locator": "page:7",
+      "origin_source": "data/raw/mp_economic_survey.pdf",
+      "evidence": "MISSING:not_applicable | Madhya Pradesh | MISSING:not_applicable | irrigation_capacity_growth | 585 | percent | decimal | period not explicit in same clause | page:7 | data/raw/mp_economic_survey.pdf",
+      "locator": "csv:line:2",
+      "agent": "statistics",
+      "source": "sha256:109fa095635bfed59e598efc22a09a48797479dfd2fdc9952852c891682cc1ad",
+      "source_type": "Database",
+      "run_id": "439b7dec-12b2-416b-b055-3d7a060e0b95",
+      "parent_file": "data/raw/mp_economic_survey.pdf",
+      "validation_errors": [],
+      "validation_status": "valid"
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "trajectory": [
+    {
+      "tool": "csv.DictReader",
+      "arguments": {
+        "input_sha256": "109fa095635bfed59e598efc22a09a48797479dfd2fdc9952852c891682cc1ad",
+        "schema": "observation-v1",
+        "max_pages": null
+      }
+    }
+  ],
+  "retries": 0,
+  "manual_interventions": 0,
+  "inventory_source": "S23",
+  "agent_trace": [
+    {
+      "agent": "statistics",
+      "tool": "csv.DictReader",
+      "ok": true,
+      "summary": "tuple[2]",
+      "seconds": 0.0
+    }
+  ],
+  "handoffs": [],
+  "agents": [
+    "statistics"
+  ],
+  "llm_calls": 0,
+  "notes": [],
+  "orchestrator": "sequential",
+  "useful_calls": 1,
+  "storage": {
+    "inserted": 0,
+    "duplicates": 1
+  },
+  "latency_seconds": 0.0019529760002114926,
+  "tool_calls": 1,
+  "reference_calls": 1
+}

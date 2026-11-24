@@ -1,0 +1,109 @@
+{
+  "run_id": "232bbe5f-7e3e-4c8a-ae68-363945477038",
+  "started_at": "2026-10-27T15:59:18.889345+00:00",
+  "input": "eval/cases/directory_09.html",
+  "input_sha256": "6386d6c432493171c37a8af4dda530dc6c6bdd241d027e02ea0e01d72297ddfd",
+  "source": "sha256:6386d6c432493171c37a8af4dda530dc6c6bdd241d027e02ea0e01d72297ddfd",
+  "source_url": "https://icar.org.in/en/node/15044",
+  "agent": "directory",
+  "source_type": "Document",
+  "status": "complete",
+  "records": [
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "dewas",
+      "period": "MISSING:not_applicable",
+      "locator": "table:1/row:2",
+      "evidence": "9. Krishi Vigyan Kendra, Balgarh Farm, PO. Balgarh, Distt. Dewas-455111 Vice-Chancellor, Jawaharlal Nehru Krishi Viswavidyalaya, Jabalpur-482 004 2005 SAU",
+      "record_id": "9",
+      "variable": "address",
+      "value": "Krishi Vigyan Kendra, Balgarh Farm, PO. Balgarh, Distt. Dewas-455111",
+      "unit": "text",
+      "value_kind": "text",
+      "agent": "directory",
+      "source": "sha256:6386d6c432493171c37a8af4dda530dc6c6bdd241d027e02ea0e01d72297ddfd",
+      "source_type": "Document",
+      "run_id": "232bbe5f-7e3e-4c8a-ae68-363945477038",
+      "parent_file": "data/raw/icar_kvk.html",
+      "validation_errors": [],
+      "validation_status": "valid"
+    },
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "dewas",
+      "period": "MISSING:not_applicable",
+      "locator": "table:1/row:2",
+      "evidence": "9. Krishi Vigyan Kendra, Balgarh Farm, PO. Balgarh, Distt. Dewas-455111 Vice-Chancellor, Jawaharlal Nehru Krishi Viswavidyalaya, Jabalpur-482 004 2005 SAU",
+      "record_id": "9",
+      "variable": "host_organization",
+      "value": "Vice-Chancellor, Jawaharlal Nehru Krishi Viswavidyalaya, Jabalpur-482 004",
+      "unit": "text",
+      "value_kind": "text",
+      "agent": "directory",
+      "source": "sha256:6386d6c432493171c37a8af4dda530dc6c6bdd241d027e02ea0e01d72297ddfd",
+      "source_type": "Document",
+      "run_id": "232bbe5f-7e3e-4c8a-ae68-363945477038",
+      "parent_file": "data/raw/icar_kvk.html",
+      "validation_errors": [],
+      "validation_status": "valid"
+    },
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "dewas",
+      "period": "MISSING:not_applicable",
+      "locator": "table:1/row:2",
+      "evidence": "9. Krishi Vigyan Kendra, Balgarh Farm, PO. Balgarh, Distt. Dewas-455111 Vice-Chancellor, Jawaharlal Nehru Krishi Viswavidyalaya, Jabalpur-482 004 2005 SAU",
+      "record_id": "9",
+      "variable": "sanction_year",
+      "value": "2005",
+      "unit": "year",
+      "value_kind": "integer",
+      "agent": "directory",
+      "source": "sha256:6386d6c432493171c37a8af4dda530dc6c6bdd241d027e02ea0e01d72297ddfd",
+      "source_type": "Document",
+      "run_id": "232bbe5f-7e3e-4c8a-ae68-363945477038",
+      "parent_file": "data/raw/icar_kvk.html",
+      "validation_errors": [],
+      "validation_status": "valid"
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "trajectory": [
+    {
+      "tool": "beautifulsoup4",
+      "arguments": {
+        "input_sha256": "6386d6c432493171c37a8af4dda530dc6c6bdd241d027e02ea0e01d72297ddfd",
+        "schema": "observation-v1",
+        "max_pages": null
+      }
+    }
+  ],
+  "retries": 0,
+  "manual_interventions": 0,
+  "inventory_source": "S21",
+  "agent_trace": [
+    {
+      "agent": "directory",
+      "tool": "beautifulsoup4",
+      "ok": true,
+      "summary": "tuple[2]",
+      "seconds": 0.0
+    }
+  ],
+  "handoffs": [],
+  "agents": [
+    "directory"
+  ],
+  "llm_calls": 0,
+  "notes": [],
+  "orchestrator": "sequential",
+  "useful_calls": 1,
+  "storage": {
+    "inserted": 0,
+    "duplicates": 3
+  },
+  "latency_seconds": 0.0028416769996510993,
+  "tool_calls": 1,
+  "reference_calls": 1
+}

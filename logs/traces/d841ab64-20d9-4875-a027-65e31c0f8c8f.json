@@ -1,0 +1,27 @@
+{
+  "run_id": "d841ab64-20d9-4875-a027-65e31c0f8c8f",
+  "started_at": "2026-10-27T15:46:21.100103+00:00",
+  "input": "data/raw/evikas_calculator.html",
+  "input_sha256": "6be6bc616874b6575a31d4fc99080cf056919fb81797cc5fa44d7f59e51bc743",
+  "source": "sha256:6be6bc616874b6575a31d4fc99080cf056919fb81797cc5fa44d7f59e51bc743",
+  "source_url": "https://evikas.mpkrishi.mp.gov.in/OFRDHome/FarmerFertilizer_Calculator",
+  "agent": "unrouted",
+  "source_type": "unknown",
+  "status": "failed",
+  "records": [],
+  "errors": [
+    "ExtractionError: Unrendered dynamic template: export actual results; placeholders are not observations"
+  ],
+  "warnings": [],
+  "trajectory": [],
+  "retries": 0,
+  "manual_interventions": 0,
+  "inventory_source": "S02",
+  "storage": {
+    "inserted": 0,
+    "duplicates": 0
+  },
+  "latency_seconds": 0.02696128000002318,
+  "tool_calls": 0,
+  "reference_calls": 0
+}

@@ -1,0 +1,60 @@
+{
+  "checks": [
+    {
+      "case_id": "unrendered_fertilizer_template",
+      "run_id": "f5d13763-6ab4-4971-bafa-a7d8378b043d",
+      "input_sha256": "6be6bc616874b6575a31d4fc99080cf056919fb81797cc5fa44d7f59e51bc743",
+      "expected": "failed",
+      "actual": "failed",
+      "passed": true,
+      "errors": [
+        "ExtractionError: Unrendered dynamic template: export actual results; placeholders are not observations"
+      ]
+    },
+    {
+      "case_id": "inventory_is_not_production_data",
+      "run_id": "68887f71-d205-4f11-8d61-45a93df1b0df",
+      "input_sha256": "98aa8e3489f8a43c34eae6d74f62ef0cb57fdac35f8dfcd03a905546d0035738",
+      "expected": "failed",
+      "actual": "failed",
+      "passed": true,
+      "errors": [
+        "ExtractionError: tables: Table agent found no table values it could map (crop/place/period/value)"
+      ]
+    },
+    {
+      "case_id": "unsupported_manual_pdf",
+      "run_id": "15d869b4-fecf-4267-8854-a850647494cd",
+      "input_sha256": "a84a4517a92a02c0f0980f01b9450be2025e39fceb623d0721571b3721b0bc08",
+      "expected": "failed",
+      "actual": "failed",
+      "passed": true,
+      "errors": [
+        "ExtractionError: statistics: No supported production sentences; text pages=35; tables/OCR are left to the tables agent; tables: Table agent found no table values it could map (crop/place/period/value)"
+      ]
+    },
+    {
+      "case_id": "real_scheme_missing_values",
+      "run_id": "6c50da31-4e1c-4022-afac-423091f19529",
+      "input_sha256": "94c35bb27ef193ff23118ddd78a80a8f26fb0637ffec814fc6c96731cc5b8074",
+      "expected": "partial",
+      "actual": "partial",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "directory_injected_fault",
+      "run_id": "5cc483fa-54a8-4b09-9ff7-5ed5682946d5",
+      "input_sha256": "4a2a2b4deb8d58cedc8d9bba5333c2db2f651480d4339e169c5a6eecaa940beb",
+      "expected": "failed",
+      "actual": "failed",
+      "passed": true,
+      "errors": [
+        "ExtractionError: Injected extraction failure"
+      ]
+    }
+  ],
+  "passed": 5,
+  "total": 5,
+  "note": "Robustness evidence, not positive extraction examples or extraction F1"
+}

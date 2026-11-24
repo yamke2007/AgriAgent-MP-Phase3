@@ -1,0 +1,88 @@
+{
+  "run_id": "4f6ca221-2e98-4288-ae42-c63a915a5697",
+  "started_at": "2026-10-24T18:55:19.351502+00:00",
+  "input": "C:\\Users\\aashi\\OneDrive\\Dokumen\\ChatGPT\\p\\AgriAgent_MadhyaPradesh\\eval\\cases\\directory_04.html",
+  "input_sha256": "9fef03b638a4b8f487134999f3dbbd486b7dc7a309c25301c54ec90afee52af7",
+  "source": "sha256:9fef03b638a4b8f487134999f3dbbd486b7dc7a309c25301c54ec90afee52af7",
+  "source_url": "unknown",
+  "agent": "directory",
+  "source_type": "Document",
+  "status": "complete",
+  "records": [
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "neemuch",
+      "period": "MISSING:not_applicable",
+      "locator": "table:1/row:2",
+      "evidence": "4. Krishi Viugyan Kendra Village Pipersama, Distt. Neemuch- Vice-Chancellor, Jawaharlal Nehru Krishi Viswavidyalaya, Jabalpur-482 004 2006 SAU",
+      "record_id": "4",
+      "variable": "address",
+      "value": "Krishi Viugyan Kendra Village Pipersama, Distt. Neemuch-",
+      "unit": "text",
+      "value_kind": "text",
+      "source": "sha256:9fef03b638a4b8f487134999f3dbbd486b7dc7a309c25301c54ec90afee52af7",
+      "source_type": "Document",
+      "agent": "directory",
+      "run_id": "4f6ca221-2e98-4288-ae42-c63a915a5697",
+      "validation_errors": [],
+      "validation_status": "valid"
+    },
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "neemuch",
+      "period": "MISSING:not_applicable",
+      "locator": "table:1/row:2",
+      "evidence": "4. Krishi Viugyan Kendra Village Pipersama, Distt. Neemuch- Vice-Chancellor, Jawaharlal Nehru Krishi Viswavidyalaya, Jabalpur-482 004 2006 SAU",
+      "record_id": "4",
+      "variable": "host_organization",
+      "value": "Vice-Chancellor, Jawaharlal Nehru Krishi Viswavidyalaya, Jabalpur-482 004",
+      "unit": "text",
+      "value_kind": "text",
+      "source": "sha256:9fef03b638a4b8f487134999f3dbbd486b7dc7a309c25301c54ec90afee52af7",
+      "source_type": "Document",
+      "agent": "directory",
+      "run_id": "4f6ca221-2e98-4288-ae42-c63a915a5697",
+      "validation_errors": [],
+      "validation_status": "valid"
+    },
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "neemuch",
+      "period": "MISSING:not_applicable",
+      "locator": "table:1/row:2",
+      "evidence": "4. Krishi Viugyan Kendra Village Pipersama, Distt. Neemuch- Vice-Chancellor, Jawaharlal Nehru Krishi Viswavidyalaya, Jabalpur-482 004 2006 SAU",
+      "record_id": "4",
+      "variable": "sanction_year",
+      "value": "2006",
+      "unit": "year",
+      "value_kind": "integer",
+      "source": "sha256:9fef03b638a4b8f487134999f3dbbd486b7dc7a309c25301c54ec90afee52af7",
+      "source_type": "Document",
+      "agent": "directory",
+      "run_id": "4f6ca221-2e98-4288-ae42-c63a915a5697",
+      "validation_errors": [],
+      "validation_status": "valid"
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "trajectory": [
+    {
+      "tool": "beautifulsoup4",
+      "arguments": {
+        "input_sha256": "9fef03b638a4b8f487134999f3dbbd486b7dc7a309c25301c54ec90afee52af7",
+        "schema": "observation-v1",
+        "max_pages": null
+      }
+    }
+  ],
+  "retries": 0,
+  "manual_interventions": 0,
+  "storage": {
+    "inserted": 3,
+    "duplicates": 0
+  },
+  "latency_seconds": 0.018488600035198033,
+  "tool_calls": 1,
+  "reference_calls": 1
+}

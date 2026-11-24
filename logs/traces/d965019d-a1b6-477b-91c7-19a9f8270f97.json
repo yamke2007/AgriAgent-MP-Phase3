@@ -1,0 +1,35 @@
+{
+  "run_id": "d965019d-a1b6-477b-91c7-19a9f8270f97",
+  "started_at": "2026-10-24T19:08:59.200362+00:00",
+  "input": "Source_Inventory/source_inventory.csv",
+  "input_sha256": "98aa8e3489f8a43c34eae6d74f62ef0cb57fdac35f8dfcd03a905546d0035738",
+  "source": "sha256:98aa8e3489f8a43c34eae6d74f62ef0cb57fdac35f8dfcd03a905546d0035738",
+  "source_url": "unknown",
+  "agent": "statistics",
+  "source_type": "Database",
+  "status": "failed",
+  "records": [],
+  "errors": [
+    "ExtractionError: CSV requires headers: crop, location, period, unit, value, variable"
+  ],
+  "warnings": [],
+  "trajectory": [
+    {
+      "tool": "csv.DictReader",
+      "arguments": {
+        "input_sha256": "98aa8e3489f8a43c34eae6d74f62ef0cb57fdac35f8dfcd03a905546d0035738",
+        "schema": "observation-v1",
+        "max_pages": null
+      }
+    }
+  ],
+  "retries": 0,
+  "manual_interventions": 0,
+  "storage": {
+    "inserted": 0,
+    "duplicates": 0
+  },
+  "latency_seconds": 0.016684899979736656,
+  "tool_calls": 1,
+  "reference_calls": 1
+}

@@ -1,0 +1,51 @@
+{
+  "run_id": "7997279a-3187-47bc-97cb-6d49c2f63985",
+  "started_at": "2026-10-24T18:55:19.633611+00:00",
+  "input": "C:\\Users\\aashi\\OneDrive\\Dokumen\\ChatGPT\\p\\AgriAgent_MadhyaPradesh\\eval\\cases\\scheme_05.html",
+  "input_sha256": "f0f3be821a6e79544b7246f708c954ffffa710b17d6e1765b0f64732dacf0e7d",
+  "source": "sha256:f0f3be821a6e79544b7246f708c954ffffa710b17d6e1765b0f64732dacf0e7d",
+  "source_url": "unknown",
+  "agent": "scheme",
+  "source_type": "Document",
+  "status": "complete",
+  "records": [
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "MISSING:not_in_source",
+      "period": "MISSING:not_in_source",
+      "variable": "लाभार्थी वर्ग",
+      "value": "भूमिधारी कृषकों",
+      "unit": "text",
+      "value_kind": "text",
+      "locator": "table:1/row:1",
+      "evidence": "लाभार्थी वर्ग भूमिधारी कृषकों",
+      "source": "sha256:f0f3be821a6e79544b7246f708c954ffffa710b17d6e1765b0f64732dacf0e7d",
+      "source_type": "Document",
+      "agent": "scheme",
+      "run_id": "7997279a-3187-47bc-97cb-6d49c2f63985",
+      "validation_errors": [],
+      "validation_status": "valid"
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "trajectory": [
+    {
+      "tool": "beautifulsoup4",
+      "arguments": {
+        "input_sha256": "f0f3be821a6e79544b7246f708c954ffffa710b17d6e1765b0f64732dacf0e7d",
+        "schema": "observation-v1",
+        "max_pages": null
+      }
+    }
+  ],
+  "retries": 0,
+  "manual_interventions": 0,
+  "storage": {
+    "inserted": 1,
+    "duplicates": 0
+  },
+  "latency_seconds": 0.015046699962113053,
+  "tool_calls": 1,
+  "reference_calls": 1
+}

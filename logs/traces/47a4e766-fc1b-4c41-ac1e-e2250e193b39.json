@@ -1,0 +1,109 @@
+{
+  "run_id": "47a4e766-fc1b-4c41-ac1e-e2250e193b39",
+  "started_at": "2026-10-27T15:56:24.402021+00:00",
+  "input": "eval/cases/directory_03.html",
+  "input_sha256": "32891cb1e620c2f4613016f0ff31cbb0055a4f498a3e3459db464acd494ef4ee",
+  "source": "sha256:32891cb1e620c2f4613016f0ff31cbb0055a4f498a3e3459db464acd494ef4ee",
+  "source_url": "https://icar.org.in/en/node/15044",
+  "agent": "directory",
+  "source_type": "Document",
+  "status": "complete",
+  "records": [
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "burhanpur",
+      "period": "MISSING:not_applicable",
+      "locator": "table:1/row:2",
+      "evidence": "3. Krishi Vigyan Kendra, Village Shankarpura Khurd and Sandas Khurd, Distt. Burhanpur- President, Lokmatas Devi Ahilya Bai Holkar Social National Mission, Maszid Comnplex, Shanwara, Burhanpur-450331, M.P. 2007 NGO",
+      "record_id": "3",
+      "variable": "address",
+      "value": "Krishi Vigyan Kendra, Village Shankarpura Khurd and Sandas Khurd, Distt. Burhanpur-",
+      "unit": "text",
+      "value_kind": "text",
+      "agent": "directory",
+      "source": "sha256:32891cb1e620c2f4613016f0ff31cbb0055a4f498a3e3459db464acd494ef4ee",
+      "source_type": "Document",
+      "run_id": "47a4e766-fc1b-4c41-ac1e-e2250e193b39",
+      "parent_file": "data/raw/icar_kvk.html",
+      "validation_errors": [],
+      "validation_status": "valid"
+    },
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "burhanpur",
+      "period": "MISSING:not_applicable",
+      "locator": "table:1/row:2",
+      "evidence": "3. Krishi Vigyan Kendra, Village Shankarpura Khurd and Sandas Khurd, Distt. Burhanpur- President, Lokmatas Devi Ahilya Bai Holkar Social National Mission, Maszid Comnplex, Shanwara, Burhanpur-450331, M.P. 2007 NGO",
+      "record_id": "3",
+      "variable": "host_organization",
+      "value": "President, Lokmatas Devi Ahilya Bai Holkar Social National Mission, Maszid Comnplex, Shanwara, Burhanpur-450331, M.P.",
+      "unit": "text",
+      "value_kind": "text",
+      "agent": "directory",
+      "source": "sha256:32891cb1e620c2f4613016f0ff31cbb0055a4f498a3e3459db464acd494ef4ee",
+      "source_type": "Document",
+      "run_id": "47a4e766-fc1b-4c41-ac1e-e2250e193b39",
+      "parent_file": "data/raw/icar_kvk.html",
+      "validation_errors": [],
+      "validation_status": "valid"
+    },
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "burhanpur",
+      "period": "MISSING:not_applicable",
+      "locator": "table:1/row:2",
+      "evidence": "3. Krishi Vigyan Kendra, Village Shankarpura Khurd and Sandas Khurd, Distt. Burhanpur- President, Lokmatas Devi Ahilya Bai Holkar Social National Mission, Maszid Comnplex, Shanwara, Burhanpur-450331, M.P. 2007 NGO",
+      "record_id": "3",
+      "variable": "sanction_year",
+      "value": "2007",
+      "unit": "year",
+      "value_kind": "integer",
+      "agent": "directory",
+      "source": "sha256:32891cb1e620c2f4613016f0ff31cbb0055a4f498a3e3459db464acd494ef4ee",
+      "source_type": "Document",
+      "run_id": "47a4e766-fc1b-4c41-ac1e-e2250e193b39",
+      "parent_file": "data/raw/icar_kvk.html",
+      "validation_errors": [],
+      "validation_status": "valid"
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "trajectory": [
+    {
+      "tool": "beautifulsoup4",
+      "arguments": {
+        "input_sha256": "32891cb1e620c2f4613016f0ff31cbb0055a4f498a3e3459db464acd494ef4ee",
+        "schema": "observation-v1",
+        "max_pages": null
+      }
+    }
+  ],
+  "retries": 0,
+  "manual_interventions": 0,
+  "inventory_source": "S21",
+  "agent_trace": [
+    {
+      "agent": "directory",
+      "tool": "beautifulsoup4",
+      "ok": true,
+      "summary": "tuple[2]",
+      "seconds": 0.001
+    }
+  ],
+  "handoffs": [],
+  "agents": [
+    "directory"
+  ],
+  "llm_calls": 0,
+  "notes": [],
+  "orchestrator": "sequential",
+  "useful_calls": 1,
+  "storage": {
+    "inserted": 0,
+    "duplicates": 3
+  },
+  "latency_seconds": 0.0034882670001934457,
+  "tool_calls": 1,
+  "reference_calls": 1
+}

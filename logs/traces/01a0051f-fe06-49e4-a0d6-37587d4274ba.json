@@ -1,0 +1,55 @@
+{
+  "run_id": "01a0051f-fe06-49e4-a0d6-37587d4274ba",
+  "started_at": "2026-10-24T19:04:55.664256+00:00",
+  "input": "data/raw/mp_economic_survey.pdf",
+  "input_sha256": "3457d6dc615a35d4ee1c61b338845d58deee2e31f67f8dce55f7611e1a5302f4",
+  "source": "sha256:3457d6dc615a35d4ee1c61b338845d58deee2e31f67f8dce55f7611e1a5302f4",
+  "source_url": "https://aiggpa.mp.gov.in/uploads/project/MPES_2022-23_Highlights_English.pdf",
+  "agent": "statistics",
+  "source_type": "Document",
+  "status": "partial",
+  "records": [
+    {
+      "crop": "wheat",
+      "location": "madhya pradesh",
+      "period": "2022-23",
+      "variable": "production",
+      "value": "352.7",
+      "unit": "lakh tonnes",
+      "value_kind": "decimal",
+      "locator": "page:7/char:66-112",
+      "evidence": "produced 352.7 lakh tonnes of wheat in 2022-23",
+      "qualifier": "source wording; estimates may be provisional",
+      "source": "sha256:3457d6dc615a35d4ee1c61b338845d58deee2e31f67f8dce55f7611e1a5302f4",
+      "source_type": "Document",
+      "agent": "statistics",
+      "run_id": "01a0051f-fe06-49e4-a0d6-37587d4274ba",
+      "validation_errors": [],
+      "validation_status": "valid"
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    "Partial PDF grammar: only explicit 'produced X tonnes of CROP in YEAR' sentences; omitted facts are not inferred"
+  ],
+  "trajectory": [
+    {
+      "tool": "pypdf",
+      "arguments": {
+        "input_sha256": "3457d6dc615a35d4ee1c61b338845d58deee2e31f67f8dce55f7611e1a5302f4",
+        "schema": "observation-v1",
+        "max_pages": 300
+      }
+    }
+  ],
+  "retries": 0,
+  "manual_interventions": 0,
+  "inventory_source": "S23",
+  "storage": {
+    "inserted": 0,
+    "duplicates": 1
+  },
+  "latency_seconds": 1.7254938000114635,
+  "tool_calls": 1,
+  "reference_calls": 1
+}

@@ -1,0 +1,88 @@
+{
+  "run_id": "b1da0f11-d10b-4457-8396-9acaf3dd56b2",
+  "started_at": "2026-10-24T18:55:19.243365+00:00",
+  "input": "C:\\Users\\aashi\\OneDrive\\Dokumen\\ChatGPT\\p\\AgriAgent_MadhyaPradesh\\eval\\cases\\directory_01.html",
+  "input_sha256": "f5765025463697f116741add13d1c05bf3440a72678c432a36b7e37ce9d72d3b",
+  "source": "sha256:f5765025463697f116741add13d1c05bf3440a72678c432a36b7e37ce9d72d3b",
+  "source_url": "unknown",
+  "agent": "directory",
+  "source_type": "Document",
+  "status": "complete",
+  "records": [
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "datia",
+      "period": "MISSING:not_applicable",
+      "locator": "table:1/row:2",
+      "evidence": "1. Krishi Vigyan Kendra, Village Hamirpur, Distt. Datia- Vice-Chancellor, Jawaharlal Nehru Krishi Viswavidyalaya, Jabalpur-482 004 2007 SAU",
+      "record_id": "1",
+      "variable": "address",
+      "value": "Krishi Vigyan Kendra, Village Hamirpur, Distt. Datia-",
+      "unit": "text",
+      "value_kind": "text",
+      "source": "sha256:f5765025463697f116741add13d1c05bf3440a72678c432a36b7e37ce9d72d3b",
+      "source_type": "Document",
+      "agent": "directory",
+      "run_id": "b1da0f11-d10b-4457-8396-9acaf3dd56b2",
+      "validation_errors": [],
+      "validation_status": "valid"
+    },
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "datia",
+      "period": "MISSING:not_applicable",
+      "locator": "table:1/row:2",
+      "evidence": "1. Krishi Vigyan Kendra, Village Hamirpur, Distt. Datia- Vice-Chancellor, Jawaharlal Nehru Krishi Viswavidyalaya, Jabalpur-482 004 2007 SAU",
+      "record_id": "1",
+      "variable": "host_organization",
+      "value": "Vice-Chancellor, Jawaharlal Nehru Krishi Viswavidyalaya, Jabalpur-482 004",
+      "unit": "text",
+      "value_kind": "text",
+      "source": "sha256:f5765025463697f116741add13d1c05bf3440a72678c432a36b7e37ce9d72d3b",
+      "source_type": "Document",
+      "agent": "directory",
+      "run_id": "b1da0f11-d10b-4457-8396-9acaf3dd56b2",
+      "validation_errors": [],
+      "validation_status": "valid"
+    },
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "datia",
+      "period": "MISSING:not_applicable",
+      "locator": "table:1/row:2",
+      "evidence": "1. Krishi Vigyan Kendra, Village Hamirpur, Distt. Datia- Vice-Chancellor, Jawaharlal Nehru Krishi Viswavidyalaya, Jabalpur-482 004 2007 SAU",
+      "record_id": "1",
+      "variable": "sanction_year",
+      "value": "2007",
+      "unit": "year",
+      "value_kind": "integer",
+      "source": "sha256:f5765025463697f116741add13d1c05bf3440a72678c432a36b7e37ce9d72d3b",
+      "source_type": "Document",
+      "agent": "directory",
+      "run_id": "b1da0f11-d10b-4457-8396-9acaf3dd56b2",
+      "validation_errors": [],
+      "validation_status": "valid"
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "trajectory": [
+    {
+      "tool": "beautifulsoup4",
+      "arguments": {
+        "input_sha256": "f5765025463697f116741add13d1c05bf3440a72678c432a36b7e37ce9d72d3b",
+        "schema": "observation-v1",
+        "max_pages": null
+      }
+    }
+  ],
+  "retries": 0,
+  "manual_interventions": 0,
+  "storage": {
+    "inserted": 3,
+    "duplicates": 0
+  },
+  "latency_seconds": 0.04248980002012104,
+  "tool_calls": 1,
+  "reference_calls": 1
+}

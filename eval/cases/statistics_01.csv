@@ -1,0 +1,2 @@
+crop,location,period,variable,value,unit,value_kind,qualifier,origin_locator,origin_source
+wheat,Madhya Pradesh,2022-23,production,352.7,lakh tonnes,decimal,advance estimate,page:7,data/raw/mp_economic_survey.pdf

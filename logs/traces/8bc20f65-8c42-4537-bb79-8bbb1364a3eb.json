@@ -1,0 +1,56 @@
+{
+  "run_id": "8bc20f65-8c42-4537-bb79-8bbb1364a3eb",
+  "started_at": "2026-10-24T19:09:01.763510+00:00",
+  "input": "eval/cases/statistics_10.csv",
+  "input_sha256": "aa909af69c92e2d5105ad7877915fda3f96d8272adbb41aa050f7eb0c5ca452b",
+  "source": "sha256:aa909af69c92e2d5105ad7877915fda3f96d8272adbb41aa050f7eb0c5ca452b",
+  "source_url": "https://aiggpa.mp.gov.in/uploads/project/MPES_2022-23_Highlights_English.pdf",
+  "agent": "statistics",
+  "source_type": "Database",
+  "status": "complete",
+  "records": [
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "madhya pradesh",
+      "period": "2025",
+      "variable": "irrigation_capacity_target",
+      "value": "65",
+      "unit": "lakh hectare",
+      "value_kind": "decimal",
+      "qualifier": "target; not observed",
+      "origin_locator": "page:7",
+      "origin_source": "data/raw/mp_economic_survey.pdf",
+      "evidence": "MISSING:not_applicable | Madhya Pradesh | 2025 | irrigation_capacity_target | 65 | lakh hectare | decimal | target; not observed | page:7 | data/raw/mp_economic_survey.pdf",
+      "locator": "csv:line:2",
+      "source": "sha256:aa909af69c92e2d5105ad7877915fda3f96d8272adbb41aa050f7eb0c5ca452b",
+      "source_type": "Database",
+      "agent": "statistics",
+      "run_id": "8bc20f65-8c42-4537-bb79-8bbb1364a3eb",
+      "parent_file": "data/raw/mp_economic_survey.pdf",
+      "validation_errors": [],
+      "validation_status": "valid"
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "trajectory": [
+    {
+      "tool": "csv.DictReader",
+      "arguments": {
+        "input_sha256": "aa909af69c92e2d5105ad7877915fda3f96d8272adbb41aa050f7eb0c5ca452b",
+        "schema": "observation-v1",
+        "max_pages": null
+      }
+    }
+  ],
+  "retries": 0,
+  "manual_interventions": 0,
+  "inventory_source": "S23",
+  "storage": {
+    "inserted": 0,
+    "duplicates": 1
+  },
+  "latency_seconds": 0.015513700025621802,
+  "tool_calls": 1,
+  "reference_calls": 1
+}

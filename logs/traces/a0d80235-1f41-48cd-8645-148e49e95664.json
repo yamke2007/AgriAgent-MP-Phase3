@@ -1,0 +1,56 @@
+{
+  "run_id": "a0d80235-1f41-48cd-8645-148e49e95664",
+  "started_at": "2026-10-24T19:05:00.582266+00:00",
+  "input": "eval/cases/statistics_07.csv",
+  "input_sha256": "f7e249555b0c91d85045887f4cf80c9d6c697df585f94e8f18b5919a068c2764",
+  "source": "sha256:f7e249555b0c91d85045887f4cf80c9d6c697df585f94e8f18b5919a068c2764",
+  "source_url": "https://aiggpa.mp.gov.in/uploads/project/MPES_2022-23_Highlights_English.pdf",
+  "agent": "statistics",
+  "source_type": "Database",
+  "status": "complete",
+  "records": [
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "madhya pradesh",
+      "period": "2021-22",
+      "variable": "insured_farmers_lower_bound",
+      "value": "90",
+      "unit": "lakh farmers",
+      "value_kind": "decimal",
+      "qualifier": "more than",
+      "origin_locator": "page:7",
+      "origin_source": "data/raw/mp_economic_survey.pdf",
+      "evidence": "MISSING:not_applicable | Madhya Pradesh | 2021-22 | insured_farmers_lower_bound | 90 | lakh farmers | decimal | more than | page:7 | data/raw/mp_economic_survey.pdf",
+      "locator": "csv:line:2",
+      "source": "sha256:f7e249555b0c91d85045887f4cf80c9d6c697df585f94e8f18b5919a068c2764",
+      "source_type": "Database",
+      "agent": "statistics",
+      "run_id": "a0d80235-1f41-48cd-8645-148e49e95664",
+      "parent_file": "data/raw/mp_economic_survey.pdf",
+      "validation_errors": [],
+      "validation_status": "valid"
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "trajectory": [
+    {
+      "tool": "csv.DictReader",
+      "arguments": {
+        "input_sha256": "f7e249555b0c91d85045887f4cf80c9d6c697df585f94e8f18b5919a068c2764",
+        "schema": "observation-v1",
+        "max_pages": null
+      }
+    }
+  ],
+  "retries": 0,
+  "manual_interventions": 0,
+  "inventory_source": "S23",
+  "storage": {
+    "inserted": 0,
+    "duplicates": 1
+  },
+  "latency_seconds": 0.016429799958132207,
+  "tool_calls": 1,
+  "reference_calls": 1
+}

@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.venv/
+.phase2-verify-venv/
+.env
+output/
+*.zip

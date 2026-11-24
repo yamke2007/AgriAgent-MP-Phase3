@@ -1,0 +1,68 @@
+{
+  "run_id": "eff5418d-1df5-48f2-9aa6-4a01f48a0f78",
+  "started_at": "2026-10-25T06:39:45.502633+00:00",
+  "input": "eval/cases/scheme_10.html",
+  "input_sha256": "c7e752ee2460b5a369954be5ab975adf6088a4cd7b0a1bfcd4929cb95bc0f555",
+  "source": "sha256:c7e752ee2460b5a369954be5ab975adf6088a4cd7b0a1bfcd4929cb95bc0f555",
+  "source_url": "https://cmhelpline.mp.gov.in/Schmedetail.aspx?Schemeid=112",
+  "agent": "scheme",
+  "source_type": "Document",
+  "status": "failed",
+  "records": [
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "MISSING:not_in_source",
+      "period": "MISSING:not_in_source",
+      "variable": "ऑनलाइन आवेदन हेतु लिंक",
+      "value": "http://mpeuparjan.nic.in",
+      "unit": "text",
+      "value_kind": "text",
+      "locator": "table:1/row:1",
+      "evidence": "ऑनलाइन आवेदन हेतु लिंक http://mpeuparjan.nic.in",
+      "agent": "scheme",
+      "source": "sha256:c7e752ee2460b5a369954be5ab975adf6088a4cd7b0a1bfcd4929cb95bc0f555",
+      "source_type": "Document",
+      "run_id": "eff5418d-1df5-48f2-9aa6-4a01f48a0f78",
+      "parent_file": "data/raw/msp_scheme.html",
+      "validation_errors": [],
+      "validation_status": "valid"
+    }
+  ],
+  "errors": [
+    "Storage: disk I/O error"
+  ],
+  "warnings": [],
+  "trajectory": [
+    {
+      "tool": "beautifulsoup4",
+      "arguments": {
+        "input_sha256": "c7e752ee2460b5a369954be5ab975adf6088a4cd7b0a1bfcd4929cb95bc0f555",
+        "schema": "observation-v1",
+        "max_pages": null
+      }
+    }
+  ],
+  "retries": 0,
+  "manual_interventions": 0,
+  "inventory_source": "S06",
+  "agent_trace": [
+    {
+      "agent": "scheme",
+      "tool": "beautifulsoup4",
+      "ok": true,
+      "summary": "tuple[2]",
+      "seconds": 0.001
+    }
+  ],
+  "handoffs": [],
+  "agents": [
+    "scheme"
+  ],
+  "llm_calls": 0,
+  "notes": [],
+  "orchestrator": "langgraph",
+  "useful_calls": 1,
+  "latency_seconds": 0.00851291700018919,
+  "tool_calls": 1,
+  "reference_calls": 1
+}

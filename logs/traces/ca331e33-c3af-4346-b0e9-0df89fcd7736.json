@@ -1,0 +1,56 @@
+{
+  "run_id": "ca331e33-c3af-4346-b0e9-0df89fcd7736",
+  "started_at": "2026-10-24T19:05:00.561628+00:00",
+  "input": "eval/cases/statistics_06.csv",
+  "input_sha256": "d6ab51e859f09cf27c4c9b39e2dddb0caf77fec2d11fd4ed5ff1a5214f9c7c9e",
+  "source": "sha256:d6ab51e859f09cf27c4c9b39e2dddb0caf77fec2d11fd4ed5ff1a5214f9c7c9e",
+  "source_url": "https://aiggpa.mp.gov.in/uploads/project/MPES_2022-23_Highlights_English.pdf",
+  "agent": "statistics",
+  "source_type": "Database",
+  "status": "complete",
+  "records": [
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "madhya pradesh",
+      "period": "2021-22",
+      "variable": "crop_production_growth",
+      "value": "4.16",
+      "unit": "percent",
+      "value_kind": "decimal",
+      "qualifier": "compared with 2020-21",
+      "origin_locator": "page:7",
+      "origin_source": "data/raw/mp_economic_survey.pdf",
+      "evidence": "MISSING:not_applicable | Madhya Pradesh | 2021-22 | crop_production_growth | 4.16 | percent | decimal | compared with 2020-21 | page:7 | data/raw/mp_economic_survey.pdf",
+      "locator": "csv:line:2",
+      "source": "sha256:d6ab51e859f09cf27c4c9b39e2dddb0caf77fec2d11fd4ed5ff1a5214f9c7c9e",
+      "source_type": "Database",
+      "agent": "statistics",
+      "run_id": "ca331e33-c3af-4346-b0e9-0df89fcd7736",
+      "parent_file": "data/raw/mp_economic_survey.pdf",
+      "validation_errors": [],
+      "validation_status": "valid"
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "trajectory": [
+    {
+      "tool": "csv.DictReader",
+      "arguments": {
+        "input_sha256": "d6ab51e859f09cf27c4c9b39e2dddb0caf77fec2d11fd4ed5ff1a5214f9c7c9e",
+        "schema": "observation-v1",
+        "max_pages": null
+      }
+    }
+  ],
+  "retries": 0,
+  "manual_interventions": 0,
+  "inventory_source": "S23",
+  "storage": {
+    "inserted": 0,
+    "duplicates": 1
+  },
+  "latency_seconds": 0.015003399981651455,
+  "tool_calls": 1,
+  "reference_calls": 1
+}

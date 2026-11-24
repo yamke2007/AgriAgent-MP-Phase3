@@ -1,0 +1,71 @@
+{
+  "run_id": "8d1d7dc2-480b-4d9f-82b8-1db89e54cbae",
+  "started_at": "2026-10-25T06:39:45.558030+00:00",
+  "input": "eval/cases/statistics_04.csv",
+  "input_sha256": "3d6ce6a87e11f98cdcc210fa61544a395e68206ef32d7f0332af945417a1208d",
+  "source": "sha256:3d6ce6a87e11f98cdcc210fa61544a395e68206ef32d7f0332af945417a1208d",
+  "source_url": "https://aiggpa.mp.gov.in/uploads/project/MPES_2022-23_Highlights_English.pdf",
+  "agent": "statistics",
+  "source_type": "Database",
+  "status": "failed",
+  "records": [
+    {
+      "crop": "rice",
+      "location": "madhya pradesh",
+      "period": "2013-14",
+      "variable": "production",
+      "value": "53.2",
+      "unit": "lakh tonnes",
+      "value_kind": "decimal",
+      "qualifier": "context sentence 1",
+      "origin_locator": "page:7",
+      "origin_source": "data/raw/mp_economic_survey.pdf",
+      "evidence": "rice | Madhya Pradesh | 2013-14 | production | 53.2 | lakh tonnes | decimal | context sentence 1 | page:7 | data/raw/mp_economic_survey.pdf",
+      "locator": "csv:line:2",
+      "agent": "statistics",
+      "source": "sha256:3d6ce6a87e11f98cdcc210fa61544a395e68206ef32d7f0332af945417a1208d",
+      "source_type": "Database",
+      "run_id": "8d1d7dc2-480b-4d9f-82b8-1db89e54cbae",
+      "parent_file": "data/raw/mp_economic_survey.pdf",
+      "validation_errors": [],
+      "validation_status": "valid"
+    }
+  ],
+  "errors": [
+    "Storage: disk I/O error"
+  ],
+  "warnings": [],
+  "trajectory": [
+    {
+      "tool": "csv.DictReader",
+      "arguments": {
+        "input_sha256": "3d6ce6a87e11f98cdcc210fa61544a395e68206ef32d7f0332af945417a1208d",
+        "schema": "observation-v1",
+        "max_pages": null
+      }
+    }
+  ],
+  "retries": 0,
+  "manual_interventions": 0,
+  "inventory_source": "S23",
+  "agent_trace": [
+    {
+      "agent": "statistics",
+      "tool": "csv.DictReader",
+      "ok": true,
+      "summary": "tuple[2]",
+      "seconds": 0.0
+    }
+  ],
+  "handoffs": [],
+  "agents": [
+    "statistics"
+  ],
+  "llm_calls": 0,
+  "notes": [],
+  "orchestrator": "langgraph",
+  "useful_calls": 1,
+  "latency_seconds": 0.008328416000040306,
+  "tool_calls": 1,
+  "reference_calls": 1
+}

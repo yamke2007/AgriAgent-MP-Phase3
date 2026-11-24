@@ -1,0 +1,53 @@
+{
+  "run_id": "58cc8273-8c7e-471d-9718-564b02139746",
+  "started_at": "2026-10-24T19:09:01.504079+00:00",
+  "input": "eval/cases/scheme_08.html",
+  "input_sha256": "37cf10023254d41df311e794088a376a0bd75fa673d6d2999db171f8eed9becc",
+  "source": "sha256:37cf10023254d41df311e794088a376a0bd75fa673d6d2999db171f8eed9becc",
+  "source_url": "https://cmhelpline.mp.gov.in/Schmedetail.aspx?Schemeid=112",
+  "agent": "scheme",
+  "source_type": "Document",
+  "status": "complete",
+  "records": [
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "MISSING:not_in_source",
+      "period": "MISSING:not_in_source",
+      "variable": "योजना का क्षेत्र",
+      "value": "Urban and Rural",
+      "unit": "text",
+      "value_kind": "text",
+      "locator": "table:1/row:1",
+      "evidence": "योजना का क्षेत्र Urban and Rural",
+      "source": "sha256:37cf10023254d41df311e794088a376a0bd75fa673d6d2999db171f8eed9becc",
+      "source_type": "Document",
+      "agent": "scheme",
+      "run_id": "58cc8273-8c7e-471d-9718-564b02139746",
+      "parent_file": "data/raw/msp_scheme.html",
+      "validation_errors": [],
+      "validation_status": "valid"
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "trajectory": [
+    {
+      "tool": "beautifulsoup4",
+      "arguments": {
+        "input_sha256": "37cf10023254d41df311e794088a376a0bd75fa673d6d2999db171f8eed9becc",
+        "schema": "observation-v1",
+        "max_pages": null
+      }
+    }
+  ],
+  "retries": 0,
+  "manual_interventions": 0,
+  "inventory_source": "S06",
+  "storage": {
+    "inserted": 0,
+    "duplicates": 1
+  },
+  "latency_seconds": 0.013869999966118485,
+  "tool_calls": 1,
+  "reference_calls": 1
+}

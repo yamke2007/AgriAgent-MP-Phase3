@@ -1,0 +1,2 @@
+crop,location,period,variable,value,unit,value_kind,qualifier,origin_locator,origin_source
+rice,Madhya Pradesh,2013-14,production,53.2,lakh tonnes,decimal,context sentence 1,page:7,data/raw/mp_economic_survey.pdf

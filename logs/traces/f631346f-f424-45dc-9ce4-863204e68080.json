@@ -1,0 +1,70 @@
+{
+  "run_id": "f631346f-f424-45dc-9ce4-863204e68080",
+  "started_at": "2026-10-27T15:54:44.069205+00:00",
+  "input": "eval/cases/scheme_07.html",
+  "input_sha256": "7a44e97d3fad9f117f627466945b46d29f63139db126c1b5962f0bb8fb3611dc",
+  "source": "sha256:7a44e97d3fad9f117f627466945b46d29f63139db126c1b5962f0bb8fb3611dc",
+  "source_url": "https://cmhelpline.mp.gov.in/Schmedetail.aspx?Schemeid=112",
+  "agent": "scheme",
+  "source_type": "Document",
+  "status": "complete",
+  "records": [
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "MISSING:not_in_source",
+      "period": "MISSING:not_in_source",
+      "variable": "लाभ की श्रेणी",
+      "value": "नगद",
+      "unit": "text",
+      "value_kind": "text",
+      "locator": "table:1/row:1",
+      "evidence": "लाभ की श्रेणी नगद",
+      "agent": "scheme",
+      "source": "sha256:7a44e97d3fad9f117f627466945b46d29f63139db126c1b5962f0bb8fb3611dc",
+      "source_type": "Document",
+      "run_id": "f631346f-f424-45dc-9ce4-863204e68080",
+      "parent_file": "data/raw/msp_scheme.html",
+      "validation_errors": [],
+      "validation_status": "valid"
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "trajectory": [
+    {
+      "tool": "beautifulsoup4",
+      "arguments": {
+        "input_sha256": "7a44e97d3fad9f117f627466945b46d29f63139db126c1b5962f0bb8fb3611dc",
+        "schema": "observation-v1",
+        "max_pages": null
+      }
+    }
+  ],
+  "retries": 0,
+  "manual_interventions": 0,
+  "inventory_source": "S06",
+  "agent_trace": [
+    {
+      "agent": "scheme",
+      "tool": "beautifulsoup4",
+      "ok": true,
+      "summary": "tuple[2]",
+      "seconds": 0.0
+    }
+  ],
+  "handoffs": [],
+  "agents": [
+    "scheme"
+  ],
+  "llm_calls": 0,
+  "notes": [],
+  "orchestrator": "sequential",
+  "useful_calls": 1,
+  "storage": {
+    "inserted": 0,
+    "duplicates": 1
+  },
+  "latency_seconds": 0.002525805000004766,
+  "tool_calls": 1,
+  "reference_calls": 1
+}

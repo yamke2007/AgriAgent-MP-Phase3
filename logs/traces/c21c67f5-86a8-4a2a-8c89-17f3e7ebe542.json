@@ -1,0 +1,53 @@
+{
+  "run_id": "c21c67f5-86a8-4a2a-8c89-17f3e7ebe542",
+  "started_at": "2026-10-24T19:05:00.418718+00:00",
+  "input": "eval/cases/scheme_09.html",
+  "input_sha256": "a1686be317ff3cbae7abc9c46b4a2d3f62956504db22dcb445b5d216a723ad65",
+  "source": "sha256:a1686be317ff3cbae7abc9c46b4a2d3f62956504db22dcb445b5d216a723ad65",
+  "source_url": "https://cmhelpline.mp.gov.in/Schmedetail.aspx?Schemeid=112",
+  "agent": "scheme",
+  "source_type": "Document",
+  "status": "complete",
+  "records": [
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "MISSING:not_in_source",
+      "period": "MISSING:not_in_source",
+      "variable": "आवेदन शुल्क",
+      "value": "निःशुल्क है",
+      "unit": "text",
+      "value_kind": "text",
+      "locator": "table:1/row:1",
+      "evidence": "आवेदन शुल्क निःशुल्क है",
+      "source": "sha256:a1686be317ff3cbae7abc9c46b4a2d3f62956504db22dcb445b5d216a723ad65",
+      "source_type": "Document",
+      "agent": "scheme",
+      "run_id": "c21c67f5-86a8-4a2a-8c89-17f3e7ebe542",
+      "parent_file": "data/raw/msp_scheme.html",
+      "validation_errors": [],
+      "validation_status": "valid"
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "trajectory": [
+    {
+      "tool": "beautifulsoup4",
+      "arguments": {
+        "input_sha256": "a1686be317ff3cbae7abc9c46b4a2d3f62956504db22dcb445b5d216a723ad65",
+        "schema": "observation-v1",
+        "max_pages": null
+      }
+    }
+  ],
+  "retries": 0,
+  "manual_interventions": 0,
+  "inventory_source": "S06",
+  "storage": {
+    "inserted": 0,
+    "duplicates": 1
+  },
+  "latency_seconds": 0.01604279997991398,
+  "tool_calls": 1,
+  "reference_calls": 1
+}

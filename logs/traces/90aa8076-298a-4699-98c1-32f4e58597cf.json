@@ -1,0 +1,70 @@
+{
+  "run_id": "90aa8076-298a-4699-98c1-32f4e58597cf",
+  "started_at": "2026-10-27T15:56:24.460017+00:00",
+  "input": "eval/cases/scheme_01.html",
+  "input_sha256": "c3eab98187cf5ca8bac2781d38d42b29a693136b95df2272eaa480d93dd3866c",
+  "source": "sha256:c3eab98187cf5ca8bac2781d38d42b29a693136b95df2272eaa480d93dd3866c",
+  "source_url": "https://cmhelpline.mp.gov.in/Schmedetail.aspx?Schemeid=112",
+  "agent": "scheme",
+  "source_type": "Document",
+  "status": "complete",
+  "records": [
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "MISSING:not_in_source",
+      "period": "MISSING:not_in_source",
+      "variable": "विभाग",
+      "value": "खाद्य नागरिक आपूर्ति एवं उपभोक्ता संरक्षण विभाग",
+      "unit": "text",
+      "value_kind": "text",
+      "locator": "table:1/row:1",
+      "evidence": "विभाग खाद्य नागरिक आपूर्ति एवं उपभोक्ता संरक्षण विभाग",
+      "agent": "scheme",
+      "source": "sha256:c3eab98187cf5ca8bac2781d38d42b29a693136b95df2272eaa480d93dd3866c",
+      "source_type": "Document",
+      "run_id": "90aa8076-298a-4699-98c1-32f4e58597cf",
+      "parent_file": "data/raw/msp_scheme.html",
+      "validation_errors": [],
+      "validation_status": "valid"
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "trajectory": [
+    {
+      "tool": "beautifulsoup4",
+      "arguments": {
+        "input_sha256": "c3eab98187cf5ca8bac2781d38d42b29a693136b95df2272eaa480d93dd3866c",
+        "schema": "observation-v1",
+        "max_pages": null
+      }
+    }
+  ],
+  "retries": 0,
+  "manual_interventions": 0,
+  "inventory_source": "S06",
+  "agent_trace": [
+    {
+      "agent": "scheme",
+      "tool": "beautifulsoup4",
+      "ok": true,
+      "summary": "tuple[2]",
+      "seconds": 0.0
+    }
+  ],
+  "handoffs": [],
+  "agents": [
+    "scheme"
+  ],
+  "llm_calls": 0,
+  "notes": [],
+  "orchestrator": "sequential",
+  "useful_calls": 1,
+  "storage": {
+    "inserted": 0,
+    "duplicates": 1
+  },
+  "latency_seconds": 0.0036905520000800607,
+  "tool_calls": 1,
+  "reference_calls": 1
+}

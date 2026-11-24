@@ -1,0 +1,2 @@
+crop,location,period,variable,value,unit,value_kind,qualifier,origin_locator,origin_source
+MISSING:not_applicable,Madhya Pradesh,2021-22,insured_farmers_lower_bound,90,lakh farmers,decimal,more than,page:7,data/raw/mp_economic_survey.pdf

@@ -1,0 +1,51 @@
+{
+  "run_id": "51887191-483d-4a46-bc0b-1bf3b8e79585",
+  "started_at": "2026-10-24T18:55:19.731829+00:00",
+  "input": "C:\\Users\\aashi\\OneDrive\\Dokumen\\ChatGPT\\p\\AgriAgent_MadhyaPradesh\\eval\\cases\\scheme_10.html",
+  "input_sha256": "c7e752ee2460b5a369954be5ab975adf6088a4cd7b0a1bfcd4929cb95bc0f555",
+  "source": "sha256:c7e752ee2460b5a369954be5ab975adf6088a4cd7b0a1bfcd4929cb95bc0f555",
+  "source_url": "unknown",
+  "agent": "scheme",
+  "source_type": "Document",
+  "status": "complete",
+  "records": [
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "MISSING:not_in_source",
+      "period": "MISSING:not_in_source",
+      "variable": "ऑनलाइन आवेदन हेतु लिंक",
+      "value": "http://mpeuparjan.nic.in",
+      "unit": "text",
+      "value_kind": "text",
+      "locator": "table:1/row:1",
+      "evidence": "ऑनलाइन आवेदन हेतु लिंक http://mpeuparjan.nic.in",
+      "source": "sha256:c7e752ee2460b5a369954be5ab975adf6088a4cd7b0a1bfcd4929cb95bc0f555",
+      "source_type": "Document",
+      "agent": "scheme",
+      "run_id": "51887191-483d-4a46-bc0b-1bf3b8e79585",
+      "validation_errors": [],
+      "validation_status": "valid"
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "trajectory": [
+    {
+      "tool": "beautifulsoup4",
+      "arguments": {
+        "input_sha256": "c7e752ee2460b5a369954be5ab975adf6088a4cd7b0a1bfcd4929cb95bc0f555",
+        "schema": "observation-v1",
+        "max_pages": null
+      }
+    }
+  ],
+  "retries": 0,
+  "manual_interventions": 0,
+  "storage": {
+    "inserted": 1,
+    "duplicates": 0
+  },
+  "latency_seconds": 0.01532290002796799,
+  "tool_calls": 1,
+  "reference_calls": 1
+}

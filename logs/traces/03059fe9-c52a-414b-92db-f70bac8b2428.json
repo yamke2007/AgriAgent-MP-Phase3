@@ -1,0 +1,88 @@
+{
+  "run_id": "03059fe9-c52a-414b-92db-f70bac8b2428",
+  "started_at": "2026-10-24T18:55:19.323384+00:00",
+  "input": "C:\\Users\\aashi\\OneDrive\\Dokumen\\ChatGPT\\p\\AgriAgent_MadhyaPradesh\\eval\\cases\\directory_03.html",
+  "input_sha256": "32891cb1e620c2f4613016f0ff31cbb0055a4f498a3e3459db464acd494ef4ee",
+  "source": "sha256:32891cb1e620c2f4613016f0ff31cbb0055a4f498a3e3459db464acd494ef4ee",
+  "source_url": "unknown",
+  "agent": "directory",
+  "source_type": "Document",
+  "status": "complete",
+  "records": [
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "burhanpur",
+      "period": "MISSING:not_applicable",
+      "locator": "table:1/row:2",
+      "evidence": "3. Krishi Vigyan Kendra, Village Shankarpura Khurd and Sandas Khurd, Distt. Burhanpur- President, Lokmatas Devi Ahilya Bai Holkar Social National Mission, Maszid Comnplex, Shanwara, Burhanpur-450331, M.P. 2007 NGO",
+      "record_id": "3",
+      "variable": "address",
+      "value": "Krishi Vigyan Kendra, Village Shankarpura Khurd and Sandas Khurd, Distt. Burhanpur-",
+      "unit": "text",
+      "value_kind": "text",
+      "source": "sha256:32891cb1e620c2f4613016f0ff31cbb0055a4f498a3e3459db464acd494ef4ee",
+      "source_type": "Document",
+      "agent": "directory",
+      "run_id": "03059fe9-c52a-414b-92db-f70bac8b2428",
+      "validation_errors": [],
+      "validation_status": "valid"
+    },
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "burhanpur",
+      "period": "MISSING:not_applicable",
+      "locator": "table:1/row:2",
+      "evidence": "3. Krishi Vigyan Kendra, Village Shankarpura Khurd and Sandas Khurd, Distt. Burhanpur- President, Lokmatas Devi Ahilya Bai Holkar Social National Mission, Maszid Comnplex, Shanwara, Burhanpur-450331, M.P. 2007 NGO",
+      "record_id": "3",
+      "variable": "host_organization",
+      "value": "President, Lokmatas Devi Ahilya Bai Holkar Social National Mission, Maszid Comnplex, Shanwara, Burhanpur-450331, M.P.",
+      "unit": "text",
+      "value_kind": "text",
+      "source": "sha256:32891cb1e620c2f4613016f0ff31cbb0055a4f498a3e3459db464acd494ef4ee",
+      "source_type": "Document",
+      "agent": "directory",
+      "run_id": "03059fe9-c52a-414b-92db-f70bac8b2428",
+      "validation_errors": [],
+      "validation_status": "valid"
+    },
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "burhanpur",
+      "period": "MISSING:not_applicable",
+      "locator": "table:1/row:2",
+      "evidence": "3. Krishi Vigyan Kendra, Village Shankarpura Khurd and Sandas Khurd, Distt. Burhanpur- President, Lokmatas Devi Ahilya Bai Holkar Social National Mission, Maszid Comnplex, Shanwara, Burhanpur-450331, M.P. 2007 NGO",
+      "record_id": "3",
+      "variable": "sanction_year",
+      "value": "2007",
+      "unit": "year",
+      "value_kind": "integer",
+      "source": "sha256:32891cb1e620c2f4613016f0ff31cbb0055a4f498a3e3459db464acd494ef4ee",
+      "source_type": "Document",
+      "agent": "directory",
+      "run_id": "03059fe9-c52a-414b-92db-f70bac8b2428",
+      "validation_errors": [],
+      "validation_status": "valid"
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "trajectory": [
+    {
+      "tool": "beautifulsoup4",
+      "arguments": {
+        "input_sha256": "32891cb1e620c2f4613016f0ff31cbb0055a4f498a3e3459db464acd494ef4ee",
+        "schema": "observation-v1",
+        "max_pages": null
+      }
+    }
+  ],
+  "retries": 0,
+  "manual_interventions": 0,
+  "storage": {
+    "inserted": 3,
+    "duplicates": 0
+  },
+  "latency_seconds": 0.019416700000874698,
+  "tool_calls": 1,
+  "reference_calls": 1
+}

@@ -1,0 +1,54 @@
+{
+  "run_id": "a1587fe7-f9f6-4a1a-a191-e0c246161776",
+  "started_at": "2026-10-24T18:55:19.809595+00:00",
+  "input": "C:\\Users\\aashi\\OneDrive\\Dokumen\\ChatGPT\\p\\AgriAgent_MadhyaPradesh\\eval\\cases\\statistics_04.csv",
+  "input_sha256": "3d6ce6a87e11f98cdcc210fa61544a395e68206ef32d7f0332af945417a1208d",
+  "source": "sha256:3d6ce6a87e11f98cdcc210fa61544a395e68206ef32d7f0332af945417a1208d",
+  "source_url": "unknown",
+  "agent": "statistics",
+  "source_type": "Database",
+  "status": "complete",
+  "records": [
+    {
+      "crop": "rice",
+      "location": "madhya pradesh",
+      "period": "2013-14",
+      "variable": "production",
+      "value": "53.2",
+      "unit": "lakh tonnes",
+      "value_kind": "decimal",
+      "qualifier": "context sentence 1",
+      "origin_locator": "page:7",
+      "origin_source": "data/raw/mp_economic_survey.pdf",
+      "evidence": "rice | Madhya Pradesh | 2013-14 | production | 53.2 | lakh tonnes | decimal | context sentence 1 | page:7 | data/raw/mp_economic_survey.pdf",
+      "locator": "csv:line:2",
+      "source": "sha256:3d6ce6a87e11f98cdcc210fa61544a395e68206ef32d7f0332af945417a1208d",
+      "source_type": "Database",
+      "agent": "statistics",
+      "run_id": "a1587fe7-f9f6-4a1a-a191-e0c246161776",
+      "validation_errors": [],
+      "validation_status": "valid"
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "trajectory": [
+    {
+      "tool": "csv.DictReader",
+      "arguments": {
+        "input_sha256": "3d6ce6a87e11f98cdcc210fa61544a395e68206ef32d7f0332af945417a1208d",
+        "schema": "observation-v1",
+        "max_pages": null
+      }
+    }
+  ],
+  "retries": 0,
+  "manual_interventions": 0,
+  "storage": {
+    "inserted": 1,
+    "duplicates": 0
+  },
+  "latency_seconds": 0.014852199994493276,
+  "tool_calls": 1,
+  "reference_calls": 1
+}

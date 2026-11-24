@@ -1,0 +1,88 @@
+{
+  "run_id": "add0212f-dc9c-48c0-926a-82f14787fee5",
+  "started_at": "2026-10-24T18:55:19.295890+00:00",
+  "input": "C:\\Users\\aashi\\OneDrive\\Dokumen\\ChatGPT\\p\\AgriAgent_MadhyaPradesh\\eval\\cases\\directory_02.html",
+  "input_sha256": "bbde3bf6acc6d2d4f614828276dc5846a6338412ff7467f3265b6717c1e638f3",
+  "source": "sha256:bbde3bf6acc6d2d4f614828276dc5846a6338412ff7467f3265b6717c1e638f3",
+  "source_url": "unknown",
+  "agent": "directory",
+  "source_type": "Document",
+  "status": "complete",
+  "records": [
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "ahoknagar",
+      "period": "MISSING:not_applicable",
+      "locator": "table:1/row:2",
+      "evidence": "2. Krishi Vigyan Kendra, Vilalge Aawari, Distt. Ahoknagar- Vice-Chancellor, Jawaharlal Nehru Krishi Viswavidyalaya, Jabalpur-482 004 2007 SAU",
+      "record_id": "2",
+      "variable": "address",
+      "value": "Krishi Vigyan Kendra, Vilalge Aawari, Distt. Ahoknagar-",
+      "unit": "text",
+      "value_kind": "text",
+      "source": "sha256:bbde3bf6acc6d2d4f614828276dc5846a6338412ff7467f3265b6717c1e638f3",
+      "source_type": "Document",
+      "agent": "directory",
+      "run_id": "add0212f-dc9c-48c0-926a-82f14787fee5",
+      "validation_errors": [],
+      "validation_status": "valid"
+    },
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "ahoknagar",
+      "period": "MISSING:not_applicable",
+      "locator": "table:1/row:2",
+      "evidence": "2. Krishi Vigyan Kendra, Vilalge Aawari, Distt. Ahoknagar- Vice-Chancellor, Jawaharlal Nehru Krishi Viswavidyalaya, Jabalpur-482 004 2007 SAU",
+      "record_id": "2",
+      "variable": "host_organization",
+      "value": "Vice-Chancellor, Jawaharlal Nehru Krishi Viswavidyalaya, Jabalpur-482 004",
+      "unit": "text",
+      "value_kind": "text",
+      "source": "sha256:bbde3bf6acc6d2d4f614828276dc5846a6338412ff7467f3265b6717c1e638f3",
+      "source_type": "Document",
+      "agent": "directory",
+      "run_id": "add0212f-dc9c-48c0-926a-82f14787fee5",
+      "validation_errors": [],
+      "validation_status": "valid"
+    },
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "ahoknagar",
+      "period": "MISSING:not_applicable",
+      "locator": "table:1/row:2",
+      "evidence": "2. Krishi Vigyan Kendra, Vilalge Aawari, Distt. Ahoknagar- Vice-Chancellor, Jawaharlal Nehru Krishi Viswavidyalaya, Jabalpur-482 004 2007 SAU",
+      "record_id": "2",
+      "variable": "sanction_year",
+      "value": "2007",
+      "unit": "year",
+      "value_kind": "integer",
+      "source": "sha256:bbde3bf6acc6d2d4f614828276dc5846a6338412ff7467f3265b6717c1e638f3",
+      "source_type": "Document",
+      "agent": "directory",
+      "run_id": "add0212f-dc9c-48c0-926a-82f14787fee5",
+      "validation_errors": [],
+      "validation_status": "valid"
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "trajectory": [
+    {
+      "tool": "beautifulsoup4",
+      "arguments": {
+        "input_sha256": "bbde3bf6acc6d2d4f614828276dc5846a6338412ff7467f3265b6717c1e638f3",
+        "schema": "observation-v1",
+        "max_pages": null
+      }
+    }
+  ],
+  "retries": 0,
+  "manual_interventions": 0,
+  "storage": {
+    "inserted": 3,
+    "duplicates": 0
+  },
+  "latency_seconds": 0.018948000040836632,
+  "tool_calls": 1,
+  "reference_calls": 1
+}

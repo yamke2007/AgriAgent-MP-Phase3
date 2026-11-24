@@ -1,0 +1,92 @@
+{
+  "run_id": "ca79df56-484a-4cd8-9438-af263841fc54",
+  "started_at": "2026-10-24T19:05:00.164248+00:00",
+  "input": "eval/cases/directory_07.html",
+  "input_sha256": "f388417c24dc4bf117602cef363ad1820132b99ca579dc02ffc4a3ea67b67a59",
+  "source": "sha256:f388417c24dc4bf117602cef363ad1820132b99ca579dc02ffc4a3ea67b67a59",
+  "source_url": "https://icar.org.in/en/node/15044",
+  "agent": "directory",
+  "source_type": "Document",
+  "status": "complete",
+  "records": [
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "umaria",
+      "period": "MISSING:not_applicable",
+      "locator": "table:1/row:2",
+      "evidence": "7. Krishi Vigyan Kendra, Vill. Darbrohatrict, Distt. Umaria- Vice-Chancellor, Jawaharlal Nehru Krishi Viswavidyalaya, Jabalpur-482 004 2006 SAU",
+      "record_id": "7",
+      "variable": "address",
+      "value": "Krishi Vigyan Kendra, Vill. Darbrohatrict, Distt. Umaria-",
+      "unit": "text",
+      "value_kind": "text",
+      "source": "sha256:f388417c24dc4bf117602cef363ad1820132b99ca579dc02ffc4a3ea67b67a59",
+      "source_type": "Document",
+      "agent": "directory",
+      "run_id": "ca79df56-484a-4cd8-9438-af263841fc54",
+      "parent_file": "data/raw/icar_kvk.html",
+      "validation_errors": [],
+      "validation_status": "valid"
+    },
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "umaria",
+      "period": "MISSING:not_applicable",
+      "locator": "table:1/row:2",
+      "evidence": "7. Krishi Vigyan Kendra, Vill. Darbrohatrict, Distt. Umaria- Vice-Chancellor, Jawaharlal Nehru Krishi Viswavidyalaya, Jabalpur-482 004 2006 SAU",
+      "record_id": "7",
+      "variable": "host_organization",
+      "value": "Vice-Chancellor, Jawaharlal Nehru Krishi Viswavidyalaya, Jabalpur-482 004",
+      "unit": "text",
+      "value_kind": "text",
+      "source": "sha256:f388417c24dc4bf117602cef363ad1820132b99ca579dc02ffc4a3ea67b67a59",
+      "source_type": "Document",
+      "agent": "directory",
+      "run_id": "ca79df56-484a-4cd8-9438-af263841fc54",
+      "parent_file": "data/raw/icar_kvk.html",
+      "validation_errors": [],
+      "validation_status": "valid"
+    },
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "umaria",
+      "period": "MISSING:not_applicable",
+      "locator": "table:1/row:2",
+      "evidence": "7. Krishi Vigyan Kendra, Vill. Darbrohatrict, Distt. Umaria- Vice-Chancellor, Jawaharlal Nehru Krishi Viswavidyalaya, Jabalpur-482 004 2006 SAU",
+      "record_id": "7",
+      "variable": "sanction_year",
+      "value": "2006",
+      "unit": "year",
+      "value_kind": "integer",
+      "source": "sha256:f388417c24dc4bf117602cef363ad1820132b99ca579dc02ffc4a3ea67b67a59",
+      "source_type": "Document",
+      "agent": "directory",
+      "run_id": "ca79df56-484a-4cd8-9438-af263841fc54",
+      "parent_file": "data/raw/icar_kvk.html",
+      "validation_errors": [],
+      "validation_status": "valid"
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "trajectory": [
+    {
+      "tool": "beautifulsoup4",
+      "arguments": {
+        "input_sha256": "f388417c24dc4bf117602cef363ad1820132b99ca579dc02ffc4a3ea67b67a59",
+        "schema": "observation-v1",
+        "max_pages": null
+      }
+    }
+  ],
+  "retries": 0,
+  "manual_interventions": 0,
+  "inventory_source": "S21",
+  "storage": {
+    "inserted": 0,
+    "duplicates": 3
+  },
+  "latency_seconds": 0.014892300008796155,
+  "tool_calls": 1,
+  "reference_calls": 1
+}

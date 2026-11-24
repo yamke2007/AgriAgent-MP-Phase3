@@ -1,0 +1,3 @@
+condition,model_id,adapter_id,case_set_sha256,sample_count,tp,fp,fn,f1,delta_f1,status,failure,prediction_sha256,training_overlap_status
+base,not_supplied,none,de174d31e91080d7efc5340eec985fa318883188b932fd36a67657d5a9a0634b,0,,,,,,blocked,"No supplied model weights, adapter, training data, or genuine prediction export",,no_exact_hash_overlap
+adapter,not_supplied,not_supplied,de174d31e91080d7efc5340eec985fa318883188b932fd36a67657d5a9a0634b,0,,,,,,blocked,"No supplied model weights, adapter, training data, or genuine prediction export",,no_exact_hash_overlap

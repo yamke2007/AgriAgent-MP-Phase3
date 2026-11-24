@@ -1,0 +1,51 @@
+{
+  "run_id": "9d3a5dd8-f54e-4853-849f-8cad01f024b9",
+  "started_at": "2026-10-24T18:55:19.672788+00:00",
+  "input": "C:\\Users\\aashi\\OneDrive\\Dokumen\\ChatGPT\\p\\AgriAgent_MadhyaPradesh\\eval\\cases\\scheme_07.html",
+  "input_sha256": "7a44e97d3fad9f117f627466945b46d29f63139db126c1b5962f0bb8fb3611dc",
+  "source": "sha256:7a44e97d3fad9f117f627466945b46d29f63139db126c1b5962f0bb8fb3611dc",
+  "source_url": "unknown",
+  "agent": "scheme",
+  "source_type": "Document",
+  "status": "complete",
+  "records": [
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "MISSING:not_in_source",
+      "period": "MISSING:not_in_source",
+      "variable": "लाभ की श्रेणी",
+      "value": "नगद",
+      "unit": "text",
+      "value_kind": "text",
+      "locator": "table:1/row:1",
+      "evidence": "लाभ की श्रेणी नगद",
+      "source": "sha256:7a44e97d3fad9f117f627466945b46d29f63139db126c1b5962f0bb8fb3611dc",
+      "source_type": "Document",
+      "agent": "scheme",
+      "run_id": "9d3a5dd8-f54e-4853-849f-8cad01f024b9",
+      "validation_errors": [],
+      "validation_status": "valid"
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "trajectory": [
+    {
+      "tool": "beautifulsoup4",
+      "arguments": {
+        "input_sha256": "7a44e97d3fad9f117f627466945b46d29f63139db126c1b5962f0bb8fb3611dc",
+        "schema": "observation-v1",
+        "max_pages": null
+      }
+    }
+  ],
+  "retries": 0,
+  "manual_interventions": 0,
+  "storage": {
+    "inserted": 1,
+    "duplicates": 0
+  },
+  "latency_seconds": 0.015444399963598698,
+  "tool_calls": 1,
+  "reference_calls": 1
+}

@@ -1,0 +1,107 @@
+{
+  "run_id": "ad167ec4-40d4-40be-88d8-9687e7d9c64a",
+  "started_at": "2026-10-25T06:39:25.698430+00:00",
+  "input": "eval/cases/directory_05.html",
+  "input_sha256": "429c25f6f8e31edab63e8f8e992733f3aa9fa72ec6277e872d3cea9a39f9b370",
+  "source": "sha256:429c25f6f8e31edab63e8f8e992733f3aa9fa72ec6277e872d3cea9a39f9b370",
+  "source_url": "https://icar.org.in/en/node/15044",
+  "agent": "directory",
+  "source_type": "Document",
+  "status": "failed",
+  "records": [
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "mandla",
+      "period": "MISSING:not_applicable",
+      "locator": "table:1/row:2",
+      "evidence": "5. Krishi Vigyan Kendra, C/o S.K. Tripathi House No.207, Near Subha Motor, Katla, Distt. Mandla- Vice-Chancellor, Jawaharlal Nehru Krishi Viswavidyalaya, Jabalpur-482 004 2006 SAU",
+      "record_id": "5",
+      "variable": "address",
+      "value": "Krishi Vigyan Kendra, C/o S.K. Tripathi House No.207, Near Subha Motor, Katla, Distt. Mandla-",
+      "unit": "text",
+      "value_kind": "text",
+      "agent": "directory",
+      "source": "sha256:429c25f6f8e31edab63e8f8e992733f3aa9fa72ec6277e872d3cea9a39f9b370",
+      "source_type": "Document",
+      "run_id": "ad167ec4-40d4-40be-88d8-9687e7d9c64a",
+      "parent_file": "data/raw/icar_kvk.html",
+      "validation_errors": [],
+      "validation_status": "valid"
+    },
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "mandla",
+      "period": "MISSING:not_applicable",
+      "locator": "table:1/row:2",
+      "evidence": "5. Krishi Vigyan Kendra, C/o S.K. Tripathi House No.207, Near Subha Motor, Katla, Distt. Mandla- Vice-Chancellor, Jawaharlal Nehru Krishi Viswavidyalaya, Jabalpur-482 004 2006 SAU",
+      "record_id": "5",
+      "variable": "host_organization",
+      "value": "Vice-Chancellor, Jawaharlal Nehru Krishi Viswavidyalaya, Jabalpur-482 004",
+      "unit": "text",
+      "value_kind": "text",
+      "agent": "directory",
+      "source": "sha256:429c25f6f8e31edab63e8f8e992733f3aa9fa72ec6277e872d3cea9a39f9b370",
+      "source_type": "Document",
+      "run_id": "ad167ec4-40d4-40be-88d8-9687e7d9c64a",
+      "parent_file": "data/raw/icar_kvk.html",
+      "validation_errors": [],
+      "validation_status": "valid"
+    },
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "mandla",
+      "period": "MISSING:not_applicable",
+      "locator": "table:1/row:2",
+      "evidence": "5. Krishi Vigyan Kendra, C/o S.K. Tripathi House No.207, Near Subha Motor, Katla, Distt. Mandla- Vice-Chancellor, Jawaharlal Nehru Krishi Viswavidyalaya, Jabalpur-482 004 2006 SAU",
+      "record_id": "5",
+      "variable": "sanction_year",
+      "value": "2006",
+      "unit": "year",
+      "value_kind": "integer",
+      "agent": "directory",
+      "source": "sha256:429c25f6f8e31edab63e8f8e992733f3aa9fa72ec6277e872d3cea9a39f9b370",
+      "source_type": "Document",
+      "run_id": "ad167ec4-40d4-40be-88d8-9687e7d9c64a",
+      "parent_file": "data/raw/icar_kvk.html",
+      "validation_errors": [],
+      "validation_status": "valid"
+    }
+  ],
+  "errors": [
+    "Storage: disk I/O error"
+  ],
+  "warnings": [],
+  "trajectory": [
+    {
+      "tool": "beautifulsoup4",
+      "arguments": {
+        "input_sha256": "429c25f6f8e31edab63e8f8e992733f3aa9fa72ec6277e872d3cea9a39f9b370",
+        "schema": "observation-v1",
+        "max_pages": null
+      }
+    }
+  ],
+  "retries": 0,
+  "manual_interventions": 0,
+  "inventory_source": "S21",
+  "agent_trace": [
+    {
+      "agent": "directory",
+      "tool": "beautifulsoup4",
+      "ok": true,
+      "summary": "tuple[2]",
+      "seconds": 0.001
+    }
+  ],
+  "handoffs": [],
+  "agents": [
+    "directory"
+  ],
+  "llm_calls": 0,
+  "notes": [],
+  "orchestrator": "langgraph",
+  "useful_calls": 1,
+  "latency_seconds": 0.009184749999803898,
+  "tool_calls": 1,
+  "reference_calls": 1
+}

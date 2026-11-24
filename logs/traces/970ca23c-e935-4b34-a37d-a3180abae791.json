@@ -1,0 +1,56 @@
+{
+  "run_id": "970ca23c-e935-4b34-a37d-a3180abae791",
+  "started_at": "2026-10-24T18:55:19.888390+00:00",
+  "input": "C:\\Users\\aashi\\OneDrive\\Dokumen\\ChatGPT\\p\\AgriAgent_MadhyaPradesh\\eval\\cases\\statistics_08.csv",
+  "input_sha256": "109fa095635bfed59e598efc22a09a48797479dfd2fdc9952852c891682cc1ad",
+  "source": "sha256:109fa095635bfed59e598efc22a09a48797479dfd2fdc9952852c891682cc1ad",
+  "source_url": "unknown",
+  "agent": "statistics",
+  "source_type": "Database",
+  "status": "partial",
+  "records": [
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "madhya pradesh",
+      "period": "MISSING:not_applicable",
+      "variable": "irrigation_capacity_growth",
+      "value": "585",
+      "unit": "percent",
+      "value_kind": "decimal",
+      "qualifier": "period not explicit in same clause",
+      "origin_locator": "page:7",
+      "origin_source": "data/raw/mp_economic_survey.pdf",
+      "evidence": "MISSING:not_applicable | Madhya Pradesh | MISSING:not_applicable | irrigation_capacity_growth | 585 | percent | decimal | period not explicit in same clause | page:7 | data/raw/mp_economic_survey.pdf",
+      "locator": "csv:line:2",
+      "source": "sha256:109fa095635bfed59e598efc22a09a48797479dfd2fdc9952852c891682cc1ad",
+      "source_type": "Database",
+      "agent": "statistics",
+      "run_id": "970ca23c-e935-4b34-a37d-a3180abae791",
+      "validation_errors": [
+        "implausible:percent"
+      ],
+      "validation_status": "invalid"
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "trajectory": [
+    {
+      "tool": "csv.DictReader",
+      "arguments": {
+        "input_sha256": "109fa095635bfed59e598efc22a09a48797479dfd2fdc9952852c891682cc1ad",
+        "schema": "observation-v1",
+        "max_pages": null
+      }
+    }
+  ],
+  "retries": 0,
+  "manual_interventions": 0,
+  "storage": {
+    "inserted": 1,
+    "duplicates": 0
+  },
+  "latency_seconds": 0.014572000014595687,
+  "tool_calls": 1,
+  "reference_calls": 1
+}

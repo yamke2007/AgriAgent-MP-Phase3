@@ -1,0 +1,68 @@
+{
+  "run_id": "bdef52fa-7920-4245-b497-784472041c4c",
+  "started_at": "2026-10-25T06:39:45.450708+00:00",
+  "input": "eval/cases/scheme_06.html",
+  "input_sha256": "c52f04cf949e0e4bf628cfcdd879b26e154bbbe55b719f568e5550a053aa2696",
+  "source": "sha256:c52f04cf949e0e4bf628cfcdd879b26e154bbbe55b719f568e5550a053aa2696",
+  "source_url": "https://cmhelpline.mp.gov.in/Schmedetail.aspx?Schemeid=112",
+  "agent": "scheme",
+  "source_type": "Document",
+  "status": "failed",
+  "records": [
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "MISSING:not_in_source",
+      "period": "MISSING:not_in_source",
+      "variable": "लाभार्थी का प्रकार",
+      "value": "किसान",
+      "unit": "text",
+      "value_kind": "text",
+      "locator": "table:1/row:1",
+      "evidence": "लाभार्थी का प्रकार किसान",
+      "agent": "scheme",
+      "source": "sha256:c52f04cf949e0e4bf628cfcdd879b26e154bbbe55b719f568e5550a053aa2696",
+      "source_type": "Document",
+      "run_id": "bdef52fa-7920-4245-b497-784472041c4c",
+      "parent_file": "data/raw/msp_scheme.html",
+      "validation_errors": [],
+      "validation_status": "valid"
+    }
+  ],
+  "errors": [
+    "Storage: disk I/O error"
+  ],
+  "warnings": [],
+  "trajectory": [
+    {
+      "tool": "beautifulsoup4",
+      "arguments": {
+        "input_sha256": "c52f04cf949e0e4bf628cfcdd879b26e154bbbe55b719f568e5550a053aa2696",
+        "schema": "observation-v1",
+        "max_pages": null
+      }
+    }
+  ],
+  "retries": 0,
+  "manual_interventions": 0,
+  "inventory_source": "S06",
+  "agent_trace": [
+    {
+      "agent": "scheme",
+      "tool": "beautifulsoup4",
+      "ok": true,
+      "summary": "tuple[2]",
+      "seconds": 0.001
+    }
+  ],
+  "handoffs": [],
+  "agents": [
+    "scheme"
+  ],
+  "llm_calls": 0,
+  "notes": [],
+  "orchestrator": "langgraph",
+  "useful_calls": 1,
+  "latency_seconds": 0.00810204099980183,
+  "tool_calls": 1,
+  "reference_calls": 1
+}

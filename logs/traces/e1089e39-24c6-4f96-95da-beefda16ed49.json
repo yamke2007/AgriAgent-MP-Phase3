@@ -1,0 +1,92 @@
+{
+  "run_id": "e1089e39-24c6-4f96-95da-beefda16ed49",
+  "started_at": "2026-10-24T19:09:01.246561+00:00",
+  "input": "eval/cases/directory_06.html",
+  "input_sha256": "7c8fd818b453fb727e6c8d2065df4cbfefd168ba16a2d8b0ab5a2a9fac773c75",
+  "source": "sha256:7c8fd818b453fb727e6c8d2065df4cbfefd168ba16a2d8b0ab5a2a9fac773c75",
+  "source_url": "https://icar.org.in/en/node/15044",
+  "agent": "directory",
+  "source_type": "Document",
+  "status": "complete",
+  "records": [
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "badwani",
+      "period": "MISSING:not_applicable",
+      "locator": "table:1/row:2",
+      "evidence": "6. Krishi Vigyan Kendra, Bataggakhurd, Distt. Badwani Vice-Chancellor, Jawaharlal Nehru Krishi Viswavidyalaya, Jabalpur-482 004 2006 SAU",
+      "record_id": "6",
+      "variable": "address",
+      "value": "Krishi Vigyan Kendra, Bataggakhurd, Distt. Badwani",
+      "unit": "text",
+      "value_kind": "text",
+      "source": "sha256:7c8fd818b453fb727e6c8d2065df4cbfefd168ba16a2d8b0ab5a2a9fac773c75",
+      "source_type": "Document",
+      "agent": "directory",
+      "run_id": "e1089e39-24c6-4f96-95da-beefda16ed49",
+      "parent_file": "data/raw/icar_kvk.html",
+      "validation_errors": [],
+      "validation_status": "valid"
+    },
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "badwani",
+      "period": "MISSING:not_applicable",
+      "locator": "table:1/row:2",
+      "evidence": "6. Krishi Vigyan Kendra, Bataggakhurd, Distt. Badwani Vice-Chancellor, Jawaharlal Nehru Krishi Viswavidyalaya, Jabalpur-482 004 2006 SAU",
+      "record_id": "6",
+      "variable": "host_organization",
+      "value": "Vice-Chancellor, Jawaharlal Nehru Krishi Viswavidyalaya, Jabalpur-482 004",
+      "unit": "text",
+      "value_kind": "text",
+      "source": "sha256:7c8fd818b453fb727e6c8d2065df4cbfefd168ba16a2d8b0ab5a2a9fac773c75",
+      "source_type": "Document",
+      "agent": "directory",
+      "run_id": "e1089e39-24c6-4f96-95da-beefda16ed49",
+      "parent_file": "data/raw/icar_kvk.html",
+      "validation_errors": [],
+      "validation_status": "valid"
+    },
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "badwani",
+      "period": "MISSING:not_applicable",
+      "locator": "table:1/row:2",
+      "evidence": "6. Krishi Vigyan Kendra, Bataggakhurd, Distt. Badwani Vice-Chancellor, Jawaharlal Nehru Krishi Viswavidyalaya, Jabalpur-482 004 2006 SAU",
+      "record_id": "6",
+      "variable": "sanction_year",
+      "value": "2006",
+      "unit": "year",
+      "value_kind": "integer",
+      "source": "sha256:7c8fd818b453fb727e6c8d2065df4cbfefd168ba16a2d8b0ab5a2a9fac773c75",
+      "source_type": "Document",
+      "agent": "directory",
+      "run_id": "e1089e39-24c6-4f96-95da-beefda16ed49",
+      "parent_file": "data/raw/icar_kvk.html",
+      "validation_errors": [],
+      "validation_status": "valid"
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "trajectory": [
+    {
+      "tool": "beautifulsoup4",
+      "arguments": {
+        "input_sha256": "7c8fd818b453fb727e6c8d2065df4cbfefd168ba16a2d8b0ab5a2a9fac773c75",
+        "schema": "observation-v1",
+        "max_pages": null
+      }
+    }
+  ],
+  "retries": 0,
+  "manual_interventions": 0,
+  "inventory_source": "S21",
+  "storage": {
+    "inserted": 0,
+    "duplicates": 3
+  },
+  "latency_seconds": 0.015987499966286123,
+  "tool_calls": 1,
+  "reference_calls": 1
+}

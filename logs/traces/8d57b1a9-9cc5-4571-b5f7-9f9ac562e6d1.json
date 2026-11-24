@@ -1,0 +1,53 @@
+{
+  "run_id": "8d57b1a9-9cc5-4571-b5f7-9f9ac562e6d1",
+  "started_at": "2026-10-24T19:09:01.442217+00:00",
+  "input": "eval/cases/scheme_05.html",
+  "input_sha256": "f0f3be821a6e79544b7246f708c954ffffa710b17d6e1765b0f64732dacf0e7d",
+  "source": "sha256:f0f3be821a6e79544b7246f708c954ffffa710b17d6e1765b0f64732dacf0e7d",
+  "source_url": "https://cmhelpline.mp.gov.in/Schmedetail.aspx?Schemeid=112",
+  "agent": "scheme",
+  "source_type": "Document",
+  "status": "complete",
+  "records": [
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "MISSING:not_in_source",
+      "period": "MISSING:not_in_source",
+      "variable": "लाभार्थी वर्ग",
+      "value": "भूमिधारी कृषकों",
+      "unit": "text",
+      "value_kind": "text",
+      "locator": "table:1/row:1",
+      "evidence": "लाभार्थी वर्ग भूमिधारी कृषकों",
+      "source": "sha256:f0f3be821a6e79544b7246f708c954ffffa710b17d6e1765b0f64732dacf0e7d",
+      "source_type": "Document",
+      "agent": "scheme",
+      "run_id": "8d57b1a9-9cc5-4571-b5f7-9f9ac562e6d1",
+      "parent_file": "data/raw/msp_scheme.html",
+      "validation_errors": [],
+      "validation_status": "valid"
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "trajectory": [
+    {
+      "tool": "beautifulsoup4",
+      "arguments": {
+        "input_sha256": "f0f3be821a6e79544b7246f708c954ffffa710b17d6e1765b0f64732dacf0e7d",
+        "schema": "observation-v1",
+        "max_pages": null
+      }
+    }
+  ],
+  "retries": 0,
+  "manual_interventions": 0,
+  "inventory_source": "S06",
+  "storage": {
+    "inserted": 0,
+    "duplicates": 1
+  },
+  "latency_seconds": 0.015793600003235042,
+  "tool_calls": 1,
+  "reference_calls": 1
+}

@@ -1,0 +1,53 @@
+{
+  "run_id": "f64dc97b-8c76-4f44-ac1e-addd266f332f",
+  "started_at": "2026-10-24T19:05:00.319721+00:00",
+  "input": "eval/cases/scheme_04.html",
+  "input_sha256": "091b88bb118d032e8ce11f560e2e9c281c363e43bcc45028d69a2a9dce3d25f5",
+  "source": "sha256:091b88bb118d032e8ce11f560e2e9c281c363e43bcc45028d69a2a9dce3d25f5",
+  "source_url": "https://cmhelpline.mp.gov.in/Schmedetail.aspx?Schemeid=112",
+  "agent": "scheme",
+  "source_type": "Document",
+  "status": "complete",
+  "records": [
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "MISSING:not_in_source",
+      "period": "MISSING:not_in_source",
+      "variable": "अधिकार क्षेत्र",
+      "value": "राज्य प्रवर्तित योजना",
+      "unit": "text",
+      "value_kind": "text",
+      "locator": "table:1/row:1",
+      "evidence": "अधिकार क्षेत्र राज्य प्रवर्तित योजना",
+      "source": "sha256:091b88bb118d032e8ce11f560e2e9c281c363e43bcc45028d69a2a9dce3d25f5",
+      "source_type": "Document",
+      "agent": "scheme",
+      "run_id": "f64dc97b-8c76-4f44-ac1e-addd266f332f",
+      "parent_file": "data/raw/msp_scheme.html",
+      "validation_errors": [],
+      "validation_status": "valid"
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "trajectory": [
+    {
+      "tool": "beautifulsoup4",
+      "arguments": {
+        "input_sha256": "091b88bb118d032e8ce11f560e2e9c281c363e43bcc45028d69a2a9dce3d25f5",
+        "schema": "observation-v1",
+        "max_pages": null
+      }
+    }
+  ],
+  "retries": 0,
+  "manual_interventions": 0,
+  "inventory_source": "S06",
+  "storage": {
+    "inserted": 0,
+    "duplicates": 1
+  },
+  "latency_seconds": 0.014125999994575977,
+  "tool_calls": 1,
+  "reference_calls": 1
+}

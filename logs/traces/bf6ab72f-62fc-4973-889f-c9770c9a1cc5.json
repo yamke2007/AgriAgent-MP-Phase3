@@ -1,0 +1,71 @@
+{
+  "run_id": "bf6ab72f-62fc-4973-889f-c9770c9a1cc5",
+  "started_at": "2026-10-25T06:39:26.039898+00:00",
+  "input": "eval/cases/statistics_09.csv",
+  "input_sha256": "f45f6bb4ebb3a1647a684d79ecc66481e146cd1106c324f6312c5ced44452d60",
+  "source": "sha256:f45f6bb4ebb3a1647a684d79ecc66481e146cd1106c324f6312c5ced44452d60",
+  "source_url": "https://aiggpa.mp.gov.in/uploads/project/MPES_2022-23_Highlights_English.pdf",
+  "agent": "statistics",
+  "source_type": "Database",
+  "status": "failed",
+  "records": [
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "madhya pradesh",
+      "period": "2022",
+      "variable": "irrigation_capacity_lower_bound",
+      "value": "45",
+      "unit": "lakh hectare",
+      "value_kind": "decimal",
+      "qualifier": "more than",
+      "origin_locator": "page:7",
+      "origin_source": "data/raw/mp_economic_survey.pdf",
+      "evidence": "MISSING:not_applicable | Madhya Pradesh | 2022 | irrigation_capacity_lower_bound | 45 | lakh hectare | decimal | more than | page:7 | data/raw/mp_economic_survey.pdf",
+      "locator": "csv:line:2",
+      "agent": "statistics",
+      "source": "sha256:f45f6bb4ebb3a1647a684d79ecc66481e146cd1106c324f6312c5ced44452d60",
+      "source_type": "Database",
+      "run_id": "bf6ab72f-62fc-4973-889f-c9770c9a1cc5",
+      "parent_file": "data/raw/mp_economic_survey.pdf",
+      "validation_errors": [],
+      "validation_status": "valid"
+    }
+  ],
+  "errors": [
+    "Storage: disk I/O error"
+  ],
+  "warnings": [],
+  "trajectory": [
+    {
+      "tool": "csv.DictReader",
+      "arguments": {
+        "input_sha256": "f45f6bb4ebb3a1647a684d79ecc66481e146cd1106c324f6312c5ced44452d60",
+        "schema": "observation-v1",
+        "max_pages": null
+      }
+    }
+  ],
+  "retries": 0,
+  "manual_interventions": 0,
+  "inventory_source": "S23",
+  "agent_trace": [
+    {
+      "agent": "statistics",
+      "tool": "csv.DictReader",
+      "ok": true,
+      "summary": "tuple[2]",
+      "seconds": 0.0
+    }
+  ],
+  "handoffs": [],
+  "agents": [
+    "statistics"
+  ],
+  "llm_calls": 0,
+  "notes": [],
+  "orchestrator": "langgraph",
+  "useful_calls": 1,
+  "latency_seconds": 0.008386916999370442,
+  "tool_calls": 1,
+  "reference_calls": 1
+}

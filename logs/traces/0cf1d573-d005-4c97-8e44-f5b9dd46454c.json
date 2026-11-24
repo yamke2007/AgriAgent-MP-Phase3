@@ -1,0 +1,51 @@
+{
+  "run_id": "0cf1d573-d005-4c97-8e44-f5b9dd46454c",
+  "started_at": "2026-10-24T18:55:19.653067+00:00",
+  "input": "C:\\Users\\aashi\\OneDrive\\Dokumen\\ChatGPT\\p\\AgriAgent_MadhyaPradesh\\eval\\cases\\scheme_06.html",
+  "input_sha256": "c52f04cf949e0e4bf628cfcdd879b26e154bbbe55b719f568e5550a053aa2696",
+  "source": "sha256:c52f04cf949e0e4bf628cfcdd879b26e154bbbe55b719f568e5550a053aa2696",
+  "source_url": "unknown",
+  "agent": "scheme",
+  "source_type": "Document",
+  "status": "complete",
+  "records": [
+    {
+      "crop": "MISSING:not_applicable",
+      "location": "MISSING:not_in_source",
+      "period": "MISSING:not_in_source",
+      "variable": "लाभार्थी का प्रकार",
+      "value": "किसान",
+      "unit": "text",
+      "value_kind": "text",
+      "locator": "table:1/row:1",
+      "evidence": "लाभार्थी का प्रकार किसान",
+      "source": "sha256:c52f04cf949e0e4bf628cfcdd879b26e154bbbe55b719f568e5550a053aa2696",
+      "source_type": "Document",
+      "agent": "scheme",
+      "run_id": "0cf1d573-d005-4c97-8e44-f5b9dd46454c",
+      "validation_errors": [],
+      "validation_status": "valid"
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "trajectory": [
+    {
+      "tool": "beautifulsoup4",
+      "arguments": {
+        "input_sha256": "c52f04cf949e0e4bf628cfcdd879b26e154bbbe55b719f568e5550a053aa2696",
+        "schema": "observation-v1",
+        "max_pages": null
+      }
+    }
+  ],
+  "retries": 0,
+  "manual_interventions": 0,
+  "storage": {
+    "inserted": 1,
+    "duplicates": 0
+  },
+  "latency_seconds": 0.015072800044436008,
+  "tool_calls": 1,
+  "reference_calls": 1
+}

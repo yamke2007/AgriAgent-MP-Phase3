@@ -1,0 +1,50 @@
+{
+  "run_id": "c090e9bc-0714-486b-9856-b48707bee9ed",
+  "started_at": "2026-10-27T15:46:29.491469+00:00",
+  "input": "Source_Inventory/source_inventory.csv",
+  "input_sha256": "98aa8e3489f8a43c34eae6d74f62ef0cb57fdac35f8dfcd03a905546d0035738",
+  "source": "sha256:98aa8e3489f8a43c34eae6d74f62ef0cb57fdac35f8dfcd03a905546d0035738",
+  "source_url": "unknown",
+  "agent": "unrouted",
+  "source_type": "Database",
+  "status": "failed",
+  "records": [],
+  "errors": [
+    "ExtractionError: tables: Table agent found no table values it could map (crop/place/period/value)"
+  ],
+  "warnings": [],
+  "trajectory": [
+    {
+      "tool": "csv.reader",
+      "arguments": {
+        "input_sha256": "98aa8e3489f8a43c34eae6d74f62ef0cb57fdac35f8dfcd03a905546d0035738",
+        "schema": "observation-v1"
+      }
+    }
+  ],
+  "retries": 0,
+  "manual_interventions": 0,
+  "agents": [
+    "tables"
+  ],
+  "handoffs": [
+    "tables -> none: Table agent found no table values it could map (crop/place/period/value)"
+  ],
+  "agent_trace": [
+    {
+      "agent": "tables",
+      "tool": "csv.reader",
+      "ok": true,
+      "summary": "list[24]",
+      "seconds": 0.0
+    }
+  ],
+  "orchestrator": "sequential",
+  "storage": {
+    "inserted": 0,
+    "duplicates": 0
+  },
+  "latency_seconds": 0.01476498800002446,
+  "tool_calls": 1,
+  "reference_calls": 0
+}
