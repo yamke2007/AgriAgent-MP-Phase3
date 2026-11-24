@@ -1,0 +1,23 @@
+{
+  "source_url": "https://aiggpa.mp.gov.in/uploads/project/MPES_2022-23_Highlights_English.pdf",
+  "input_sha256": "3457d6dc615a35d4ee1c61b338845d58deee2e31f67f8dce55f7611e1a5302f4",
+  "status": "complete",
+  "true_positives": 10,
+  "false_positives": 0,
+  "false_negatives": 0,
+  "manual_interventions": 0,
+  "run_id": "1abd07ed-71d8-4540-af8f-27851d16e3b5",
+  "trajectory": [
+    {
+      "tool": "pypdf",
+      "arguments": {
+        "input_sha256": "3457d6dc615a35d4ee1c61b338845d58deee2e31f67f8dce55f7611e1a5302f4",
+        "schema": "observation-v1",
+        "max_pages": 300,
+        "scope": "survey agriculture highlights"
+      }
+    }
+  ],
+  "warnings": [],
+  "scope": "Separate automation pilot for the survey agriculture section; original M12 cohort remains fixed"
+}

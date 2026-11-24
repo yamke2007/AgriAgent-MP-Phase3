@@ -1,0 +1,5 @@
+{
+  "database": "output/fault-demo/agriagent.sqlite",
+  "output_dir": "output/fault-demo/runs",
+  "automation_log": "output/fault-demo/automation.csv"
+}

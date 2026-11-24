@@ -1,0 +1,355 @@
+{
+  "tesseract": "5.4.0.20240606",
+  "references": "Source-image inspection by implementer. Independent human review pending.",
+  "english_image_only": {
+    "source_url": "https://imdagrimet.gov.in/Services/DistrictBulletin.php?district=Sehore&language=English&state=Madhya+Pradesh",
+    "source_sha256": "f18a55e1516b2034c6466906187c323d59df92d7dfbc5da87ce804d56b54d2e2",
+    "source_page": 1,
+    "native_text_characters_per_page": [
+      0,
+      0,
+      0
+    ],
+    "exact_cells": 15,
+    "sample_cells": 15,
+    "records": [
+      {
+        "expected": {
+          "variable": "forecast_rainfall",
+          "value": "0.0",
+          "period": "2026-11-24",
+          "location": "sehore"
+        },
+        "matched": true,
+        "locator": "page:1/ocr/forecast/row:2/col:2"
+      },
+      {
+        "expected": {
+          "variable": "forecast_rainfall",
+          "value": "0.0",
+          "period": "2026-11-25",
+          "location": "sehore"
+        },
+        "matched": true,
+        "locator": "page:1/ocr/forecast/row:2/col:3"
+      },
+      {
+        "expected": {
+          "variable": "forecast_rainfall",
+          "value": "0.0",
+          "period": "2026-11-26",
+          "location": "sehore"
+        },
+        "matched": true,
+        "locator": "page:1/ocr/forecast/row:2/col:4"
+      },
+      {
+        "expected": {
+          "variable": "forecast_rainfall",
+          "value": "0.0",
+          "period": "2026-11-27",
+          "location": "sehore"
+        },
+        "matched": true,
+        "locator": "page:1/ocr/forecast/row:2/col:5"
+      },
+      {
+        "expected": {
+          "variable": "forecast_rainfall",
+          "value": "0.0",
+          "period": "2026-11-28",
+          "location": "sehore"
+        },
+        "matched": true,
+        "locator": "page:1/ocr/forecast/row:2/col:6"
+      },
+      {
+        "expected": {
+          "variable": "forecast_daily_max_temperature",
+          "value": "28.3",
+          "period": "2026-11-24",
+          "location": "sehore"
+        },
+        "matched": true,
+        "locator": "page:1/ocr/forecast/row:3/col:2"
+      },
+      {
+        "expected": {
+          "variable": "forecast_daily_max_temperature",
+          "value": "28.4",
+          "period": "2026-11-25",
+          "location": "sehore"
+        },
+        "matched": true,
+        "locator": "page:1/ocr/forecast/row:3/col:3"
+      },
+      {
+        "expected": {
+          "variable": "forecast_daily_max_temperature",
+          "value": "28.6",
+          "period": "2026-11-26",
+          "location": "sehore"
+        },
+        "matched": true,
+        "locator": "page:1/ocr/forecast/row:3/col:4"
+      },
+      {
+        "expected": {
+          "variable": "forecast_daily_max_temperature",
+          "value": "28.2",
+          "period": "2026-11-27",
+          "location": "sehore"
+        },
+        "matched": true,
+        "locator": "page:1/ocr/forecast/row:3/col:5"
+      },
+      {
+        "expected": {
+          "variable": "forecast_daily_max_temperature",
+          "value": "27.6",
+          "period": "2026-11-28",
+          "location": "sehore"
+        },
+        "matched": true,
+        "locator": "page:1/ocr/forecast/row:3/col:6"
+      },
+      {
+        "expected": {
+          "variable": "forecast_daily_min_temperature",
+          "value": "11.4",
+          "period": "2026-11-24",
+          "location": "sehore"
+        },
+        "matched": true,
+        "locator": "page:1/ocr/forecast/row:4/col:2"
+      },
+      {
+        "expected": {
+          "variable": "forecast_daily_min_temperature",
+          "value": "11.2",
+          "period": "2026-11-25",
+          "location": "sehore"
+        },
+        "matched": true,
+        "locator": "page:1/ocr/forecast/row:4/col:3"
+      },
+      {
+        "expected": {
+          "variable": "forecast_daily_min_temperature",
+          "value": "10.8",
+          "period": "2026-11-26",
+          "location": "sehore"
+        },
+        "matched": true,
+        "locator": "page:1/ocr/forecast/row:4/col:4"
+      },
+      {
+        "expected": {
+          "variable": "forecast_daily_min_temperature",
+          "value": "10.5",
+          "period": "2026-11-27",
+          "location": "sehore"
+        },
+        "matched": true,
+        "locator": "page:1/ocr/forecast/row:4/col:5"
+      },
+      {
+        "expected": {
+          "variable": "forecast_daily_min_temperature",
+          "value": "10.3",
+          "period": "2026-11-28",
+          "location": "sehore"
+        },
+        "matched": true,
+        "locator": "page:1/ocr/forecast/row:4/col:6"
+      }
+    ],
+    "tool_trace": [
+      {
+        "tool": "pypdf",
+        "arguments": {
+          "input_sha256": "f18a55e1516b2034c6466906187c323d59df92d7dfbc5da87ce804d56b54d2e2",
+          "schema": "observation-v1",
+          "max_pages": 500
+        }
+      },
+      {
+        "tool": "pdfplumber.pages",
+        "arguments": {
+          "input_sha256": "f18a55e1516b2034c6466906187c323d59df92d7dfbc5da87ce804d56b54d2e2",
+          "schema": "observation-v1",
+          "max_pages": 500
+        }
+      },
+      {
+        "tool": "tesseract.forecast_header",
+        "arguments": {
+          "input_sha256": "f18a55e1516b2034c6466906187c323d59df92d7dfbc5da87ce804d56b54d2e2",
+          "schema": "observation-v1",
+          "page": 1,
+          "lang": "eng",
+          "dpi": 150
+        }
+      },
+      {
+        "tool": "tesseract.forecast_cells",
+        "arguments": {
+          "input_sha256": "f18a55e1516b2034c6466906187c323d59df92d7dfbc5da87ce804d56b54d2e2",
+          "schema": "observation-v1",
+          "page": 1,
+          "lang": "eng",
+          "dpi": 220
+        }
+      }
+    ],
+    "latency_seconds": 4.564698599977419
+  },
+  "hindi_legacy_pdf": {
+    "source_path": "data/raw/e_mandi_manual.pdf",
+    "source_sha256": "a84a4517a92a02c0f0980f01b9450be2025e39fceb623d0721571b3721b0bc08",
+    "source_page": 2,
+    "regions": [
+      {
+        "region": "date_format",
+        "bounds": [
+          0.08,
+          0.08,
+          0.955,
+          0.15
+        ],
+        "expected": "1. किसी भी दिनांक वाली फील्ड में दिनांक (dd-MM-yyyy) वाले प्रारूप में ही डाले। जैसे कि - (03-01-2019)",
+        "actual": "I. किसी भी दिनांक वाली फील्ड में दिनांक (dd-MM-yyyy) वाले प्रारूप में ही डाले| जैसे कि - (03-0-2049)",
+        "text_layer_exact": false,
+        "exact": false,
+        "reference_characters": 101,
+        "char_edits": 4,
+        "reference_words": 18,
+        "word_edits": 3,
+        "latency_seconds": 0.6210897999699228
+      },
+      {
+        "region": "numeric_entry",
+        "bounds": [
+          0.08,
+          0.157,
+          0.96,
+          0.221
+        ],
+        "expected": "2. नंबर वाली फील्ड को हिंदी के नंबर में एंट्री न करे। जैसे कि “2200” को हिंदी में २२०० न डाले ।",
+        "actual": "2. नंबर वाली फील्ड को हिंदी के नंबर में एंट्री न करे| जैसे कि “2200” को हिंदी में २२०० न डाले | |",
+        "text_layer_exact": false,
+        "exact": false,
+        "reference_characters": 95,
+        "char_edits": 4,
+        "reference_words": 22,
+        "word_edits": 3,
+        "latency_seconds": 0.5537445999798365
+      },
+      {
+        "region": "publisher_name",
+        "bounds": [
+          0.051,
+          0.923,
+          0.566,
+          0.955
+        ],
+        "expected": "म.प्र. राज्य कृषि विपणन (मंडी) बोर्ड",
+        "actual": "म.प्र. राज्य कृषि विपणन (मंडी) बोर्ड",
+        "text_layer_exact": false,
+        "exact": true,
+        "reference_characters": 36,
+        "char_edits": 0,
+        "reference_words": 6,
+        "word_edits": 0,
+        "latency_seconds": 0.3196365000330843
+      }
+    ],
+    "exact_regions": 1,
+    "text_layer_exact_regions": 0,
+    "cer": 0.034482758620689655,
+    "wer": 0.13043478260869565
+  },
+  "real_des_fault": {
+    "source": "https://data.desagri.gov.in/report/crop/crops-printdraft-major-contributing-district?fltrstates=23&fltrtopdistrict=all&fltrcontribut=production&fltrfromyear=2022&fltrtoyear=2022&number_district=&fltrcrops=2",
+    "input_sha256": "8c27f3271e48bf789986a95b05041ee90520ce4de4633886cb36e5e075787128",
+    "engine": "langgraph",
+    "recovered": true,
+    "retries": 1,
+    "records": 52,
+    "trajectory": [
+      {
+        "tool": "pypdf",
+        "arguments": {
+          "input_sha256": "8c27f3271e48bf789986a95b05041ee90520ce4de4633886cb36e5e075787128",
+          "schema": "observation-v1",
+          "max_pages": 300
+        }
+      },
+      {
+        "tool": "pdfplumber.pages",
+        "arguments": {
+          "input_sha256": "8c27f3271e48bf789986a95b05041ee90520ce4de4633886cb36e5e075787128",
+          "schema": "observation-v1",
+          "max_pages": 300
+        }
+      },
+      {
+        "tool": "pdfplumber.extract_tables",
+        "arguments": {
+          "input_sha256": "8c27f3271e48bf789986a95b05041ee90520ce4de4633886cb36e5e075787128",
+          "schema": "observation-v1",
+          "pages": [
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      {
+        "tool": "pdfplumber.extract_tables",
+        "arguments": {
+          "input_sha256": "8c27f3271e48bf789986a95b05041ee90520ce4de4633886cb36e5e075787128",
+          "schema": "observation-v1",
+          "pages": [
+            1,
+            2,
+            3
+          ]
+        }
+      }
+    ],
+    "agent_trace": [
+      {
+        "agent": "statistics",
+        "tool": "pypdf",
+        "ok": false,
+        "summary": "ExtractionError: No supported production sentences; text pages=3; tables/OCR are left to the tables agent",
+        "seconds": 1.724
+      },
+      {
+        "agent": "tables",
+        "tool": "pdfplumber.pages",
+        "ok": true,
+        "summary": "list[3]",
+        "seconds": 0.908
+      },
+      {
+        "agent": "tables",
+        "tool": "pdfplumber.extract_tables",
+        "ok": false,
+        "summary": "ToolFault: injected transient failure in pdfplumber.extract_tables",
+        "seconds": 0.0
+      },
+      {
+        "agent": "tables",
+        "tool": "pdfplumber.extract_tables",
+        "ok": true,
+        "summary": "list[3]",
+        "seconds": 0.806
+      }
+    ],
+    "notes": [
+      "tables: Reused the successful PDF page inspection after a tool fault"
+    ]
+  }
+}

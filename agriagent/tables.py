@@ -380,6 +380,49 @@ def _rec(variable, value, unit, crop, location, period, locator, row, by, mandi)
     return rec
 
 
+def apply_price_adapter(path, cfg, trace, args, rows, records):
+    """Use model selections only when identifiable from exactly one source cell."""
+    from collections import defaultdict
+    from decimal import InvalidOperation
+    from . import model, normalization as norm
+
+    required = {"State Name", "District Name", "Market Name", "Reported Date", "Modal Price (Rs./Quintal)"}
+    if not records or not rows or not required.issubset(rows[0]) or not cfg.get("adapter_path"):
+        return records, []
+    try:
+        predictions, usage = trace.call(
+            "tables", "llm.peft_extraction", args, lambda: model.configured_prediction(path, cfg),
+        )
+    except Exception as exc:
+        trace.note("tables", f"Adapter unavailable: {type(exc).__name__}: {exc}")
+        return records, ["Adapter unavailable; used the existing deterministic table extraction"]
+    trace.model_usage.append(usage)
+
+    def key(record):
+        return (norm.crop(record["crop"]), norm.location(record["location"]), norm.period(record["period"]),
+                record["variable"], record["unit"], norm.number(record["value"]))
+
+    candidates = defaultdict(list)
+    for record in records:
+        candidates[key(record)].append(record)
+    selected = {}
+    for record in predictions:
+        try:
+            matches = candidates.get(key(record), [])
+        except (KeyError, TypeError, ValueError, InvalidOperation):
+            continue
+        if len(matches) == 1:
+            verified = matches[0]
+            selected[verified["locator"]] = dict(verified, model_confirmed=True)
+    if not selected:
+        return records, ["Adapter produced no unambiguous supported fields; used deterministic extraction"]
+    warnings = []
+    if len(selected) != len(records) or len(selected) != len(predictions):
+        warnings.append(f"Adapter confirmed {len(selected)}/{len(records)} source fields; "
+                        f"{len(predictions) - len(selected)} predicted fields had no unique match")
+    return list(selected.values()), warnings
+
+
 # ---------------------------------------------------------------- agent entry point
 def run(path, cfg, trace, digest):
     path = Path(path)
@@ -389,6 +432,16 @@ def run(path, cfg, trace, digest):
     if suffix == ".pdf":
         pages = trace.call("tables", "pdfplumber.pages", dict(args, max_pages=cfg["max_pdf_pages"]),
                            lambda: pdf_pages(path, cfg["max_pdf_pages"]))
+        from . import public_sources
+        if pages and (report_type := public_sources.des_pdf_type(pages[0]["text"])):
+            selected = [item["page"] for item in pages if item["chars"] > 50]
+            source_tables = trace.call("tables", "pdfplumber.extract_tables", dict(args, pages=selected),
+                                       lambda: pdf_tables(path, selected))
+            extracted, notes = public_sources.des_district_tables(source_tables, pages[0]["text"], report_type)
+            if not extracted:
+                from .extractors import ExtractionError
+                raise ExtractionError("; ".join(notes) or "No supported MP cells in the published DES report")
+            return extracted, notes
         # Prioritize pages whose text layer signals agricultural/table content.
         # For documents with broken/legacy text layers, inspect only a bounded
         # prefix rather than spending unbounded time extracting every page.
@@ -411,6 +464,28 @@ def run(path, cfg, trace, digest):
             if missing:
                 warnings.append("OCR language model(s) not installed: " + ",".join(missing))
             imgs = render_pages(path, scanned, resolution=150)
+            if not digital and scanned[0] == 1 and "eng" in lang:
+                from . import forecast_ocr
+                image = imgs[0][1]
+                grid = forecast_ocr.locate_grid(image)
+                if grid:
+                    identity = trace.call("tables", "tesseract.forecast_header",
+                                          dict(args, page=1, lang="eng", dpi=150),
+                                          lambda: forecast_ocr.header(image, grid[0][0]))
+                    if identity:
+                        detailed = render_pages(path, [1], resolution=220)[0][1]
+                        detailed_grid = forecast_ocr.locate_grid(detailed)
+                        if not detailed_grid:
+                            from .extractors import ExtractionError
+                            raise ExtractionError("IMD forecast table could not be resolved at OCR resolution")
+                        cells = trace.call("tables", "tesseract.forecast_cells",
+                                           dict(args, page=1, lang="eng", dpi=220),
+                                           lambda: forecast_ocr.read_cells(detailed, detailed_grid))
+                        result, notes = forecast_ocr.observations(cells, *identity, page=1)
+                        if not result:
+                            from .extractors import ExtractionError
+                            raise ExtractionError("; ".join(notes))
+                        return result, notes
             tables += trace.call("tables", "tesseract.ocr_tables", dict(args, pages=scanned, lang=lang),
                                  lambda: ocr_tables(imgs, lang))
         def collect(ts):
@@ -459,6 +534,8 @@ def run(path, cfg, trace, digest):
     elif suffix == ".csv":
         rows = trace.call("tables", "csv.reader", args, lambda: read_csv_rows(path))
         records += table_records(trace, rows, "csv", path.stem + " " + " ".join(" ".join(r) for r in rows[:2]))
+        records, model_warnings = apply_price_adapter(path, cfg, trace, args, rows, records)
+        warnings.extend(model_warnings)
     if not records:
         from .extractors import ExtractionError
         raise ExtractionError("Table agent found no table values it could map (crop/place/period/value)")

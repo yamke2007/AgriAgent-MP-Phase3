@@ -6,6 +6,7 @@ import subprocess
 import sys
 import tempfile
 import unittest
+from contextlib import closing
 from pathlib import Path
 from agriagent.pipeline import ROOT,process
 from agriagent.storage import connect,dump
@@ -80,7 +81,7 @@ class ProjectTests(unittest.TestCase):
         path=self.csv("wheat,mp,2024,production,5,tonne\n")
         process(path,self.cfg);r=process(path,self.cfg)
         self.assertEqual(r["storage"]["duplicates"],1)
-        with connect(self.cfg["database"]) as db:
+        with closing(connect(self.cfg["database"])) as db:
             self.assertEqual(db.execute("SELECT count(*) FROM observations").fetchone()[0],1)
             self.assertEqual(db.execute("SELECT sum(duplicates) FROM attempts").fetchone()[0],1)
     def test_dump_roundtrip(self):
@@ -133,7 +134,8 @@ class ProjectTests(unittest.TestCase):
             self.assertEqual(hashlib.sha256((ROOT/r["preserved"]).read_bytes()).hexdigest(),r["sha256"],r["original"])
     def test_manifest_covers_corpus(self):
         rows=self.read_csv(ROOT/"data/manifest.csv")
-        required={p.relative_to(ROOT).as_posix() for folder in ("data/raw","data/derived","eval/cases") for p in (ROOT/folder).iterdir() if p.is_file() and not p.name.startswith(".")}  # ignore macOS .DS_Store
+        required={p.relative_to(ROOT).as_posix() for folder in ("data/raw","data/derived","eval/cases","data/production","data/train/raw") for p in (ROOT/folder).iterdir() if p.is_file() and not p.name.startswith(".") and p.name != "sources.json"}
+        required.add("data/train/examples.jsonl")
         self.assertEqual({r["file"] for r in rows},required)
         for r in rows:self.assertEqual(hashlib.sha256((ROOT/r["file"]).read_bytes()).hexdigest(),r["sha256"])
     def test_contamination_empty_and_overlap(self):

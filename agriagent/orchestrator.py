@@ -20,14 +20,18 @@ The workflow is complete when the plan is exhausted (or stopped); the run
 status (complete / partial / failed) is then set by pipeline.process.
 """
 import time
+from contextlib import nullcontext
 
 from . import extractors, tables
 
 try:
-    from langsmith import traceable
+    from langsmith import traceable, trace as trace_span
 except Exception:  # optional
     def traceable(*_a, **_k):
         return lambda f: f
+
+    def trace_span(*_a, **_k):
+        return nullcontext()
 
 MAX_RETRIES = 2
 TOOL = {"directory": "beautifulsoup4", "scheme": "beautifulsoup4"}
@@ -40,9 +44,16 @@ class ToolFault(RuntimeError):
 class Trace:
     def __init__(self, inject_tool=None):
         self.trajectory, self.agent_trace, self.notes = [], [], []
+        self.model_usage = []
+        self.pdf_page_inspections = {}
         self.inject_tool, self.retries, self.llm_calls = inject_tool, 0, 0
 
     def call(self, agent, tool, arguments, fn):
+        if tool == "pdfplumber.pages":
+            key = (arguments["input_sha256"], arguments["max_pages"])
+            if key in self.pdf_page_inspections:
+                self.note(agent, "Reused the successful PDF page inspection after a tool fault")
+                return self.pdf_page_inspections[key]
         entry = dict(tool=tool, arguments=arguments)
         self.trajectory.append(entry)
         t0 = time.perf_counter()
@@ -50,10 +61,13 @@ class Trace:
         if tool.startswith("llm."):
             self.llm_calls += 1
         try:
-            if self.inject_tool and self.inject_tool == tool:
-                self.inject_tool = None  # fail once so the retry can succeed
-                raise ToolFault(f"injected transient failure in {tool}")
-            out = fn()
+            with trace_span(tool, run_type="tool", metadata={"agent": agent}):
+                if self.inject_tool and self.inject_tool == tool:
+                    self.inject_tool = None  # fail once so the retry can succeed
+                    raise ToolFault(f"injected transient failure in {tool}")
+                out = fn()
+            if tool == "pdfplumber.pages":
+                self.pdf_page_inspections[key] = out
             rec["summary"] = f"{type(out).__name__}[{len(out)}]" if hasattr(out, "__len__") else type(out).__name__
             return out
         except Exception as exc:
@@ -81,7 +95,11 @@ def run_specialist(agent, path, cfg, trace, digest):
         tool = "pypdf" if path.suffix.lower() == ".pdf" else "csv.DictReader"
         args = {"input_sha256": digest, "schema": "observation-v1",
                 "max_pages": cfg["max_pdf_pages"] if tool == "pypdf" else None}
-        records, warnings = trace.call(agent, tool, args, lambda: extractors.statistics(path, cfg["max_pdf_pages"]))
+        scoped_survey = bool(cfg.get("scoped_survey") and tool == "pypdf")
+        if scoped_survey:
+            args["scope"] = "survey agriculture highlights"
+        records, warnings = trace.call(agent, tool, args,
+                                       lambda: extractors.statistics(path, cfg["max_pdf_pages"], scoped_survey))
     else:
         args = {"input_sha256": digest, "schema": "observation-v1", "max_pages": None}
         records, warnings = trace.call(agent, TOOL[agent], args, lambda: getattr(extractors, agent)(path))
@@ -101,8 +119,14 @@ def _step(state, path, cfg, trace, digest):
         state["records"] += recs
         state["warnings"] += warns
         state["producers"].append(agent)
-        state["useful_calls"] += sum(1 for c in trace.agent_trace if c["agent"] == agent and c["ok"])
-        state["outcome"] = "ok"
+        document_only = agent == "statistics" and all(
+            r.get("extraction_scope") or r["variable"].startswith(
+                ("mandi_workflow_", "mandi_date_entry_", "pmfby_premium_cap_")
+            ) for r in recs
+        )
+        if document_only and state["idx"] + 1 < len(state["plan"]):
+            trace.note(agent, "Recognized a policy or workflow document; agricultural table pass skipped")
+        state["outcome"] = "finish" if document_only else "ok"
     except ToolFault as exc:
         state["outcome"] = "retry" if state["attempts"] < MAX_RETRIES else "handoff"
         state["errors"].append(f"{agent}: {exc}")
@@ -120,7 +144,7 @@ def _step(state, path, cfg, trace, digest):
 def _route(state):
     if state["outcome"] == "retry":
         return "retry"
-    if state["outcome"] == "stop" or state["idx"] + 1 >= len(state["plan"]):
+    if state["outcome"] in {"stop", "finish"} or state["idx"] + 1 >= len(state["plan"]):
         return "finish"
     return "next"
 
@@ -131,7 +155,7 @@ def run(path, cfg, digest, inject_tool=None):
     trace = Trace(inject_tool)
     plan_agents, group = plan(path)
     state = dict(plan=plan_agents, idx=0, attempts=0, records=[], warnings=[], errors=[], handoffs=[],
-                 producers=[], useful_calls=0, outcome=None, fatal=None)
+                 producers=[], outcome=None, fatal=None)
     engine = "sequential"
     try:
         from langgraph.graph import END, START, StateGraph
@@ -179,7 +203,8 @@ def run(path, cfg, digest, inject_tool=None):
             else:
                 break
     details = dict(agents=plan_agents, handoffs=state["handoffs"], trajectory=trace.trajectory,
-                   agent_trace=trace.agent_trace, retries=trace.retries, orchestrator=engine, source_type=group)
+                   agent_trace=trace.agent_trace, retries=trace.retries, orchestrator=engine, source_type=group,
+                   llm_calls=trace.llm_calls, model_usage=trace.model_usage)
     if state["fatal"] is not None:
         state["fatal"].details = details
         raise state["fatal"]
@@ -190,4 +215,4 @@ def run(path, cfg, digest, inject_tool=None):
     return dict(records=state["records"], warnings=state["warnings"], trajectory=trace.trajectory,
                 agent_trace=trace.agent_trace, notes=trace.notes, producers=state["producers"],
                 plan=plan_agents, handoffs=state["handoffs"], retries=trace.retries, llm_calls=trace.llm_calls,
-                useful_calls=state["useful_calls"], group=group, engine=engine)
+                group=group, engine=engine, model_usage=trace.model_usage)

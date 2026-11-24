@@ -1,0 +1,340 @@
+[
+  {
+    "input": "data/raw/mp_economic_survey.pdf",
+    "expected_status": "partial",
+    "expected_plan": [
+      "statistics",
+      "tables"
+    ],
+    "status": "partial",
+    "plan": [
+      "statistics",
+      "tables"
+    ],
+    "producers": "statistics",
+    "handoffs": [
+      "tables -> none: Table agent found no table values it could map (crop/place/period/value)"
+    ],
+    "retries": 0,
+    "fault": null,
+    "correct": true,
+    "trajectory": [
+      {
+        "tool": "pypdf",
+        "arguments": {
+          "input_sha256": "3457d6dc615a35d4ee1c61b338845d58deee2e31f67f8dce55f7611e1a5302f4",
+          "schema": "observation-v1",
+          "max_pages": 300
+        }
+      },
+      {
+        "tool": "pdfplumber.pages",
+        "arguments": {
+          "input_sha256": "3457d6dc615a35d4ee1c61b338845d58deee2e31f67f8dce55f7611e1a5302f4",
+          "schema": "observation-v1",
+          "max_pages": 300
+        }
+      },
+      {
+        "tool": "pdfplumber.extract_tables",
+        "arguments": {
+          "input_sha256": "3457d6dc615a35d4ee1c61b338845d58deee2e31f67f8dce55f7611e1a5302f4",
+          "schema": "observation-v1",
+          "pages": [
+            1,
+            3,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      }
+    ],
+    "reference_tools": null,
+    "engine": "langgraph",
+    "latency_seconds": 28.931967000011355,
+    "model_usage": [],
+    "synthetic": false,
+    "run_id": "f92822f0-9bb1-40da-bd2d-29b3803cc6d7"
+  },
+  {
+    "input": "data/raw/icar_kvk.html",
+    "expected_status": "complete",
+    "expected_plan": [
+      "directory"
+    ],
+    "status": "complete",
+    "plan": [
+      "directory"
+    ],
+    "producers": "directory",
+    "handoffs": [],
+    "retries": 0,
+    "fault": null,
+    "correct": true,
+    "trajectory": [
+      {
+        "tool": "beautifulsoup4",
+        "arguments": {
+          "input_sha256": "4a2a2b4deb8d58cedc8d9bba5333c2db2f651480d4339e169c5a6eecaa940beb",
+          "schema": "observation-v1",
+          "max_pages": null
+        }
+      }
+    ],
+    "reference_tools": null,
+    "engine": "langgraph",
+    "latency_seconds": 0.14223619998665527,
+    "model_usage": [],
+    "synthetic": false,
+    "run_id": "43d961fe-4f77-480e-bc2c-9696d79f5223"
+  },
+  {
+    "input": "data/raw/msp_scheme.html",
+    "expected_status": "partial",
+    "expected_plan": [
+      "scheme"
+    ],
+    "status": "partial",
+    "plan": [
+      "scheme"
+    ],
+    "producers": "scheme",
+    "handoffs": [],
+    "retries": 0,
+    "fault": null,
+    "correct": true,
+    "trajectory": [
+      {
+        "tool": "beautifulsoup4",
+        "arguments": {
+          "input_sha256": "94c35bb27ef193ff23118ddd78a80a8f26fb0637ffec814fc6c96731cc5b8074",
+          "schema": "observation-v1",
+          "max_pages": null
+        }
+      }
+    ],
+    "reference_tools": null,
+    "engine": "langgraph",
+    "latency_seconds": 0.02338559995405376,
+    "model_usage": [],
+    "synthetic": false,
+    "run_id": "d4088eab-2413-415e-9129-118d99b21436"
+  },
+  {
+    "input": "data/derived/survey_agriculture_transcription.csv",
+    "expected_status": "complete",
+    "expected_plan": [
+      "statistics"
+    ],
+    "status": "complete",
+    "plan": [
+      "statistics"
+    ],
+    "producers": "statistics",
+    "handoffs": [],
+    "retries": 0,
+    "fault": null,
+    "correct": true,
+    "trajectory": [
+      {
+        "tool": "csv.DictReader",
+        "arguments": {
+          "input_sha256": "0bda8a83f36dfa93d85b0fcfc2a697007308074b112885472eced24cfbdf95a7",
+          "schema": "observation-v1",
+          "max_pages": null
+        }
+      }
+    ],
+    "reference_tools": null,
+    "engine": "langgraph",
+    "latency_seconds": 0.010116100020240992,
+    "model_usage": [],
+    "synthetic": false,
+    "run_id": "0d15f506-e470-4064-8730-0091d1ed17da"
+  },
+  {
+    "input": "data/raw/evikas_calculator.html",
+    "expected_status": "failed",
+    "expected_plan": [],
+    "status": "failed",
+    "plan": null,
+    "producers": "unrouted",
+    "handoffs": [],
+    "retries": 0,
+    "fault": null,
+    "correct": true,
+    "trajectory": [],
+    "reference_tools": null,
+    "engine": null,
+    "latency_seconds": 0.09628450003219768,
+    "model_usage": [],
+    "synthetic": false,
+    "run_id": "65522cef-3791-4fec-9b05-4d2de6eea295"
+  },
+  {
+    "input": "tests/fixtures_tables/synthetic_district_apy.pdf",
+    "expected_status": "complete",
+    "expected_plan": [
+      "statistics",
+      "tables"
+    ],
+    "status": "complete",
+    "plan": [
+      "statistics",
+      "tables"
+    ],
+    "producers": "tables",
+    "handoffs": [
+      "statistics -> next agent: No supported production sentences; text pages=1; tables/OCR are left to the tables agent"
+    ],
+    "retries": 0,
+    "fault": null,
+    "correct": true,
+    "trajectory": [
+      {
+        "tool": "pypdf",
+        "arguments": {
+          "input_sha256": "95f8af5d5bf99e47c2efe4ec8fdd9022cfaea34fe8cf686308d395fcd3331e61",
+          "schema": "observation-v1",
+          "max_pages": 300
+        }
+      },
+      {
+        "tool": "pdfplumber.pages",
+        "arguments": {
+          "input_sha256": "95f8af5d5bf99e47c2efe4ec8fdd9022cfaea34fe8cf686308d395fcd3331e61",
+          "schema": "observation-v1",
+          "max_pages": 300
+        }
+      },
+      {
+        "tool": "pdfplumber.extract_tables",
+        "arguments": {
+          "input_sha256": "95f8af5d5bf99e47c2efe4ec8fdd9022cfaea34fe8cf686308d395fcd3331e61",
+          "schema": "observation-v1",
+          "pages": [
+            1
+          ]
+        }
+      }
+    ],
+    "reference_tools": [
+      "pypdf",
+      "pdfplumber.pages",
+      "pdfplumber.extract_tables"
+    ],
+    "engine": "langgraph",
+    "latency_seconds": 0.27407869999296963,
+    "model_usage": [],
+    "synthetic": true,
+    "run_id": "004a9407-e3c0-4d37-9acb-235af9788b27"
+  },
+  {
+    "input": "tests/fixtures_tables/synthetic_mandi_prices.xlsx",
+    "expected_status": "complete",
+    "expected_plan": [
+      "tables"
+    ],
+    "status": "complete",
+    "plan": [
+      "tables"
+    ],
+    "producers": "tables",
+    "handoffs": [],
+    "retries": 0,
+    "fault": null,
+    "correct": true,
+    "trajectory": [
+      {
+        "tool": "openpyxl.read",
+        "arguments": {
+          "input_sha256": "e93052f1da671740225e1a1bddca5c8a8b109f5a422244f4a130aede3c318e67",
+          "schema": "observation-v1"
+        }
+      }
+    ],
+    "reference_tools": [
+      "openpyxl.read"
+    ],
+    "engine": "langgraph",
+    "latency_seconds": 1.3038856000057422,
+    "model_usage": [],
+    "synthetic": true,
+    "run_id": "f9c917e2-e1fd-449e-8768-923ec7aa9b6e"
+  },
+  {
+    "input": "tests/fixtures_tables/synthetic_district_apy.pdf",
+    "expected_status": "complete",
+    "expected_plan": [
+      "statistics",
+      "tables"
+    ],
+    "status": "complete",
+    "plan": [
+      "statistics",
+      "tables"
+    ],
+    "producers": "tables",
+    "handoffs": [
+      "statistics -> next agent: No supported production sentences; text pages=1; tables/OCR are left to the tables agent"
+    ],
+    "retries": 1,
+    "fault": "pdfplumber.extract_tables",
+    "correct": true,
+    "trajectory": [
+      {
+        "tool": "pypdf",
+        "arguments": {
+          "input_sha256": "95f8af5d5bf99e47c2efe4ec8fdd9022cfaea34fe8cf686308d395fcd3331e61",
+          "schema": "observation-v1",
+          "max_pages": 300
+        }
+      },
+      {
+        "tool": "pdfplumber.pages",
+        "arguments": {
+          "input_sha256": "95f8af5d5bf99e47c2efe4ec8fdd9022cfaea34fe8cf686308d395fcd3331e61",
+          "schema": "observation-v1",
+          "max_pages": 300
+        }
+      },
+      {
+        "tool": "pdfplumber.extract_tables",
+        "arguments": {
+          "input_sha256": "95f8af5d5bf99e47c2efe4ec8fdd9022cfaea34fe8cf686308d395fcd3331e61",
+          "schema": "observation-v1",
+          "pages": [
+            1
+          ]
+        }
+      },
+      {
+        "tool": "pdfplumber.extract_tables",
+        "arguments": {
+          "input_sha256": "95f8af5d5bf99e47c2efe4ec8fdd9022cfaea34fe8cf686308d395fcd3331e61",
+          "schema": "observation-v1",
+          "pages": [
+            1
+          ]
+        }
+      }
+    ],
+    "reference_tools": [
+      "pypdf",
+      "pdfplumber.pages",
+      "pdfplumber.extract_tables",
+      "pdfplumber.extract_tables"
+    ],
+    "engine": "langgraph",
+    "latency_seconds": 0.08424509997712448,
+    "model_usage": [],
+    "synthetic": true,
+    "run_id": "d324c8f6-149f-45d4-9133-79cc1e492fb2"
+  }
+]

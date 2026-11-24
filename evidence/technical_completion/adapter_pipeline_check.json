@@ -1,0 +1,34 @@
+{
+  "case": "tables_14",
+  "scope": "Single local Windows CPU application check with unquantized pinned base; separate from frozen Colab M18 comparison",
+  "input_sha256": "08c143a467d24c58b8ff29801b81de793d9c942c57427ad7a44ef07dde3761ea",
+  "checkpoint_hashes": {
+    "adapter_sha256": "589b4c8bce67b16b82bfb102b887d9f754db875151bc008378c4e7e2e867571d",
+    "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+    "base_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee"
+  },
+  "torch": "2.7.1+cpu",
+  "transformers": "4.57.1",
+  "peft": "0.17.1",
+  "adapter_run_id": "96b020e2-425f-4b44-aa6f-2b9647687eba",
+  "adapter_status": "partial",
+  "adapter_tp_fp_fn": [
+    4,
+    0,
+    12
+  ],
+  "deterministic_tp_fp_fn": [
+    16,
+    0,
+    0
+  ],
+  "usage": [
+    {
+      "input_tokens": 347,
+      "generated_tokens": 292
+    }
+  ],
+  "adapter_latency_s": 504.04541020002216,
+  "tool_success": true,
+  "fallback_used": false
+}

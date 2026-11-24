@@ -1,0 +1,10 @@
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+{"run_id": "96b020e2-425f-4b44-aa6f-2b9647687eba", "agent": "tables", "status": "partial", "errors": [], "warnings": ["Adapter confirmed 4/16 source fields; 0 predicted fields had no unique match"], "latency_seconds": 504.04541020002216}
+records=4
+  plan: ['tables'] engine: langgraph retries: 0
+  [ok ]     tables -> csv.reader                   list[5]
+  [ok ]     tables -> llm.peft_extraction          tuple[2]
+    arrivals = 209.00 tonne | soybean | betul | 2013-04-09 @ csv/row:2/col:6
+    arrivals = 3.00 tonne | soybean | bhind | 2013-04-09 @ csv/row:3/col:6
+    arrivals = 80.90 tonne | soybean | bhopal | 2013-04-09 @ csv/row:4/col:6
+    arrivals = 0.46 tonne | soybean | burhanpur | 2013-04-09 @ csv/row:5/col:6

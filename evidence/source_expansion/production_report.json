@@ -1,0 +1,812 @@
+{
+  "cohort_sha256": "b998190fceec5ecbb133909214c1f77cce49aa7a2aa01e6d58c337e6603a1cef",
+  "scope": "All declared genuine inputs, including partial, failed, and historically transcribed inputs",
+  "m12": {
+    "completed_without_manual_intervention": 10,
+    "attempted": 17,
+    "value": 0.5882352941176471,
+    "status_counts": {
+      "complete": 11,
+      "partial": 4,
+      "failed": 2
+    }
+  },
+  "original_inputs_m12": {
+    "completed_without_manual_intervention": 1,
+    "attempted": 4,
+    "value": 0.25,
+    "status_counts": {
+      "complete": 2,
+      "partial": 2
+    }
+  },
+  "original_ingestion_only_comparison": {
+    "completed_without_manual_intervention": 2,
+    "attempted": 4,
+    "value": 0.5,
+    "status_counts": {
+      "complete": 2,
+      "partial": 2
+    }
+  },
+  "cases": [
+    {
+      "status": "complete",
+      "run_id": "f9aebf36-34fb-4f4b-b005-5b6e323bb214",
+      "manual_interventions": 0,
+      "warnings": [],
+      "errors": [],
+      "tool_calls": 1,
+      "input": "data/raw/icar_kvk.html",
+      "source_id": "S21",
+      "sample": "original",
+      "outputs": 162,
+      "valid": 162,
+      "checks": [],
+      "trajectory": [
+        "beautifulsoup4"
+      ],
+      "verified": true
+    },
+    {
+      "status": "partial",
+      "run_id": "956853df-0e1c-47e1-be61-4cbf4fab6749",
+      "manual_interventions": 0,
+      "warnings": [],
+      "errors": [],
+      "tool_calls": 1,
+      "input": "data/raw/msp_scheme.html",
+      "source_id": "S06",
+      "sample": "original",
+      "outputs": 23,
+      "valid": 18,
+      "checks": [],
+      "trajectory": [
+        "beautifulsoup4"
+      ],
+      "verified": true
+    },
+    {
+      "status": "complete",
+      "run_id": "4dc20afb-5685-4bfd-b3f5-9d5d5074ae22",
+      "manual_interventions": 1,
+      "warnings": [],
+      "errors": [],
+      "tool_calls": 1,
+      "input": "data/derived/survey_agriculture_transcription.csv",
+      "source_id": "S23",
+      "sample": "original",
+      "outputs": 10,
+      "valid": 10,
+      "checks": [],
+      "trajectory": [
+        "csv.DictReader"
+      ],
+      "verified": true
+    },
+    {
+      "status": "partial",
+      "run_id": "a60f5d66-7cc9-4af6-a872-831be8219ead",
+      "manual_interventions": 0,
+      "warnings": [
+        "13 empty area or production cells skipped"
+      ],
+      "errors": [],
+      "tool_calls": 1,
+      "input": "data/production/mp_crop_production_2016_2022.csv",
+      "source_id": "S11",
+      "sample": "original",
+      "outputs": 3785,
+      "valid": 3785,
+      "checks": [],
+      "trajectory": [
+        "csv.DictReader"
+      ],
+      "verified": true
+    },
+    {
+      "status": "complete",
+      "run_id": "7c9c8062-e1cf-4753-b8eb-3fc0f132b446",
+      "manual_interventions": 0,
+      "warnings": [],
+      "errors": [],
+      "tool_calls": 1,
+      "input": "output/source-expansion/acquisition/S08_facilities.html",
+      "source_id": "S08",
+      "sample": "expanded",
+      "outputs": 7,
+      "valid": 7,
+      "checks": [
+        {
+          "expected": {
+            "variable": "government_tractor_rental_district_count_as_published",
+            "value": "37"
+          },
+          "matched": true,
+          "locator": "css:#collapseOne1 li/match:1"
+        },
+        {
+          "expected": {
+            "variable": "government_tractor_rental_fleet_as_published",
+            "value": "275"
+          },
+          "matched": true,
+          "locator": "css:#collapseOne1 li/match:1"
+        },
+        {
+          "expected": {
+            "variable": "custom_hiring_subsidy_general_share",
+            "value": "40"
+          },
+          "matched": true,
+          "locator": "css:#collapseOne3 li/match:1"
+        },
+        {
+          "expected": {
+            "variable": "custom_hiring_subsidy_sc_st_share",
+            "value": "50"
+          },
+          "matched": true,
+          "locator": "css:#collapseOne3 li/match:1"
+        },
+        {
+          "expected": {
+            "variable": "custom_hiring_subsidy_cap_lakh_inr",
+            "value": "10"
+          },
+          "matched": true,
+          "locator": "css:#collapseOne3 li/match:1"
+        },
+        {
+          "expected": {
+            "variable": "deep_ploughing_subsidy_share",
+            "value": "50"
+          },
+          "matched": true,
+          "locator": "css:#collapseOne5 li/match:1"
+        },
+        {
+          "expected": {
+            "variable": "deep_ploughing_subsidy_cap_inr",
+            "value": "2000"
+          },
+          "matched": true,
+          "locator": "css:#collapseOne5 li/match:1"
+        }
+      ],
+      "trajectory": [
+        "beautifulsoup4"
+      ],
+      "verified": true
+    },
+    {
+      "status": "complete",
+      "run_id": "841691d7-b504-43c5-909f-440479289746",
+      "manual_interventions": 0,
+      "warnings": [],
+      "errors": [],
+      "tool_calls": 1,
+      "input": "output/source-expansion/acquisition/S09_rules.html",
+      "source_id": "S09",
+      "sample": "expanded",
+      "outputs": 3,
+      "valid": 3,
+      "checks": [
+        {
+          "expected": {
+            "variable": "machinery_subsidy_purchase_deadline",
+            "value": "20"
+          },
+          "matched": true,
+          "locator": "css:.page-context .panel-success li/match:12"
+        },
+        {
+          "expected": {
+            "variable": "machinery_subsidy_inspection_deadline",
+            "value": "7"
+          },
+          "matched": true,
+          "locator": "css:.page-context .panel-success li/match:19"
+        },
+        {
+          "expected": {
+            "variable": "machinery_subsidy_reapply_wait_after_rejection",
+            "value": "6"
+          },
+          "matched": true,
+          "locator": "css:.page-context .panel-success li/match:13"
+        }
+      ],
+      "trajectory": [
+        "beautifulsoup4"
+      ],
+      "verified": true
+    },
+    {
+      "status": "complete",
+      "run_id": "16a4f3d5-3668-4f97-a8e6-2e1c3da7bf04",
+      "manual_interventions": 0,
+      "warnings": [],
+      "errors": [],
+      "tool_calls": 4,
+      "input": "output/source-expansion/acquisition/S10_sehore_scan.pdf",
+      "source_id": "S10",
+      "sample": "expanded",
+      "outputs": 15,
+      "valid": 15,
+      "checks": [
+        {
+          "expected": {
+            "variable": "forecast_rainfall",
+            "value": "0.0",
+            "period": "2026-11-24",
+            "location": "sehore"
+          },
+          "matched": true,
+          "locator": "page:1/ocr/forecast/row:2/col:2"
+        },
+        {
+          "expected": {
+            "variable": "forecast_rainfall",
+            "value": "0.0",
+            "period": "2026-11-25",
+            "location": "sehore"
+          },
+          "matched": true,
+          "locator": "page:1/ocr/forecast/row:2/col:3"
+        },
+        {
+          "expected": {
+            "variable": "forecast_rainfall",
+            "value": "0.0",
+            "period": "2026-11-26",
+            "location": "sehore"
+          },
+          "matched": true,
+          "locator": "page:1/ocr/forecast/row:2/col:4"
+        },
+        {
+          "expected": {
+            "variable": "forecast_rainfall",
+            "value": "0.0",
+            "period": "2026-11-27",
+            "location": "sehore"
+          },
+          "matched": true,
+          "locator": "page:1/ocr/forecast/row:2/col:5"
+        },
+        {
+          "expected": {
+            "variable": "forecast_rainfall",
+            "value": "0.0",
+            "period": "2026-11-28",
+            "location": "sehore"
+          },
+          "matched": true,
+          "locator": "page:1/ocr/forecast/row:2/col:6"
+        },
+        {
+          "expected": {
+            "variable": "forecast_daily_max_temperature",
+            "value": "28.3",
+            "period": "2026-11-24",
+            "location": "sehore"
+          },
+          "matched": true,
+          "locator": "page:1/ocr/forecast/row:3/col:2"
+        },
+        {
+          "expected": {
+            "variable": "forecast_daily_max_temperature",
+            "value": "28.4",
+            "period": "2026-11-25",
+            "location": "sehore"
+          },
+          "matched": true,
+          "locator": "page:1/ocr/forecast/row:3/col:3"
+        },
+        {
+          "expected": {
+            "variable": "forecast_daily_max_temperature",
+            "value": "28.6",
+            "period": "2026-11-26",
+            "location": "sehore"
+          },
+          "matched": true,
+          "locator": "page:1/ocr/forecast/row:3/col:4"
+        },
+        {
+          "expected": {
+            "variable": "forecast_daily_max_temperature",
+            "value": "28.2",
+            "period": "2026-11-27",
+            "location": "sehore"
+          },
+          "matched": true,
+          "locator": "page:1/ocr/forecast/row:3/col:5"
+        },
+        {
+          "expected": {
+            "variable": "forecast_daily_max_temperature",
+            "value": "27.6",
+            "period": "2026-11-28",
+            "location": "sehore"
+          },
+          "matched": true,
+          "locator": "page:1/ocr/forecast/row:3/col:6"
+        },
+        {
+          "expected": {
+            "variable": "forecast_daily_min_temperature",
+            "value": "11.4",
+            "period": "2026-11-24",
+            "location": "sehore"
+          },
+          "matched": true,
+          "locator": "page:1/ocr/forecast/row:4/col:2"
+        },
+        {
+          "expected": {
+            "variable": "forecast_daily_min_temperature",
+            "value": "11.2",
+            "period": "2026-11-25",
+            "location": "sehore"
+          },
+          "matched": true,
+          "locator": "page:1/ocr/forecast/row:4/col:3"
+        },
+        {
+          "expected": {
+            "variable": "forecast_daily_min_temperature",
+            "value": "10.8",
+            "period": "2026-11-26",
+            "location": "sehore"
+          },
+          "matched": true,
+          "locator": "page:1/ocr/forecast/row:4/col:4"
+        },
+        {
+          "expected": {
+            "variable": "forecast_daily_min_temperature",
+            "value": "10.5",
+            "period": "2026-11-27",
+            "location": "sehore"
+          },
+          "matched": true,
+          "locator": "page:1/ocr/forecast/row:4/col:5"
+        },
+        {
+          "expected": {
+            "variable": "forecast_daily_min_temperature",
+            "value": "10.3",
+            "period": "2026-11-28",
+            "location": "sehore"
+          },
+          "matched": true,
+          "locator": "page:1/ocr/forecast/row:4/col:6"
+        }
+      ],
+      "trajectory": [
+        "pypdf",
+        "pdfplumber.pages",
+        "tesseract.forecast_header",
+        "tesseract.forecast_cells"
+      ],
+      "verified": true
+    },
+    {
+      "status": "complete",
+      "run_id": "37cfe88c-941a-4d6a-8af4-87f84ba00b03",
+      "manual_interventions": 0,
+      "warnings": [],
+      "errors": [],
+      "tool_calls": 3,
+      "input": "output/source-expansion/acquisition/S11_wheat_rabi_2022.pdf",
+      "source_id": "S11",
+      "sample": "expanded",
+      "outputs": 156,
+      "valid": 156,
+      "checks": [
+        {
+          "expected": {
+            "variable": "area",
+            "value": "342604",
+            "location": "sehore",
+            "period": "2022-23"
+          },
+          "matched": true,
+          "locator": "page:2/table:1/row:5/col:4"
+        },
+        {
+          "expected": {
+            "variable": "production",
+            "value": "1177873",
+            "location": "sehore"
+          },
+          "matched": true,
+          "locator": "page:2/table:1/row:5/col:5"
+        },
+        {
+          "expected": {
+            "variable": "yield",
+            "value": "3.44",
+            "location": "sehore"
+          },
+          "matched": true,
+          "locator": "page:2/table:1/row:5/col:6"
+        }
+      ],
+      "trajectory": [
+        "pypdf",
+        "pdfplumber.pages",
+        "pdfplumber.extract_tables"
+      ],
+      "verified": true
+    },
+    {
+      "status": "complete",
+      "run_id": "2ba2ede9-ff56-4b3a-90b5-2e1914649782",
+      "manual_interventions": 0,
+      "warnings": [],
+      "errors": [],
+      "tool_calls": 3,
+      "input": "output/source-expansion/acquisition/S12_major_report.pdf",
+      "source_id": "S12",
+      "sample": "expanded",
+      "outputs": 52,
+      "valid": 52,
+      "checks": [
+        {
+          "expected": {
+            "variable": "production",
+            "value": "1773206",
+            "location": "dhar",
+            "source_rank": 1
+          },
+          "matched": true,
+          "locator": "page:1/table:1/row:3/col:4"
+        },
+        {
+          "expected": {
+            "variable": "production",
+            "value": "1177873",
+            "location": "sehore",
+            "source_rank": 6
+          },
+          "matched": true,
+          "locator": "page:1/table:1/row:8/col:4"
+        },
+        {
+          "expected": {
+            "variable": "production",
+            "value": "1113638",
+            "location": "vidisha",
+            "source_rank": 10
+          },
+          "matched": true,
+          "locator": "page:1/table:1/row:12/col:4"
+        }
+      ],
+      "trajectory": [
+        "pypdf",
+        "pdfplumber.pages",
+        "pdfplumber.extract_tables"
+      ],
+      "verified": true
+    },
+    {
+      "status": "complete",
+      "run_id": "07a218d5-d8d7-4f9f-a32c-dafd3dfd8924",
+      "manual_interventions": 0,
+      "warnings": [],
+      "errors": [],
+      "tool_calls": 1,
+      "input": "output/source-expansion/acquisition/S13_nccd.pdf",
+      "source_id": "S13",
+      "sample": "expanded",
+      "outputs": 6,
+      "valid": 6,
+      "checks": [
+        {
+          "expected": {
+            "variable": "area",
+            "value": "7.50",
+            "period": "2023-24",
+            "crop": "wheat"
+          },
+          "matched": true,
+          "locator": "page:84/line:4/data-column:1"
+        },
+        {
+          "expected": {
+            "variable": "production",
+            "value": "22.58",
+            "period": "2023-24",
+            "crop": "wheat"
+          },
+          "matched": true,
+          "locator": "page:84/line:4/data-column:3"
+        },
+        {
+          "expected": {
+            "variable": "yield",
+            "value": "3012",
+            "period": "2023-24",
+            "crop": "wheat"
+          },
+          "matched": true,
+          "locator": "page:84/line:4/data-column:5"
+        },
+        {
+          "expected": {
+            "variable": "area",
+            "value": "7.75",
+            "period": "2024-25",
+            "crop": "wheat"
+          },
+          "matched": true,
+          "locator": "page:84/line:4/data-column:6"
+        },
+        {
+          "expected": {
+            "variable": "production",
+            "value": "24.51",
+            "period": "2024-25",
+            "crop": "wheat"
+          },
+          "matched": true,
+          "locator": "page:84/line:4/data-column:8"
+        },
+        {
+          "expected": {
+            "variable": "yield",
+            "value": "3163",
+            "period": "2024-25",
+            "crop": "wheat"
+          },
+          "matched": true,
+          "locator": "page:84/line:4/data-column:10"
+        }
+      ],
+      "trajectory": [
+        "pypdf"
+      ],
+      "verified": true
+    },
+    {
+      "status": "complete",
+      "run_id": "7bb3c89a-f06a-4437-9023-0c97c12a50ac",
+      "manual_interventions": 0,
+      "warnings": [],
+      "errors": [],
+      "tool_calls": 1,
+      "input": "output/source-expansion/acquisition/S16_native.pdf",
+      "source_id": "S16",
+      "sample": "expanded",
+      "outputs": 1,
+      "valid": 1,
+      "checks": [
+        {
+          "expected": {
+            "variable": "pmkisan_annual_assistance",
+            "value": "6000",
+            "period": "2020-03-29",
+            "unit": "INR"
+          },
+          "matched": true,
+          "locator": "page:2/char:626-630"
+        }
+      ],
+      "trajectory": [
+        "pypdf"
+      ],
+      "verified": true
+    },
+    {
+      "status": "complete",
+      "run_id": "f5d7966e-e90c-4dcc-81bd-921cfb11652c",
+      "manual_interventions": 0,
+      "warnings": [],
+      "errors": [],
+      "tool_calls": 1,
+      "input": "output/source-expansion/acquisition/S18_coverage.html",
+      "source_id": "S18",
+      "sample": "expanded",
+      "outputs": 24,
+      "valid": 24,
+      "checks": [
+        {
+          "expected": {
+            "variable": "enam_aspirational_mandi",
+            "value": "SENDHWA",
+            "location": "barwani"
+          },
+          "matched": true,
+          "locator": "css:#madhyapradesh_list table/row:5/col:2"
+        },
+        {
+          "expected": {
+            "variable": "enam_aspirational_mandi",
+            "value": "NARSINGHGARH",
+            "location": "rajgarh"
+          },
+          "matched": true,
+          "locator": "css:#madhyapradesh_list table/row:21/col:2"
+        },
+        {
+          "expected": {
+            "variable": "enam_aspirational_mandi",
+            "value": "GANJ BASODA",
+            "location": "vidisha"
+          },
+          "matched": true,
+          "locator": "css:#madhyapradesh_list table/row:24/col:2"
+        }
+      ],
+      "trajectory": [
+        "beautifulsoup4"
+      ],
+      "verified": true
+    },
+    {
+      "status": "complete",
+      "run_id": "4ab5f02a-007c-409b-a8a2-50058a8a1601",
+      "manual_interventions": 0,
+      "warnings": [],
+      "errors": [],
+      "tool_calls": 1,
+      "input": "output/source-expansion/acquisition/S20_counts_bare.html",
+      "source_id": "S20",
+      "sample": "expanded",
+      "outputs": 3,
+      "valid": 3,
+      "checks": [
+        {
+          "expected": {
+            "variable": "enam_registered_mandis",
+            "value": "139"
+          },
+          "matched": true,
+          "locator": "css:table.unified/row:16/col:3"
+        },
+        {
+          "expected": {
+            "variable": "enam_registered_traders",
+            "value": "25938"
+          },
+          "matched": true,
+          "locator": "css:table.unified/row:16/col:4"
+        },
+        {
+          "expected": {
+            "variable": "enam_unified_licenses_issued",
+            "value": "1105"
+          },
+          "matched": true,
+          "locator": "css:table.unified/row:16/col:5"
+        }
+      ],
+      "trajectory": [
+        "beautifulsoup4"
+      ],
+      "verified": true
+    },
+    {
+      "status": "partial",
+      "run_id": "64f41549-a534-4730-b5de-3d92471e4d82",
+      "manual_interventions": 0,
+      "warnings": [
+        "16 APY cells or row identifiers could not be validated"
+      ],
+      "errors": [],
+      "tool_calls": 3,
+      "input": "output/source-expansion/acquisition/S11_summer_2019_rice.pdf",
+      "source_id": "S11",
+      "sample": "missingness follow-up",
+      "outputs": 44,
+      "valid": 44,
+      "checks": [
+        {
+          "expected": {
+            "variable": "area",
+            "value": "98",
+            "location": "agar malwa",
+            "period": "2019-20"
+          },
+          "matched": true,
+          "locator": "page:1/table:1/row:4/col:4"
+        }
+      ],
+      "trajectory": [
+        "pypdf",
+        "pdfplumber.pages",
+        "pdfplumber.extract_tables"
+      ],
+      "verified": true
+    },
+    {
+      "status": "partial",
+      "run_id": "dba0d0fd-9195-473c-a385-2203770169c2",
+      "manual_interventions": 0,
+      "warnings": [
+        "10 APY cells or row identifiers could not be validated"
+      ],
+      "errors": [],
+      "tool_calls": 3,
+      "input": "output/source-expansion/acquisition/S11_summer_2019_maize.pdf",
+      "source_id": "S11",
+      "sample": "missingness follow-up",
+      "outputs": 83,
+      "valid": 83,
+      "checks": [
+        {
+          "expected": {
+            "variable": "area",
+            "value": "30",
+            "location": "anuppur",
+            "period": "2019-20"
+          },
+          "matched": true,
+          "locator": "page:1/table:1/row:6/col:4"
+        }
+      ],
+      "trajectory": [
+        "pypdf",
+        "pdfplumber.pages",
+        "pdfplumber.extract_tables"
+      ],
+      "verified": true
+    },
+    {
+      "status": "failed",
+      "run_id": "94b1443f-b973-4fbd-bc3c-e29144041fa9",
+      "manual_interventions": 0,
+      "warnings": [],
+      "errors": [
+        "ExtractionError: tables: Table agent found no table values it could map (crop/place/period/value)"
+      ],
+      "tool_calls": 1,
+      "input": "output/source-expansion/acquisition/S03_rates.html",
+      "source_id": "S03",
+      "sample": "empty public result",
+      "outputs": 0,
+      "valid": 0,
+      "checks": [],
+      "trajectory": [
+        "beautifulsoup4.tables"
+      ],
+      "verified": true
+    },
+    {
+      "status": "failed",
+      "run_id": "1d08c921-9100-4a59-9011-954e05d408cf",
+      "manual_interventions": 0,
+      "warnings": [],
+      "errors": [
+        "ExtractionError: tables: Table agent found no table values it could map (crop/place/period/value)"
+      ],
+      "tool_calls": 1,
+      "input": "output/source-expansion/acquisition/S19_online_bare.html",
+      "source_id": "S19",
+      "sample": "empty public result",
+      "outputs": 0,
+      "valid": 0,
+      "checks": [],
+      "trajectory": [
+        "beautifulsoup4.tables"
+      ],
+      "verified": true
+    }
+  ],
+  "verified": 17,
+  "coverage_candidates_verified": [
+    "S08",
+    "S09",
+    "S10",
+    "S12",
+    "S13",
+    "S16",
+    "S18",
+    "S20"
+  ]
+}

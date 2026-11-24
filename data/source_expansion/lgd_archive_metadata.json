@@ -1,0 +1,13 @@
+{
+  "authority": "Ministry of Panchayati Raj, Local Government Directory",
+  "authority_resource": "https://www.data.gov.in/resource/local-government-directory-lgd-districts",
+  "repackaged_by": "Public independent LGD export archive",
+  "archive_parquet_url": "https://ramseraph.github.io/opendata/lgd/data/districts.8edd1bf95e5bfeec.parquet",
+  "archive_parquet_sha256": "8edd1bf95e5bfeec468c23075cc60360cab2b55d955a60e2e330462cfe84b97f",
+  "observed_on": "2026-11-23",
+  "original_csv_sha256_reported_by_archive": "08ac67303317c0cd9b84becefadebca73209eefbf6f7e87a9876daff5dcb5f10",
+  "subset_sha256": "cd9702f372d25ff5f6732e53d96be5c4785f48f097931842027d51f2bdda4b71",
+  "transformation": "Retain state code 23 and the four official district/state label and code columns",
+  "direct_ministry_export_retrieved": false,
+  "terms": "Government catalog identifies NDSAP. No separate permission claim for files outside the listed archive and catalog."
+}

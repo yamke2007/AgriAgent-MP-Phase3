@@ -1,0 +1,39 @@
+{
+  "cases": [
+    {
+      "input": "data/raw/icar_kvk.html",
+      "run_id": "4542eb7a-e5de-4892-afa2-1e21f1ea1caa",
+      "input_sha256": "4a2a2b4deb8d58cedc8d9bba5333c2db2f651480d4339e169c5a6eecaa940beb",
+      "status": "complete",
+      "errors": [],
+      "warnings": [],
+      "run_sha256": "d8448cd91d5810098c170df3db6238e92df282067b79136c5d25fae394a5d30a",
+      "manual_interventions": 0
+    },
+    {
+      "input": "data/raw/msp_scheme.html",
+      "run_id": "4e88b43d-ca47-4770-8826-6a47ef4be810",
+      "input_sha256": "94c35bb27ef193ff23118ddd78a80a8f26fb0637ffec814fc6c96731cc5b8074",
+      "status": "partial",
+      "errors": [],
+      "warnings": [],
+      "run_sha256": "6db30b9799997b37f6f0b1c37b62f55f3da9140649c45758de65a83b605fd32e",
+      "manual_interventions": 0
+    },
+    {
+      "input": "data/raw/evikas_calculator.html",
+      "run_id": "6c70485d-fe13-423a-95d6-e91903876b86",
+      "input_sha256": "6be6bc616874b6575a31d4fc99080cf056919fb81797cc5fa44d7f59e51bc743",
+      "status": "failed",
+      "errors": [
+        "ExtractionError: Unrendered dynamic template: export actual results; placeholders are not observations"
+      ],
+      "warnings": [],
+      "run_sha256": "22f5b47ef25c38d1a43fdbc368ed09810d88ff04cd30f469b1f4cc23b74e0b7e",
+      "manual_interventions": 0
+    }
+  ],
+  "metric": "M5",
+  "status": "awaiting_key",
+  "f1": null
+}

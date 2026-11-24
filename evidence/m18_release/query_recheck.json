@@ -1,0 +1,433 @@
+{
+  "results": {
+    "q01": [
+      {
+        "district": "dhar",
+        "tonnes": 1773206.0
+      },
+      {
+        "district": "ujjain",
+        "tonnes": 1624927.0
+      },
+      {
+        "district": "narmadapuram",
+        "tonnes": 1388453.0
+      },
+      {
+        "district": "chhindwara",
+        "tonnes": 1385078.0
+      },
+      {
+        "district": "rajgarh",
+        "tonnes": 1217446.0
+      }
+    ],
+    "q02": [
+      {
+        "district": "dhar",
+        "tonnes_per_ha": 1.605
+      },
+      {
+        "district": "chhindwara",
+        "tonnes_per_ha": 1.501
+      },
+      {
+        "district": "gwalior",
+        "tonnes_per_ha": 1.413
+      },
+      {
+        "district": "chhatarpur",
+        "tonnes_per_ha": 1.405
+      },
+      {
+        "district": "narsinghpur",
+        "tonnes_per_ha": 1.346
+      }
+    ],
+    "q03": [
+      {
+        "year": 2016,
+        "tonnes": 21916000.0,
+        "districts": 51
+      },
+      {
+        "year": 2017,
+        "tonnes": 20019950.0,
+        "districts": 51
+      },
+      {
+        "year": 2018,
+        "tonnes": 25276038.0,
+        "districts": 51
+      },
+      {
+        "year": 2019,
+        "tonnes": 37507219.0,
+        "districts": 52
+      },
+      {
+        "year": 2020,
+        "tonnes": 35666886.0,
+        "districts": 52
+      },
+      {
+        "year": 2021,
+        "tonnes": 33031469.0,
+        "districts": 52
+      },
+      {
+        "year": 2022,
+        "tonnes": 34977038.0,
+        "districts": 52
+      }
+    ],
+    "q04": [
+      {
+        "year": 2016,
+        "tonnes_per_ha": 3.388
+      },
+      {
+        "year": 2017,
+        "tonnes_per_ha": 3.528
+      },
+      {
+        "year": 2018,
+        "tonnes_per_ha": 3.089
+      },
+      {
+        "year": 2019,
+        "tonnes_per_ha": 3.625
+      },
+      {
+        "year": 2020,
+        "tonnes_per_ha": 3.298
+      },
+      {
+        "year": 2021,
+        "tonnes_per_ha": 3.438
+      },
+      {
+        "year": 2022,
+        "tonnes_per_ha": 3.438
+      }
+    ],
+    "q05": [
+      {
+        "district": "sehore",
+        "year": 2022,
+        "tonnes": 1177873.0,
+        "source_url": "https://raw.githubusercontent.com/Ankush-Manhas840/crop-yield-prediction/f42942ca9c1ecbc2b7da92147d80dc9aafcddf17/data/crop_production.csv",
+        "original_locator": "csv:line:397682/column:Production",
+        "local_snapshot": "data/production/mp_crop_production_2016_2022.csv",
+        "local_locator": "csv:line:1845/column:Production",
+        "file_sha256": "9f6bce52f00a2039e32f5281622e2ad4090953492f1376992f234b6324157642"
+      }
+    ],
+    "q06": [
+      {
+        "crop": "maize",
+        "tonnes_per_ha": 3.191,
+        "districts": 48
+      },
+      {
+        "crop": "rice",
+        "tonnes_per_ha": 3.411,
+        "districts": 52
+      },
+      {
+        "crop": "soybean",
+        "tonnes_per_ha": 1.06,
+        "districts": 52
+      }
+    ],
+    "q07": [
+      {
+        "district": "dhar",
+        "change_tonnes": 1022206.0
+      },
+      {
+        "district": "chhindwara",
+        "change_tonnes": 807078.0
+      },
+      {
+        "district": "ratlam",
+        "change_tonnes": 784133.0
+      },
+      {
+        "district": "seoni",
+        "change_tonnes": 669789.0
+      },
+      {
+        "district": "rajgarh",
+        "change_tonnes": 646446.0
+      }
+    ],
+    "q08": [
+      {
+        "maize_higher": 48,
+        "paired_districts": 48
+      }
+    ],
+    "q09": [
+      {
+        "crop": "chickpea",
+        "year": 2016,
+        "districts": 51
+      },
+      {
+        "crop": "chickpea",
+        "year": 2017,
+        "districts": 51
+      },
+      {
+        "crop": "chickpea",
+        "year": 2018,
+        "districts": 51
+      },
+      {
+        "crop": "chickpea",
+        "year": 2019,
+        "districts": 52
+      },
+      {
+        "crop": "chickpea",
+        "year": 2020,
+        "districts": 52
+      },
+      {
+        "crop": "chickpea",
+        "year": 2021,
+        "districts": 52
+      },
+      {
+        "crop": "chickpea",
+        "year": 2022,
+        "districts": 52
+      },
+      {
+        "crop": "maize",
+        "year": 2016,
+        "districts": 46
+      },
+      {
+        "crop": "maize",
+        "year": 2017,
+        "districts": 50
+      },
+      {
+        "crop": "maize",
+        "year": 2018,
+        "districts": 51
+      },
+      {
+        "crop": "maize",
+        "year": 2019,
+        "districts": 51
+      },
+      {
+        "crop": "maize",
+        "year": 2020,
+        "districts": 51
+      },
+      {
+        "crop": "maize",
+        "year": 2021,
+        "districts": 51
+      },
+      {
+        "crop": "maize",
+        "year": 2022,
+        "districts": 48
+      },
+      {
+        "crop": "rice",
+        "year": 2016,
+        "districts": 34
+      },
+      {
+        "crop": "rice",
+        "year": 2017,
+        "districts": 49
+      },
+      {
+        "crop": "rice",
+        "year": 2018,
+        "districts": 51
+      },
+      {
+        "crop": "rice",
+        "year": 2019,
+        "districts": 50
+      },
+      {
+        "crop": "rice",
+        "year": 2020,
+        "districts": 52
+      },
+      {
+        "crop": "rice",
+        "year": 2021,
+        "districts": 51
+      },
+      {
+        "crop": "rice",
+        "year": 2022,
+        "districts": 52
+      },
+      {
+        "crop": "soybean",
+        "year": 2016,
+        "districts": 45
+      },
+      {
+        "crop": "soybean",
+        "year": 2017,
+        "districts": 50
+      },
+      {
+        "crop": "soybean",
+        "year": 2018,
+        "districts": 50
+      },
+      {
+        "crop": "soybean",
+        "year": 2019,
+        "districts": 51
+      },
+      {
+        "crop": "soybean",
+        "year": 2020,
+        "districts": 51
+      },
+      {
+        "crop": "soybean",
+        "year": 2021,
+        "districts": 48
+      },
+      {
+        "crop": "soybean",
+        "year": 2022,
+        "districts": 52
+      },
+      {
+        "crop": "wheat",
+        "year": 2016,
+        "districts": 51
+      },
+      {
+        "crop": "wheat",
+        "year": 2017,
+        "districts": 51
+      },
+      {
+        "crop": "wheat",
+        "year": 2018,
+        "districts": 51
+      },
+      {
+        "crop": "wheat",
+        "year": 2019,
+        "districts": 52
+      },
+      {
+        "crop": "wheat",
+        "year": 2020,
+        "districts": 52
+      },
+      {
+        "crop": "wheat",
+        "year": 2021,
+        "districts": 52
+      },
+      {
+        "crop": "wheat",
+        "year": 2022,
+        "districts": 52
+      }
+    ],
+    "q10": [
+      {
+        "crop": "rice",
+        "period": "2013-14",
+        "lakh_tonnes": 53.2,
+        "pdf": "data/raw/mp_economic_survey.pdf",
+        "page": "page:7"
+      },
+      {
+        "crop": "rice",
+        "period": "2022-23",
+        "lakh_tonnes": 131.8,
+        "pdf": "data/raw/mp_economic_survey.pdf",
+        "page": "page:7"
+      },
+      {
+        "crop": "wheat",
+        "period": "2013-14",
+        "lakh_tonnes": 174.8,
+        "pdf": "data/raw/mp_economic_survey.pdf",
+        "page": "page:7"
+      },
+      {
+        "crop": "wheat",
+        "period": "2022-23",
+        "lakh_tonnes": 352.7,
+        "pdf": "data/raw/mp_economic_survey.pdf",
+        "page": "page:7"
+      }
+    ]
+  },
+  "checks": {
+    "q01": {
+      "passed": true,
+      "rows": 5,
+      "category": "spatial"
+    },
+    "q02": {
+      "passed": true,
+      "rows": 5,
+      "category": "spatial"
+    },
+    "q03": {
+      "passed": true,
+      "rows": 7,
+      "category": "temporal"
+    },
+    "q04": {
+      "passed": true,
+      "rows": 7,
+      "category": "temporal"
+    },
+    "q05": {
+      "passed": true,
+      "rows": 1,
+      "category": "provenance"
+    },
+    "q06": {
+      "passed": true,
+      "rows": 3,
+      "category": "comparison"
+    },
+    "q07": {
+      "passed": true,
+      "rows": 5,
+      "category": "spatial"
+    },
+    "q08": {
+      "passed": true,
+      "rows": 1,
+      "category": "comparison"
+    },
+    "q09": {
+      "passed": true,
+      "rows": 35,
+      "category": "coverage"
+    },
+    "q10": {
+      "passed": true,
+      "rows": 4,
+      "category": "provenance"
+    }
+  },
+  "passed": 10,
+  "total": 10
+}

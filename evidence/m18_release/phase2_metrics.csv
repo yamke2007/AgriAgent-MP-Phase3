@@ -1,0 +1,96 @@
+metric_id,scope,value,numerator,denominator,floor,target,direction,status,evidence,notes
+M1,end_to_end,1.0,23,23,0.5,1,higher,measured_local,docs/source_agent_map.csv,
+M2,end_to_end,0.2608695652173913,6,23,0.2,0.6,higher,measured_local,docs/source_agent_map.csv,
+M3,directory,1.0,60,60,0.5,0.85,higher,measured_local,results.json,"Field tuples; source-derived fragments; CSV cases measure import, not PDF extraction"
+M4,directory,1.0,30,30,0.6,0.95,higher,original_source_subset,results.json,Resolved original HTML rows and available CSV archives. Checked 30/30 records; evaluator verification pending
+M6,directory,1.0,10,10,0.6,0.9,higher,measured_local,results.json,Deterministic exact reference comparison; no LLM judge / external service
+M7,directory,1.0,10,10,0.6,0.9,higher,measured_local,results.json,Deterministic exact reference comparison; no LLM judge / external service
+M8,directory,1.0,10,10,0.5,0.8,higher,measured_local,results.json,"AgentEvals create_trajectory_match_evaluator, mode=strict, tool_args=exact"
+M9,directory,1.0,10,10,0.5,0.9,higher,measured_local,results.json,"All records valid, explicit missing codes allowed; required value cannot be missing"
+M10,directory,1.0,30,30,0.7,0.95,higher,measured_local,results.json,"Match variable, context, unit and value in resolved input cells; no LLM judge"
+M3,Document,1.0,80,80,0.5,0.85,higher,measured_local,results.json,"Field tuples; source-derived fragments; CSV cases measure import, not PDF extraction"
+M4,Document,1.0,40,40,0.6,0.95,higher,original_source_subset,results.json,Resolved original HTML rows and available CSV archives. Checked 40/40 records; evaluator verification pending
+M6,Document,1.0,20,20,0.6,0.9,higher,measured_local,results.json,Deterministic exact reference comparison; no LLM judge / external service
+M7,Document,1.0,20,20,0.6,0.9,higher,measured_local,results.json,Deterministic exact reference comparison; no LLM judge / external service
+M8,Document,1.0,20,20,0.5,0.8,higher,measured_local,results.json,"AgentEvals create_trajectory_match_evaluator, mode=strict, tool_args=exact"
+M9,Document,1.0,20,20,0.5,0.9,higher,measured_local,results.json,"All records valid, explicit missing codes allowed; required value cannot be missing"
+M10,Document,1.0,40,40,0.7,0.95,higher,measured_local,results.json,"Match variable, context, unit and value in resolved input cells; no LLM judge"
+M3,end_to_end,1.0,804,804,0.5,0.85,higher,measured_local,results.json,"Field tuples; source-derived fragments; CSV cases measure import, not PDF extraction"
+M4,end_to_end,1.0,392,392,0.6,0.95,higher,original_source_subset,results.json,Resolved original HTML rows and available CSV archives. Checked 392/402 records; evaluator verification pending
+M6,end_to_end,1.0,52,52,0.6,0.9,higher,measured_local,results.json,Deterministic exact reference comparison; no LLM judge / external service
+M7,end_to_end,1.0,52,52,0.6,0.9,higher,measured_local,results.json,Deterministic exact reference comparison; no LLM judge / external service
+M8,end_to_end,1.0,52,52,0.5,0.8,higher,measured_local,results.json,"AgentEvals create_trajectory_match_evaluator, mode=strict, tool_args=exact"
+M9,end_to_end,1.0,52,52,0.5,0.9,higher,measured_local,results.json,"All records valid, explicit missing codes allowed; required value cannot be missing"
+M10,end_to_end,1.0,402,402,0.7,0.95,higher,measured_local,results.json,"Match variable, context, unit and value in resolved input cells; no LLM judge"
+M3,language:en,1.0,784,784,0.5,0.85,higher,measured_local,results.json,"Field tuples; source-derived fragments; CSV cases measure import, not PDF extraction"
+M4,language:en,1.0,382,382,0.6,0.95,higher,original_source_subset,results.json,Resolved original HTML rows and available CSV archives. Checked 382/392 records; evaluator verification pending
+M6,language:en,1.0,42,42,0.6,0.9,higher,measured_local,results.json,Deterministic exact reference comparison; no LLM judge / external service
+M7,language:en,1.0,42,42,0.6,0.9,higher,measured_local,results.json,Deterministic exact reference comparison; no LLM judge / external service
+M8,language:en,1.0,42,42,0.5,0.8,higher,measured_local,results.json,"AgentEvals create_trajectory_match_evaluator, mode=strict, tool_args=exact"
+M9,language:en,1.0,42,42,0.5,0.9,higher,measured_local,results.json,"All records valid, explicit missing codes allowed; required value cannot be missing"
+M10,language:en,1.0,392,392,0.7,0.95,higher,measured_local,results.json,"Match variable, context, unit and value in resolved input cells; no LLM judge"
+M3,scheme,1.0,20,20,0.5,0.85,higher,measured_local,results.json,"Field tuples; source-derived fragments; CSV cases measure import, not PDF extraction"
+M4,scheme,1.0,10,10,0.6,0.95,higher,original_source_subset,results.json,Resolved original HTML rows and available CSV archives. Checked 10/10 records; evaluator verification pending
+M6,scheme,1.0,10,10,0.6,0.9,higher,measured_local,results.json,Deterministic exact reference comparison; no LLM judge / external service
+M7,scheme,1.0,10,10,0.6,0.9,higher,measured_local,results.json,Deterministic exact reference comparison; no LLM judge / external service
+M8,scheme,1.0,10,10,0.5,0.8,higher,measured_local,results.json,"AgentEvals create_trajectory_match_evaluator, mode=strict, tool_args=exact"
+M9,scheme,1.0,10,10,0.5,0.9,higher,measured_local,results.json,"All records valid, explicit missing codes allowed; required value cannot be missing"
+M10,scheme,1.0,10,10,0.7,0.95,higher,measured_local,results.json,"Match variable, context, unit and value in resolved input cells; no LLM judge"
+M3,language:hi,1.0,20,20,0.5,0.85,higher,measured_local,results.json,"Field tuples; source-derived fragments; CSV cases measure import, not PDF extraction"
+M4,language:hi,1.0,10,10,0.6,0.95,higher,original_source_subset,results.json,Resolved original HTML rows and available CSV archives. Checked 10/10 records; evaluator verification pending
+M6,language:hi,1.0,10,10,0.6,0.9,higher,measured_local,results.json,Deterministic exact reference comparison; no LLM judge / external service
+M7,language:hi,1.0,10,10,0.6,0.9,higher,measured_local,results.json,Deterministic exact reference comparison; no LLM judge / external service
+M8,language:hi,1.0,10,10,0.5,0.8,higher,measured_local,results.json,"AgentEvals create_trajectory_match_evaluator, mode=strict, tool_args=exact"
+M9,language:hi,1.0,10,10,0.5,0.9,higher,measured_local,results.json,"All records valid, explicit missing codes allowed; required value cannot be missing"
+M10,language:hi,1.0,10,10,0.7,0.95,higher,measured_local,results.json,"Match variable, context, unit and value in resolved input cells; no LLM judge"
+M3,statistics,1.0,20,20,0.5,0.85,higher,measured_local,results.json,"Field tuples; source-derived fragments; CSV cases measure import, not PDF extraction"
+M4,statistics,,0,0,0.6,0.95,higher,original_source_subset,results.json,Resolved original HTML rows and available CSV archives. Checked 0/10 records; evaluator verification pending
+M6,statistics,1.0,10,10,0.6,0.9,higher,measured_local,results.json,Deterministic exact reference comparison; no LLM judge / external service
+M7,statistics,1.0,10,10,0.6,0.9,higher,measured_local,results.json,Deterministic exact reference comparison; no LLM judge / external service
+M8,statistics,1.0,10,10,0.5,0.8,higher,measured_local,results.json,"AgentEvals create_trajectory_match_evaluator, mode=strict, tool_args=exact"
+M9,statistics,1.0,10,10,0.5,0.9,higher,measured_local,results.json,"All records valid, explicit missing codes allowed; required value cannot be missing"
+M10,statistics,1.0,10,10,0.7,0.95,higher,measured_local,results.json,"Match variable, context, unit and value in resolved input cells; no LLM judge"
+M3,Database,1.0,724,724,0.5,0.85,higher,measured_local,results.json,"Field tuples; source-derived fragments; CSV cases measure import, not PDF extraction"
+M4,Database,1.0,352,352,0.6,0.95,higher,original_source_subset,results.json,Resolved original HTML rows and available CSV archives. Checked 352/362 records; evaluator verification pending
+M6,Database,1.0,32,32,0.6,0.9,higher,measured_local,results.json,Deterministic exact reference comparison; no LLM judge / external service
+M7,Database,1.0,32,32,0.6,0.9,higher,measured_local,results.json,Deterministic exact reference comparison; no LLM judge / external service
+M8,Database,1.0,32,32,0.5,0.8,higher,measured_local,results.json,"AgentEvals create_trajectory_match_evaluator, mode=strict, tool_args=exact"
+M9,Database,1.0,32,32,0.5,0.9,higher,measured_local,results.json,"All records valid, explicit missing codes allowed; required value cannot be missing"
+M10,Database,1.0,362,362,0.7,0.95,higher,measured_local,results.json,"Match variable, context, unit and value in resolved input cells; no LLM judge"
+M3,tables,1.0,704,704,0.5,0.85,higher,measured_local,results.json,"Field tuples; source-derived fragments; CSV cases measure import, not PDF extraction"
+M4,tables,1.0,352,352,0.6,0.95,higher,original_source_subset,results.json,Resolved original HTML rows and available CSV archives. Checked 352/352 records; evaluator verification pending
+M6,tables,1.0,22,22,0.6,0.9,higher,measured_local,results.json,Deterministic exact reference comparison; no LLM judge / external service
+M7,tables,1.0,22,22,0.6,0.9,higher,measured_local,results.json,Deterministic exact reference comparison; no LLM judge / external service
+M8,tables,1.0,22,22,0.5,0.8,higher,measured_local,results.json,"AgentEvals create_trajectory_match_evaluator, mode=strict, tool_args=exact"
+M9,tables,1.0,22,22,0.5,0.9,higher,measured_local,results.json,"All records valid, explicit missing codes allowed; required value cannot be missing"
+M10,tables,1.0,352,352,0.7,0.95,higher,measured_local,results.json,"Match variable, context, unit and value in resolved input cells; no LLM judge"
+M3,split:development,1.0,384,384,0.5,0.85,higher,measured_local,results.json,"Field tuples; source-derived fragments; CSV cases measure import, not PDF extraction"
+M4,split:development,1.0,192,192,0.6,0.95,higher,original_source_subset,results.json,Resolved original HTML rows and available CSV archives. Checked 192/192 records; evaluator verification pending
+M6,split:development,1.0,12,12,0.6,0.9,higher,measured_local,results.json,Deterministic exact reference comparison; no LLM judge / external service
+M7,split:development,1.0,12,12,0.6,0.9,higher,measured_local,results.json,Deterministic exact reference comparison; no LLM judge / external service
+M8,split:development,1.0,12,12,0.5,0.8,higher,measured_local,results.json,"AgentEvals create_trajectory_match_evaluator, mode=strict, tool_args=exact"
+M9,split:development,1.0,12,12,0.5,0.9,higher,measured_local,results.json,"All records valid, explicit missing codes allowed; required value cannot be missing"
+M10,split:development,1.0,192,192,0.7,0.95,higher,measured_local,results.json,"Match variable, context, unit and value in resolved input cells; no LLM judge"
+M3,split:heldout,1.0,320,320,0.5,0.85,higher,measured_local,results.json,"Field tuples; source-derived fragments; CSV cases measure import, not PDF extraction"
+M4,split:heldout,1.0,160,160,0.6,0.95,higher,original_source_subset,results.json,Resolved original HTML rows and available CSV archives. Checked 160/160 records; evaluator verification pending
+M6,split:heldout,1.0,10,10,0.6,0.9,higher,measured_local,results.json,Deterministic exact reference comparison; no LLM judge / external service
+M7,split:heldout,1.0,10,10,0.6,0.9,higher,measured_local,results.json,Deterministic exact reference comparison; no LLM judge / external service
+M8,split:heldout,1.0,10,10,0.5,0.8,higher,measured_local,results.json,"AgentEvals create_trajectory_match_evaluator, mode=strict, tool_args=exact"
+M9,split:heldout,1.0,10,10,0.5,0.9,higher,measured_local,results.json,"All records valid, explicit missing codes allowed; required value cannot be missing"
+M10,split:heldout,1.0,160,160,0.7,0.95,higher,measured_local,results.json,"Match variable, context, unit and value in resolved input cells; no LLM judge"
+M3,macro_agents,1.0,,4,0.5,0.85,higher,measured_local,results.json,Arithmetic mean across implemented agents; 4/4 scored
+M4,macro_agents,,,4,0.6,0.95,higher,incomplete_coverage,results.json,Arithmetic mean across implemented agents; 3/4 scored
+M6,macro_agents,1.0,,4,0.6,0.9,higher,measured_local,results.json,Arithmetic mean across implemented agents; 4/4 scored
+M7,macro_agents,1.0,,4,0.6,0.9,higher,measured_local,results.json,Arithmetic mean across implemented agents; 4/4 scored
+M8,macro_agents,1.0,,4,0.5,0.8,higher,measured_local,results.json,Arithmetic mean across implemented agents; 4/4 scored
+M9,macro_agents,1.0,,4,0.5,0.9,higher,measured_local,results.json,Arithmetic mean across implemented agents; 4/4 scored
+M10,macro_agents,1.0,,4,0.7,0.95,higher,measured_local,results.json,Arithmetic mean across implemented agents; 4/4 scored
+M5,surprise,,,,0.3,0.75,higher,awaiting_instructor,results.json,Requires three instructor items and checked answer key
+M11,end_to_end,1.0,1,1,0.5,0.9,higher,synthetic_fixture_only,workflow_results.json,Expected-complete multi-agent cases only; local injected fault recovered: True; live LangSmith pending
+M12,end_to_end,1.0,52,52,0.3,0.8,higher,measured_local,automation.csv,Positive benchmark cohort; see separate robustness and release traces
+M13,end_to_end,0.0,0,52,0.5,0.1,lower,measured_local,automation.csv,Reference call count from the declared case trajectories; LLM calls are included in tool_calls; retries=0
+M14,end_to_end,1.0,3980,3980,0.8,1,higher,measured_local,output\release\agriagent.sqlite,Explicit MISSING codes count as filled; not evidence of known values
+M15,end_to_end,0.9987437185929648,3975,3980,0.7,0.98,higher,measured_local,output\release\agriagent.sqlite,Declared rules; no supplied LGD registry; location name accuracy unverified
+M16,end_to_end,0.0,0,3980,0.1,0,lower,measured_local,output\release\agriagent.sqlite,"Rows in duplicate natural-key groups / stored rows; insertion duplicates rejected, attempts retained"
+M17,end_to_end,,,,1,3,higher,awaiting_instructor,results.json,Evaluator randomly selects 3 database rows live
+M18,end_to_end,0.6774193548387096,,,,,higher,scored_workflow_export,evidence/m18_release/adapter_comparison.csv,Ten frozen Agmarknet CSV cases; 160 reference fields; F1(adapter) minus F1(base). Independent human review pending.

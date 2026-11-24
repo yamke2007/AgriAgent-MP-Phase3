@@ -1,0 +1,110 @@
+{
+  "archive_sha256": "20d0b2d24b8942d7a6e91f3287a3541081c30006a713054bbbc3954ba597665c",
+  "export_files_matching_archive": 18,
+  "manifest_hashes_verified": 17,
+  "base": "Qwen/Qwen2.5-1.5B-Instruct@989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "gpu": "Tesla T4",
+  "quantization": {
+    "bits": 4,
+    "quant_type": "nf4",
+    "compute": "float16"
+  },
+  "lora": {
+    "r": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.05,
+    "task_type": "CAUSAL_LM",
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj"
+    ]
+  },
+  "decode": {
+    "do_sample": false,
+    "max_new_tokens": 1280
+  },
+  "training_log": {
+    "optimizer_steps": 27,
+    "epochs": 3.0,
+    "trainer_seconds": 267.1117,
+    "first_logged_loss": 0.7282,
+    "final_logged_loss": 0.2829,
+    "mean_train_loss": 0.44152440406658033
+  },
+  "adapter_weights": {
+    "tensor_count": 224,
+    "parameters": 4358144,
+    "nonzero_lora_B_tensors": 112,
+    "all_values_finite": true,
+    "sha256": "589b4c8bce67b16b82bfb102b887d9f754db875151bc008378c4e7e2e867571d"
+  },
+  "cohort": {
+    "training_examples": 72,
+    "training_target_fields": 1152,
+    "heldout_cases": 10,
+    "heldout_reference_fields": 160,
+    "training_parent_years": [
+      "2008",
+      "2009",
+      "2010"
+    ],
+    "heldout_parent_years": [
+      "2011",
+      "2013",
+      "2017"
+    ],
+    "case_digest": "250147089c3df711f7a4676b9b4b75565aeb126fb3874d694bed73d69a5616a7",
+    "case_lock_sha256": "f2722edbe9e6e895f1035b5a001ae1b14306ec2c593618f36459c747cd1f5d04",
+    "training_examples_sha256": "741cfef3663e356793e5b35b5be3ae152312ef509720162ee8c585c8b69331ab",
+    "training_exact_input_and_parent_overlap": 0,
+    "references_present_in_colab_input_zip": false
+  },
+  "scores": {
+    "base": {
+      "tp": 0,
+      "fp": 56,
+      "fn": 160,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "decode_failures": [
+        "tables_19"
+      ],
+      "complete_cases": [],
+      "prediction_fields": {
+        "Arrivals (Tonnes)": 36,
+        "Min Price (Rs./Quintal)": 6,
+        "Max Price (Rs./Quintal)": 6,
+        "Modal Price (Rs./Quintal)": 6,
+        "Variety": 1,
+        "Group": 1
+      }
+    },
+    "adapter": {
+      "tp": 84,
+      "fp": 4,
+      "fn": 76,
+      "precision": 0.9545454545454546,
+      "recall": 0.525,
+      "f1": 0.6774193548387096,
+      "decode_failures": [],
+      "complete_cases": [
+        "tables_14",
+        "tables_18",
+        "tables_19",
+        "tables_22"
+      ],
+      "prediction_fields": {
+        "arrivals": 22,
+        "min_price": 22,
+        "max_price": 22,
+        "modal_price": 22
+      }
+    }
+  },
+  "m18_delta_f1": 0.6774193548387096,
+  "scope": "One agent, English Agmarknet CSV cohort. One-to-one tuple scoring of unmodified prediction files.",
+  "limits": "Export files and logs were verified locally. Base-model pretraining overlap and independent human reference review are unresolved."
+}

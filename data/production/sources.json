@@ -1,0 +1,17 @@
+{
+  "retrieved": "2026-11-24",
+  "production": {
+    "catalog": "https://www.data.gov.in/resource/district-wise-season-wise-crop-production-statistics-1997",
+    "retrieval_url": "https://raw.githubusercontent.com/Ankush-Manhas840/crop-yield-prediction/f42942ca9c1ecbc2b7da92147d80dc9aafcddf17/data/crop_production.csv",
+    "parent_sha256": "9c71fa3e8424e7d4dd6fd8241592edac8819bd4d21067b4e794fc163d7224713",
+    "selected_rows": 1899,
+    "license_status": "OGD catalog lists Government Open Data License India. Mirror byte identity with the portal export is unverified."
+  },
+  "boundary": {
+    "retrieval_url": "https://services2.arcgis.com/fQDJ6zNJPJ0yhFjv/ArcGIS/rest/services/IND_AdminBoundary/FeatureServer/2/query?where=UPPER%28state%29+%3D+%27MADHYA+PRADESH%27&outFields=objectid%2Cstate%2Cdistrict&outSR=4326&geometryPrecision=5&maxAllowableOffset=0.015&f=geojson",
+    "provider": "Survey of India via Esri India",
+    "vintage": "Published service last edited April 2021",
+    "districts": 52,
+    "license_status": "Copyright Survey of India. Public query access; redistribution terms unverified."
+  }
+}

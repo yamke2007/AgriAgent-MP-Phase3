@@ -1,0 +1,295 @@
+{
+  "coverage": {
+    "eligible_district_crop_year_season_rows": 1886,
+    "years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022
+    ],
+    "districts": 52
+  },
+  "wheat_balanced_panel": {
+    "method": "Rabi district intersection across all years. Crop-level yield is summed production divided by summed area.",
+    "districts": [
+      "agar malwa",
+      "alirajpur",
+      "anuppur",
+      "ashoknagar",
+      "balaghat",
+      "barwani",
+      "betul",
+      "bhind",
+      "bhopal",
+      "burhanpur",
+      "chhatarpur",
+      "chhindwara",
+      "damoh",
+      "datia",
+      "dewas",
+      "dhar",
+      "dindori",
+      "guna",
+      "gwalior",
+      "harda",
+      "indore",
+      "jabalpur",
+      "jhabua",
+      "katni",
+      "khandwa",
+      "khargone",
+      "mandla",
+      "mandsaur",
+      "morena",
+      "narmadapuram",
+      "narsinghpur",
+      "neemuch",
+      "panna",
+      "raisen",
+      "rajgarh",
+      "ratlam",
+      "rewa",
+      "sagar",
+      "satna",
+      "sehore",
+      "seoni",
+      "shahdol",
+      "shajapur",
+      "sheopur",
+      "shivpuri",
+      "sidhi",
+      "singrauli",
+      "tikamgarh",
+      "ujjain",
+      "umaria",
+      "vidisha"
+    ],
+    "series": [
+      {
+        "year": 2016,
+        "districts": 51,
+        "tonnes": 21916000.0,
+        "weighted_tonnes_per_ha": 3.4121127199128134
+      },
+      {
+        "year": 2017,
+        "districts": 51,
+        "tonnes": 20019950.0,
+        "weighted_tonnes_per_ha": 3.4499429603410663
+      },
+      {
+        "year": 2018,
+        "districts": 51,
+        "tonnes": 25276038.0,
+        "weighted_tonnes_per_ha": 3.2734413781483482
+      },
+      {
+        "year": 2019,
+        "districts": 51,
+        "tonnes": 37261887.0,
+        "weighted_tonnes_per_ha": 3.675210588962617
+      },
+      {
+        "year": 2020,
+        "districts": 51,
+        "tonnes": 35502887.0,
+        "weighted_tonnes_per_ha": 3.6352335662663013
+      },
+      {
+        "year": 2021,
+        "districts": 51,
+        "tonnes": 32836338.0,
+        "weighted_tonnes_per_ha": 3.472876023853831
+      },
+      {
+        "year": 2022,
+        "districts": 51,
+        "tonnes": 34767911.0,
+        "weighted_tonnes_per_ha": 3.5817702796575674
+      }
+    ],
+    "output_change_percent": 58.64168187625478,
+    "increasing_districts": 46,
+    "largest_increase": [
+      "dhar",
+      1022206.0
+    ]
+  },
+  "maize_soybean_paired": {
+    "year": 2022,
+    "method": "Same district and Kharif season. Pearson correlation on district yields.",
+    "n": 48,
+    "districts": [
+      "agar malwa",
+      "alirajpur",
+      "anuppur",
+      "ashoknagar",
+      "balaghat",
+      "barwani",
+      "betul",
+      "bhopal",
+      "burhanpur",
+      "chhatarpur",
+      "chhindwara",
+      "damoh",
+      "dewas",
+      "dhar",
+      "dindori",
+      "guna",
+      "harda",
+      "indore",
+      "jabalpur",
+      "jhabua",
+      "katni",
+      "khandwa",
+      "khargone",
+      "mandla",
+      "mandsaur",
+      "narmadapuram",
+      "narsinghpur",
+      "neemuch",
+      "niwari",
+      "panna",
+      "raisen",
+      "rajgarh",
+      "ratlam",
+      "rewa",
+      "sagar",
+      "satna",
+      "sehore",
+      "seoni",
+      "shahdol",
+      "shajapur",
+      "sheopur",
+      "shivpuri",
+      "sidhi",
+      "singrauli",
+      "tikamgarh",
+      "ujjain",
+      "umaria",
+      "vidisha"
+    ],
+    "pearson_r": 0.22444216633276265,
+    "maize_higher_districts": 48
+  },
+  "wheat_rice_paired": {
+    "year": 2022,
+    "method": "Same district and crop year across Rabi wheat and Kharif rice. Pearson correlation on district yields.",
+    "n": 52,
+    "districts": [
+      "agar malwa",
+      "alirajpur",
+      "anuppur",
+      "ashoknagar",
+      "balaghat",
+      "barwani",
+      "betul",
+      "bhind",
+      "bhopal",
+      "burhanpur",
+      "chhatarpur",
+      "chhindwara",
+      "damoh",
+      "datia",
+      "dewas",
+      "dhar",
+      "dindori",
+      "guna",
+      "gwalior",
+      "harda",
+      "indore",
+      "jabalpur",
+      "jhabua",
+      "katni",
+      "khandwa",
+      "khargone",
+      "mandla",
+      "mandsaur",
+      "morena",
+      "narmadapuram",
+      "narsinghpur",
+      "neemuch",
+      "niwari",
+      "panna",
+      "raisen",
+      "rajgarh",
+      "ratlam",
+      "rewa",
+      "sagar",
+      "satna",
+      "sehore",
+      "seoni",
+      "shahdol",
+      "shajapur",
+      "sheopur",
+      "shivpuri",
+      "sidhi",
+      "singrauli",
+      "tikamgarh",
+      "ujjain",
+      "umaria",
+      "vidisha"
+    ],
+    "pearson_r": 0.16518370957593886
+  },
+  "limitations": [
+    "Historical crop-production snapshots, not current forecasts.",
+    "Empty cells and rows without positive observed area are excluded from yield calculations.",
+    "Districts are harmonized by documented names. District splits and topology changes are not reconstructed.",
+    "Descriptive associations do not control for crop mix, weather, irrigation, soil or farm practices.",
+    "Maps use one historical Survey of India service layer for every frame. Unmatched districts are reported."
+  ],
+  "map_join": [
+    {
+      "year": 2016,
+      "mapped_districts": 51,
+      "districts_without_shape": [],
+      "shapes_without_data": [
+        "niwari"
+      ]
+    },
+    {
+      "year": 2017,
+      "mapped_districts": 51,
+      "districts_without_shape": [],
+      "shapes_without_data": [
+        "niwari"
+      ]
+    },
+    {
+      "year": 2018,
+      "mapped_districts": 51,
+      "districts_without_shape": [],
+      "shapes_without_data": [
+        "niwari"
+      ]
+    },
+    {
+      "year": 2019,
+      "mapped_districts": 52,
+      "districts_without_shape": [],
+      "shapes_without_data": []
+    },
+    {
+      "year": 2020,
+      "mapped_districts": 52,
+      "districts_without_shape": [],
+      "shapes_without_data": []
+    },
+    {
+      "year": 2021,
+      "mapped_districts": 52,
+      "districts_without_shape": [],
+      "shapes_without_data": []
+    },
+    {
+      "year": 2022,
+      "mapped_districts": 52,
+      "districts_without_shape": [],
+      "shapes_without_data": []
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "checks": [
+    {
+      "case_id": "unrendered_fertilizer_template",
+      "run_id": "124495cb-c43a-4fea-9bcb-ae354ad27b82",
+      "input_sha256": "6be6bc616874b6575a31d4fc99080cf056919fb81797cc5fa44d7f59e51bc743",
+      "expected": "failed",
+      "actual": "failed",
+      "passed": true,
+      "errors": [
+        "ExtractionError: Unrendered dynamic template: export actual results; placeholders are not observations"
+      ]
+    },
+    {
+      "case_id": "inventory_is_not_production_data",
+      "run_id": "a7de7856-1537-4aa4-861b-06f13a348370",
+      "input_sha256": "98aa8e3489f8a43c34eae6d74f62ef0cb57fdac35f8dfcd03a905546d0035738",
+      "expected": "failed",
+      "actual": "failed",
+      "passed": true,
+      "errors": [
+        "ExtractionError: tables: Table agent found no table values it could map (crop/place/period/value)"
+      ]
+    },
+    {
+      "case_id": "manual_pdf_excludes_prices",
+      "run_id": "ee91093a-b3cf-43c6-90b8-14a6150865de",
+      "input_sha256": "a84a4517a92a02c0f0980f01b9450be2025e39fceb623d0721571b3721b0bc08",
+      "expected": "partial",
+      "actual": "partial",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "real_scheme_missing_values",
+      "run_id": "92ba4cd3-4220-47ef-b4c8-d118976e18bd",
+      "input_sha256": "94c35bb27ef193ff23118ddd78a80a8f26fb0637ffec814fc6c96731cc5b8074",
+      "expected": "partial",
+      "actual": "partial",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case_id": "directory_injected_fault",
+      "run_id": "37753174-4d6a-4ec7-97b7-17701aa2a2d5",
+      "input_sha256": "4a2a2b4deb8d58cedc8d9bba5333c2db2f651480d4339e169c5a6eecaa940beb",
+      "expected": "failed",
+      "actual": "failed",
+      "passed": true,
+      "errors": [
+        "ExtractionError: Injected extraction failure"
+      ]
+    }
+  ],
+  "passed": 5,
+  "total": 5,
+  "note": "Robustness evidence, not positive extraction examples or extraction F1"
+}

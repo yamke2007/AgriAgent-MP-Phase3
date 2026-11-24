@@ -1,0 +1,19 @@
+{
+  "adapter/README.md": "ed7dc3f805b13a9437878bda53f8cb6ddd846b7f48550e226d5e409040e8be9e",
+  "adapter/adapter_config.json": "002a2a4c48e4bde3440fa3fbe37e2c6daf0f6867818fce432cae4f25002b59a6",
+  "adapter/adapter_model.safetensors": "589b4c8bce67b16b82bfb102b887d9f754db875151bc008378c4e7e2e867571d",
+  "adapter/added_tokens.json": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b",
+  "adapter/chat_template.jinja": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+  "adapter/merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+  "adapter/special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+  "adapter/tokenizer.json": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa",
+  "adapter/tokenizer_config.json": "0a04a9d7d4a62b28482bdfe726c122756de85714fb64166ace92ae75b8f57614",
+  "adapter/training_args.bin": "5e46087dbfe754018f2c9afee021533583120e88a22e15a44e8db4863f6b9b20",
+  "adapter/vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+  "adapter.json": "e1d6a475fbafe7ed87388fa65a4efa4f2d06f46531dab274d803a7e118c3cb4b",
+  "adapter_trace.json": "3cd91a257cab8ea8f7214ac6c5ec8a13def5df2bcc60a714292617492f016450",
+  "base.json": "96caebe656008c616a9f8a51a72ca7910823f5ad30b4d64cba31d9f6508efcb1",
+  "base_trace.json": "de9cabba9417ecb6baa75c8962a0277967569ac9432b9716d15d957cfe311f1b",
+  "configuration.json": "0cde62d6d4c6ff8f8075c14f49b0f581a1db39fb163ed08425ed09be1c8c74e9",
+  "training_log.json": "9ef1ff6dcd23b2cc2780f4ec037309dbb552bd4756a79cefa04eb7f316998008"
+}

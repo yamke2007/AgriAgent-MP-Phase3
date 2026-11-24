@@ -1,0 +1,1116 @@
+{
+  "wheat_matched_cells": 104,
+  "wheat_checked_cells": 104,
+  "ranking_matched_production_rows": 52,
+  "ranking_checked_rows": 52,
+  "release_missing_production_cells": 13,
+  "same_cells_blank_in_direct_des": 13,
+  "paired": [
+    {
+      "district": "agar malwa",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "396920",
+      "des_locator": "page:1/table:1/row:4/col:4"
+    },
+    {
+      "district": "agar malwa",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "396920",
+      "des_locator": "page:1/table:1/row:4/col:5"
+    },
+    {
+      "district": "alirajpur",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "396940",
+      "des_locator": "page:1/table:1/row:5/col:4"
+    },
+    {
+      "district": "alirajpur",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "396940",
+      "des_locator": "page:1/table:1/row:5/col:5"
+    },
+    {
+      "district": "anuppur",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "396961",
+      "des_locator": "page:1/table:1/row:6/col:4"
+    },
+    {
+      "district": "anuppur",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "396961",
+      "des_locator": "page:1/table:1/row:6/col:5"
+    },
+    {
+      "district": "ashoknagar",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "396980",
+      "des_locator": "page:1/table:1/row:7/col:4"
+    },
+    {
+      "district": "ashoknagar",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "396980",
+      "des_locator": "page:1/table:1/row:7/col:5"
+    },
+    {
+      "district": "balaghat",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "397000",
+      "des_locator": "page:1/table:1/row:8/col:4"
+    },
+    {
+      "district": "balaghat",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "397000",
+      "des_locator": "page:1/table:1/row:8/col:5"
+    },
+    {
+      "district": "barwani",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "397019",
+      "des_locator": "page:1/table:1/row:9/col:4"
+    },
+    {
+      "district": "barwani",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "397019",
+      "des_locator": "page:1/table:1/row:9/col:5"
+    },
+    {
+      "district": "betul",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "397041",
+      "des_locator": "page:1/table:1/row:10/col:4"
+    },
+    {
+      "district": "betul",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "397041",
+      "des_locator": "page:1/table:1/row:10/col:5"
+    },
+    {
+      "district": "bhind",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "397059",
+      "des_locator": "page:1/table:1/row:11/col:4"
+    },
+    {
+      "district": "bhind",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "397059",
+      "des_locator": "page:1/table:1/row:11/col:5"
+    },
+    {
+      "district": "bhopal",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "397077",
+      "des_locator": "page:1/table:1/row:12/col:4"
+    },
+    {
+      "district": "bhopal",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "397077",
+      "des_locator": "page:1/table:1/row:12/col:5"
+    },
+    {
+      "district": "burhanpur",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "397094",
+      "des_locator": "page:1/table:1/row:13/col:4"
+    },
+    {
+      "district": "burhanpur",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "397094",
+      "des_locator": "page:1/table:1/row:13/col:5"
+    },
+    {
+      "district": "chhatarpur",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "397116",
+      "des_locator": "page:1/table:1/row:14/col:4"
+    },
+    {
+      "district": "chhatarpur",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "397116",
+      "des_locator": "page:1/table:1/row:14/col:5"
+    },
+    {
+      "district": "chhindwara",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "397139",
+      "des_locator": "page:1/table:1/row:15/col:4"
+    },
+    {
+      "district": "chhindwara",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "397139",
+      "des_locator": "page:1/table:1/row:15/col:5"
+    },
+    {
+      "district": "damoh",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "397157",
+      "des_locator": "page:1/table:1/row:16/col:4"
+    },
+    {
+      "district": "damoh",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "397157",
+      "des_locator": "page:1/table:1/row:16/col:5"
+    },
+    {
+      "district": "datia",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "397175",
+      "des_locator": "page:1/table:1/row:17/col:4"
+    },
+    {
+      "district": "datia",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "397175",
+      "des_locator": "page:1/table:1/row:17/col:5"
+    },
+    {
+      "district": "dewas",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "397192",
+      "des_locator": "page:1/table:1/row:18/col:4"
+    },
+    {
+      "district": "dewas",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "397192",
+      "des_locator": "page:1/table:1/row:18/col:5"
+    },
+    {
+      "district": "dhar",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "397213",
+      "des_locator": "page:1/table:1/row:19/col:4"
+    },
+    {
+      "district": "dhar",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "397213",
+      "des_locator": "page:1/table:1/row:19/col:5"
+    },
+    {
+      "district": "dindori",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "397231",
+      "des_locator": "page:1/table:1/row:20/col:4"
+    },
+    {
+      "district": "dindori",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "397231",
+      "des_locator": "page:1/table:1/row:20/col:5"
+    },
+    {
+      "district": "guna",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "397250",
+      "des_locator": "page:1/table:1/row:21/col:4"
+    },
+    {
+      "district": "guna",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "397250",
+      "des_locator": "page:1/table:1/row:21/col:5"
+    },
+    {
+      "district": "gwalior",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "397266",
+      "des_locator": "page:1/table:1/row:22/col:4"
+    },
+    {
+      "district": "gwalior",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "397266",
+      "des_locator": "page:1/table:1/row:22/col:5"
+    },
+    {
+      "district": "harda",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "397284",
+      "des_locator": "page:1/table:1/row:23/col:4"
+    },
+    {
+      "district": "harda",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "397284",
+      "des_locator": "page:1/table:1/row:23/col:5"
+    },
+    {
+      "district": "indore",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "397300",
+      "des_locator": "page:1/table:1/row:25/col:4"
+    },
+    {
+      "district": "indore",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "397300",
+      "des_locator": "page:1/table:1/row:25/col:5"
+    },
+    {
+      "district": "jabalpur",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "397319",
+      "des_locator": "page:1/table:1/row:26/col:4"
+    },
+    {
+      "district": "jabalpur",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "397319",
+      "des_locator": "page:1/table:1/row:26/col:5"
+    },
+    {
+      "district": "jhabua",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "397339",
+      "des_locator": "page:1/table:1/row:27/col:4"
+    },
+    {
+      "district": "jhabua",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "397339",
+      "des_locator": "page:1/table:1/row:27/col:5"
+    },
+    {
+      "district": "katni",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "397359",
+      "des_locator": "page:1/table:1/row:28/col:4"
+    },
+    {
+      "district": "katni",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "397359",
+      "des_locator": "page:1/table:1/row:28/col:5"
+    },
+    {
+      "district": "khandwa",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "397380",
+      "des_locator": "page:1/table:1/row:29/col:4"
+    },
+    {
+      "district": "khandwa",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "397380",
+      "des_locator": "page:1/table:1/row:29/col:5"
+    },
+    {
+      "district": "khargone",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "397398",
+      "des_locator": "page:1/table:1/row:30/col:4"
+    },
+    {
+      "district": "khargone",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "397398",
+      "des_locator": "page:1/table:1/row:30/col:5"
+    },
+    {
+      "district": "mandla",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "397416",
+      "des_locator": "page:1/table:1/row:31/col:4"
+    },
+    {
+      "district": "mandla",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "397416",
+      "des_locator": "page:1/table:1/row:31/col:5"
+    },
+    {
+      "district": "mandsaur",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "397436",
+      "des_locator": "page:1/table:1/row:32/col:4"
+    },
+    {
+      "district": "mandsaur",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "397436",
+      "des_locator": "page:1/table:1/row:32/col:5"
+    },
+    {
+      "district": "morena",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "397453",
+      "des_locator": "page:1/table:1/row:33/col:4"
+    },
+    {
+      "district": "morena",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "397453",
+      "des_locator": "page:1/table:1/row:33/col:5"
+    },
+    {
+      "district": "narmadapuram",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "397471",
+      "des_locator": "page:1/table:1/row:24/col:4"
+    },
+    {
+      "district": "narmadapuram",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "397471",
+      "des_locator": "page:1/table:1/row:24/col:5"
+    },
+    {
+      "district": "narsinghpur",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "397491",
+      "des_locator": "page:1/table:1/row:34/col:4"
+    },
+    {
+      "district": "narsinghpur",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "397491",
+      "des_locator": "page:1/table:1/row:34/col:5"
+    },
+    {
+      "district": "neemuch",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "397509",
+      "des_locator": "page:1/table:1/row:35/col:4"
+    },
+    {
+      "district": "neemuch",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "397509",
+      "des_locator": "page:1/table:1/row:35/col:5"
+    },
+    {
+      "district": "niwari",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "397525",
+      "des_locator": "page:1/table:1/row:36/col:4"
+    },
+    {
+      "district": "niwari",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "397525",
+      "des_locator": "page:1/table:1/row:36/col:5"
+    },
+    {
+      "district": "panna",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "397546",
+      "des_locator": "page:1/table:1/row:37/col:4"
+    },
+    {
+      "district": "panna",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "397546",
+      "des_locator": "page:1/table:1/row:37/col:5"
+    },
+    {
+      "district": "raisen",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "397564",
+      "des_locator": "page:1/table:1/row:38/col:4"
+    },
+    {
+      "district": "raisen",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "397564",
+      "des_locator": "page:1/table:1/row:38/col:5"
+    },
+    {
+      "district": "rajgarh",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "397582",
+      "des_locator": "page:1/table:1/row:39/col:4"
+    },
+    {
+      "district": "rajgarh",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "397582",
+      "des_locator": "page:1/table:1/row:39/col:5"
+    },
+    {
+      "district": "ratlam",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "397603",
+      "des_locator": "page:2/table:1/row:1/col:4"
+    },
+    {
+      "district": "ratlam",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "397603",
+      "des_locator": "page:2/table:1/row:1/col:5"
+    },
+    {
+      "district": "rewa",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "397623",
+      "des_locator": "page:2/table:1/row:2/col:4"
+    },
+    {
+      "district": "rewa",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "397623",
+      "des_locator": "page:2/table:1/row:2/col:5"
+    },
+    {
+      "district": "sagar",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "397644",
+      "des_locator": "page:2/table:1/row:3/col:4"
+    },
+    {
+      "district": "sagar",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "397644",
+      "des_locator": "page:2/table:1/row:3/col:5"
+    },
+    {
+      "district": "satna",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "397664",
+      "des_locator": "page:2/table:1/row:4/col:4"
+    },
+    {
+      "district": "satna",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "397664",
+      "des_locator": "page:2/table:1/row:4/col:5"
+    },
+    {
+      "district": "sehore",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "397682",
+      "des_locator": "page:2/table:1/row:5/col:4"
+    },
+    {
+      "district": "sehore",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "397682",
+      "des_locator": "page:2/table:1/row:5/col:5"
+    },
+    {
+      "district": "seoni",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "397705",
+      "des_locator": "page:2/table:1/row:6/col:4"
+    },
+    {
+      "district": "seoni",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "397705",
+      "des_locator": "page:2/table:1/row:6/col:5"
+    },
+    {
+      "district": "shahdol",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "397728",
+      "des_locator": "page:2/table:1/row:7/col:4"
+    },
+    {
+      "district": "shahdol",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "397728",
+      "des_locator": "page:2/table:1/row:7/col:5"
+    },
+    {
+      "district": "shajapur",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "397745",
+      "des_locator": "page:2/table:1/row:8/col:4"
+    },
+    {
+      "district": "shajapur",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "397745",
+      "des_locator": "page:2/table:1/row:8/col:5"
+    },
+    {
+      "district": "sheopur",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "397764",
+      "des_locator": "page:2/table:1/row:9/col:4"
+    },
+    {
+      "district": "sheopur",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "397764",
+      "des_locator": "page:2/table:1/row:9/col:5"
+    },
+    {
+      "district": "shivpuri",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "397785",
+      "des_locator": "page:2/table:1/row:10/col:4"
+    },
+    {
+      "district": "shivpuri",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "397785",
+      "des_locator": "page:2/table:1/row:10/col:5"
+    },
+    {
+      "district": "sidhi",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "397804",
+      "des_locator": "page:2/table:1/row:11/col:4"
+    },
+    {
+      "district": "sidhi",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "397804",
+      "des_locator": "page:2/table:1/row:11/col:5"
+    },
+    {
+      "district": "singrauli",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "397824",
+      "des_locator": "page:2/table:1/row:12/col:4"
+    },
+    {
+      "district": "singrauli",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "397824",
+      "des_locator": "page:2/table:1/row:12/col:5"
+    },
+    {
+      "district": "tikamgarh",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "397844",
+      "des_locator": "page:2/table:1/row:13/col:4"
+    },
+    {
+      "district": "tikamgarh",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "397844",
+      "des_locator": "page:2/table:1/row:13/col:5"
+    },
+    {
+      "district": "ujjain",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "397862",
+      "des_locator": "page:2/table:1/row:14/col:4"
+    },
+    {
+      "district": "ujjain",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "397862",
+      "des_locator": "page:2/table:1/row:14/col:5"
+    },
+    {
+      "district": "umaria",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "397882",
+      "des_locator": "page:2/table:1/row:15/col:4"
+    },
+    {
+      "district": "umaria",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "397882",
+      "des_locator": "page:2/table:1/row:15/col:5"
+    },
+    {
+      "district": "vidisha",
+      "field": "area",
+      "matched": true,
+      "original_csv_line": "397902",
+      "des_locator": "page:2/table:1/row:16/col:4"
+    },
+    {
+      "district": "vidisha",
+      "field": "production",
+      "matched": true,
+      "original_csv_line": "397902",
+      "des_locator": "page:2/table:1/row:16/col:5"
+    }
+  ],
+  "ranking": [
+    {
+      "district": "dhar",
+      "matched": true
+    },
+    {
+      "district": "ujjain",
+      "matched": true
+    },
+    {
+      "district": "narmadapuram",
+      "matched": true
+    },
+    {
+      "district": "chhindwara",
+      "matched": true
+    },
+    {
+      "district": "rajgarh",
+      "matched": true
+    },
+    {
+      "district": "sehore",
+      "matched": true
+    },
+    {
+      "district": "dewas",
+      "matched": true
+    },
+    {
+      "district": "ratlam",
+      "matched": true
+    },
+    {
+      "district": "seoni",
+      "matched": true
+    },
+    {
+      "district": "vidisha",
+      "matched": true
+    },
+    {
+      "district": "indore",
+      "matched": true
+    },
+    {
+      "district": "rewa",
+      "matched": true
+    },
+    {
+      "district": "sagar",
+      "matched": true
+    },
+    {
+      "district": "raisen",
+      "matched": true
+    },
+    {
+      "district": "khargone",
+      "matched": true
+    },
+    {
+      "district": "satna",
+      "matched": true
+    },
+    {
+      "district": "chhatarpur",
+      "matched": true
+    },
+    {
+      "district": "shivpuri",
+      "matched": true
+    },
+    {
+      "district": "guna",
+      "matched": true
+    },
+    {
+      "district": "betul",
+      "matched": true
+    },
+    {
+      "district": "mandsaur",
+      "matched": true
+    },
+    {
+      "district": "jabalpur",
+      "matched": true
+    },
+    {
+      "district": "shajapur",
+      "matched": true
+    },
+    {
+      "district": "katni",
+      "matched": true
+    },
+    {
+      "district": "narsinghpur",
+      "matched": true
+    },
+    {
+      "district": "tikamgarh",
+      "matched": true
+    },
+    {
+      "district": "datia",
+      "matched": true
+    },
+    {
+      "district": "khandwa",
+      "matched": true
+    },
+    {
+      "district": "damoh",
+      "matched": true
+    },
+    {
+      "district": "harda",
+      "matched": true
+    },
+    {
+      "district": "gwalior",
+      "matched": true
+    },
+    {
+      "district": "bhopal",
+      "matched": true
+    },
+    {
+      "district": "bhind",
+      "matched": true
+    },
+    {
+      "district": "morena",
+      "matched": true
+    },
+    {
+      "district": "barwani",
+      "matched": true
+    },
+    {
+      "district": "ashoknagar",
+      "matched": true
+    },
+    {
+      "district": "sheopur",
+      "matched": true
+    },
+    {
+      "district": "panna",
+      "matched": true
+    },
+    {
+      "district": "neemuch",
+      "matched": true
+    },
+    {
+      "district": "singrauli",
+      "matched": true
+    },
+    {
+      "district": "agar malwa",
+      "matched": true
+    },
+    {
+      "district": "sidhi",
+      "matched": true
+    },
+    {
+      "district": "jhabua",
+      "matched": true
+    },
+    {
+      "district": "niwari",
+      "matched": true
+    },
+    {
+      "district": "mandla",
+      "matched": true
+    },
+    {
+      "district": "umaria",
+      "matched": true
+    },
+    {
+      "district": "dindori",
+      "matched": true
+    },
+    {
+      "district": "shahdol",
+      "matched": true
+    },
+    {
+      "district": "balaghat",
+      "matched": true
+    },
+    {
+      "district": "alirajpur",
+      "matched": true
+    },
+    {
+      "district": "burhanpur",
+      "matched": true
+    },
+    {
+      "district": "anuppur",
+      "matched": true
+    }
+  ],
+  "missing": [
+    {
+      "district": "agar malwa",
+      "crop": "rice",
+      "year": "2019",
+      "season": "Summer",
+      "original_csv_line": "340435",
+      "direct_des_area_locator": "page:1/table:1/row:4/col:4",
+      "direct_des_area_value": "98",
+      "direct_des_production_value": null,
+      "direct_report_production_cell_blank": true
+    },
+    {
+      "district": "anuppur",
+      "crop": "maize",
+      "year": "2019",
+      "season": "Summer",
+      "original_csv_line": "340486",
+      "direct_des_area_locator": "page:1/table:1/row:6/col:4",
+      "direct_des_area_value": "30",
+      "direct_des_production_value": null,
+      "direct_report_production_cell_blank": true
+    },
+    {
+      "district": "anuppur",
+      "crop": "rice",
+      "year": "2019",
+      "season": "Summer",
+      "original_csv_line": "340498",
+      "direct_des_area_locator": "page:1/table:1/row:6/col:4",
+      "direct_des_area_value": "67",
+      "direct_des_production_value": null,
+      "direct_report_production_cell_blank": true
+    },
+    {
+      "district": "barwani",
+      "crop": "rice",
+      "year": "2019",
+      "season": "Summer",
+      "original_csv_line": "340594",
+      "direct_des_area_locator": "page:1/table:1/row:8/col:4",
+      "direct_des_area_value": "865",
+      "direct_des_production_value": null,
+      "direct_report_production_cell_blank": true
+    },
+    {
+      "district": "khandwa",
+      "crop": "rice",
+      "year": "2019",
+      "season": "Summer",
+      "original_csv_line": "341168",
+      "direct_des_area_locator": "page:1/table:1/row:15/col:4",
+      "direct_des_area_value": "2605",
+      "direct_des_production_value": null,
+      "direct_report_production_cell_blank": true
+    },
+    {
+      "district": "narsinghpur",
+      "crop": "rice",
+      "year": "2019",
+      "season": "Summer",
+      "original_csv_line": "341350",
+      "direct_des_area_locator": "page:1/table:1/row:16/col:4",
+      "direct_des_area_value": "380",
+      "direct_des_production_value": null,
+      "direct_report_production_cell_blank": true
+    },
+    {
+      "district": "rajgarh",
+      "crop": "maize",
+      "year": "2019",
+      "season": "Summer",
+      "original_csv_line": "341470",
+      "direct_des_area_locator": "page:1/table:1/row:25/col:4",
+      "direct_des_area_value": "53",
+      "direct_des_production_value": null,
+      "direct_report_production_cell_blank": true
+    },
+    {
+      "district": "shahdol",
+      "crop": "maize",
+      "year": "2019",
+      "season": "Summer",
+      "original_csv_line": "341690",
+      "direct_des_area_locator": "page:1/table:1/row:30/col:4",
+      "direct_des_area_value": "68",
+      "direct_des_production_value": null,
+      "direct_report_production_cell_blank": true
+    },
+    {
+      "district": "ujjain",
+      "crop": "maize",
+      "year": "2019",
+      "season": "Summer",
+      "original_csv_line": "341895",
+      "direct_des_area_locator": "page:1/table:1/row:32/col:4",
+      "direct_des_area_value": "1039",
+      "direct_des_production_value": null,
+      "direct_report_production_cell_blank": true
+    },
+    {
+      "district": "ujjain",
+      "crop": "rice",
+      "year": "2019",
+      "season": "Summer",
+      "original_csv_line": "341904",
+      "direct_des_area_locator": "page:1/table:1/row:21/col:4",
+      "direct_des_area_value": "29",
+      "direct_des_production_value": null,
+      "direct_report_production_cell_blank": true
+    },
+    {
+      "district": "umaria",
+      "crop": "maize",
+      "year": "2019",
+      "season": "Summer",
+      "original_csv_line": "341925",
+      "direct_des_area_locator": "page:1/table:1/row:33/col:4",
+      "direct_des_area_value": "37",
+      "direct_des_production_value": null,
+      "direct_report_production_cell_blank": true
+    },
+    {
+      "district": "umaria",
+      "crop": "rice",
+      "year": "2019",
+      "season": "Summer",
+      "original_csv_line": "341935",
+      "direct_des_area_locator": "page:1/table:1/row:22/col:4",
+      "direct_des_area_value": "2",
+      "direct_des_production_value": null,
+      "direct_report_production_cell_blank": true
+    },
+    {
+      "district": "vidisha",
+      "crop": "rice",
+      "year": "2019",
+      "season": "Summer",
+      "original_csv_line": "341967",
+      "direct_des_area_locator": "page:1/table:1/row:23/col:4",
+      "direct_des_area_value": "5",
+      "direct_des_production_value": null,
+      "direct_report_production_cell_blank": true
+    }
+  ],
+  "official_reports": [
+    {
+      "input": "output/source-expansion/acquisition/S11_wheat_rabi_2022.pdf",
+      "sha256": "ca7d31ed74bd02bfc753883cfc9360a5c588cb84519e7c70764d4b73d1ec4c48",
+      "source_url": "https://data.desagri.gov.in/report/crop/crops-printdraft-apy-report?fltrstates=23&fltrdistricts=all&fltrcrops=2&fltrseason=R&fltrstartyear=2022&fltrendyear=2022&reportformat=horizontal_crop_vertical_year"
+    },
+    {
+      "input": "output/source-expansion/acquisition/S12_major_report.pdf",
+      "sha256": "8c27f3271e48bf789986a95b05041ee90520ce4de4633886cb36e5e075787128",
+      "source_url": "https://data.desagri.gov.in/report/crop/crops-printdraft-major-contributing-district?fltrstates=23&fltrtopdistrict=all&fltrcontribut=production&fltrfromyear=2022&fltrtoyear=2022&number_district=&fltrcrops=2"
+    },
+    {
+      "input": "output/source-expansion/acquisition/S11_summer_2019_rice.pdf",
+      "sha256": "915dd39744d3dc4dbcc90c60c5f24dda68268c8051c26d765deec7baed470c8b",
+      "source_url": "https://data.desagri.gov.in/report/crop/crops-printdraft-apy-report?fltrstates=23&fltrdistricts=all&fltrcrops=1&fltrseason=S&fltrstartyear=2019&fltrendyear=2019&reportformat=horizontal_crop_vertical_year"
+    },
+    {
+      "input": "output/source-expansion/acquisition/S11_summer_2019_maize.pdf",
+      "sha256": "a8f838eb6275da327bc45ec5682995196ee6a362419da7baabaa1b19be6ec05b",
+      "source_url": "https://data.desagri.gov.in/report/crop/crops-printdraft-apy-report?fltrstates=23&fltrdistricts=all&fltrcrops=5&fltrseason=S&fltrstartyear=2019&fltrendyear=2019&reportformat=horizontal_crop_vertical_year"
+    }
+  ],
+  "limitations": "Wheat comparison covers the 2022-23 Rabi sample. Summer verification covers identified production blanks. Neither proves the bulk mirror's full byte identity."
+}

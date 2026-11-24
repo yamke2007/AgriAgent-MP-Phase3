@@ -1,0 +1,25 @@
+{
+  "scope": "Synthetic, randomly initialized CPU compatibility check; no M18 predictions or scores",
+  "archive_members": 90,
+  "frozen_cases": 10,
+  "training_examples_verified_against_source_cells": 72,
+  "training_cells": 1152,
+  "versions": {
+    "torch": "2.7.1",
+    "transformers": "4.57.1",
+    "trl": "0.24.0",
+    "peft": "0.17.1",
+    "accelerate": "1.11.0",
+    "bitsandbytes": "0.48.2",
+    "datasets": "4.2.0"
+  },
+  "token_budget": {
+    "longest_training_sequence": 1381,
+    "longest_evaluation_input": 361,
+    "longest_training_target": 1024
+  },
+  "steps": 1,
+  "adapter_parameters_updated": true,
+  "smoke_generated_tokens": 2,
+  "cuda_available": false
+}

@@ -1,0 +1,9 @@
+{"run_id": "c19722d8-f936-4568-a0d9-49b6b8329d85", "agent": "tables", "status": "complete", "errors": [], "warnings": [], "latency_seconds": 1.3058685999712907}
+records=16
+  plan: ['tables'] engine: langgraph retries: 0
+  [ok ]     tables -> csv.reader                   list[5]
+    arrivals = 209.00 tonne | soybean | betul | 2013-04-09 @ csv/row:2/col:6
+    min_price = 3601 INR/quintal | soybean | betul | 2013-04-09 @ csv/row:2/col:7
+    max_price = 3939 INR/quintal | soybean | betul | 2013-04-09 @ csv/row:2/col:8
+    modal_price = 3910 INR/quintal | soybean | betul | 2013-04-09 @ csv/row:2/col:9
+    arrivals = 3.00 tonne | soybean | bhind | 2013-04-09 @ csv/row:3/col:6

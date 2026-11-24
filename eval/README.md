@@ -1,4 +1,14 @@
-# Evaluation contract, declared before any live demonstration
+# Evaluation contract
+
+The current evaluator writes only to a new output directory. Run `python scripts/fetch_eval_parents.py` to retrieve and hash-check the annual Agmarknet originals, then `python eval/run_eval.py --production-db output/release/agriagent.sqlite --output output/evaluation-recheck`. M10 resolves the specified row and column and checks the whole normalized tuple. M4 checks original HTML rows, archived Agmarknet rows and the original Economic Survey PDF page for the ten statistics cases. Use `scripts/verify_release_formats.py` for separate PDF and spreadsheet verification.
+
+The [current metrics snapshot](../evidence/technical_completion/phase2_metrics.csv) combines the local benchmark rerun, both genuine-input M12 ledgers and the verified M18 result. Its CSV format remains provisional pending the TA attachment. See [protocol and scope details](../docs/technical_acceptance_audit.md).
+
+For M18 use `python scripts/package_colab.py` and the generated notebook. The package contains only the ten frozen held-out inputs and source-linked training examples. Their references stay local. The annual original-source hashes and parent paths are checked for separation. The independent human review remains pending. Compare the exported predictions with `python eval/compare_adapters.py --run-dir output/m18`.
+
+The verified Colab run scored **0.0000 base F1** and **0.6774 adapter F1** on the ten frozen cases. [Comparison CSV](../evidence/m18_release/adapter_comparison.csv) · [Precision, recall, and artifact checks](../evidence/m18_release/verification.json) · [Versioned M18 metrics](../evidence/m18_release/phase2_metrics.csv)
+
+## Historical Phase 2 run notes
 
 Run `python eval/run_eval.py` from the project root. It processes all 30 source-derived fragments, writes real automation entries, evaluates field tuples, refreshes the SQLite dump, and writes per-case evidence. Repeated runs append genuine attempts; M12 consequently describes accumulated runs at report time. Test isolation uses temporary logs and databases.
 

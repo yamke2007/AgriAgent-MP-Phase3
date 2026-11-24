@@ -53,10 +53,16 @@ def workflow_eval(root, process):
     for c in cases:
         r = process(root / c["input"], persist=c.get("persist", False), inject_tool=c.get("inject_tool"))
         ok = r["status"] == c["expected_status"] and r.get("agents", []) == c["expected_plan"]
+        expected_tools = c.get("reference_tools")
+        if expected_tools is not None:
+            ok = ok and [call["tool"] for call in r["trajectory"]] == expected_tools
         if c.get("inject_tool"):
             ok = ok and r.get("retries", 0) >= 1
-        rows.append(dict(input=c["input"], expected_status=c["expected_status"], status=r["status"],
+        rows.append(dict(input=c["input"], expected_status=c["expected_status"], expected_plan=c["expected_plan"], status=r["status"],
                          plan=r.get("agents"), producers=r["agent"], handoffs=r.get("handoffs", []),
                          retries=r.get("retries", 0), fault=c.get("inject_tool"), correct=ok,
+                         trajectory=r["trajectory"], reference_tools=expected_tools,
+                         engine=r.get("orchestrator"), latency_seconds=r["latency_seconds"],
+                         model_usage=r.get("model_usage", []),
                          synthetic=c.get("synthetic", False), run_id=r["run_id"]))
     return rows

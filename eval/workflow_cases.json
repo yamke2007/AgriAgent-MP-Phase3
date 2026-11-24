@@ -4,7 +4,7 @@
   {"input": "data/raw/msp_scheme.html", "expected_status": "partial", "expected_plan": ["scheme"], "note": "real S06 Hindi scheme page with empty fields"},
   {"input": "data/derived/survey_agriculture_transcription.csv", "expected_status": "complete", "expected_plan": ["statistics"], "note": "manual transcription of S23 page 7"},
   {"input": "data/raw/evikas_calculator.html", "expected_status": "failed", "expected_plan": [], "note": "unrendered template must be rejected, not guessed"},
-  {"input": "tests/fixtures_tables/synthetic_district_apy.pdf", "expected_status": "complete", "expected_plan": ["statistics", "tables"], "synthetic": true, "note": "SYNTHETIC: statistics -> tables hand-off"},
-  {"input": "tests/fixtures_tables/synthetic_mandi_prices.xlsx", "expected_status": "complete", "expected_plan": ["tables"], "synthetic": true},
-  {"input": "tests/fixtures_tables/synthetic_district_apy.pdf", "expected_status": "complete", "expected_plan": ["statistics", "tables"], "synthetic": true, "inject_tool": "pdfplumber.extract_tables", "note": "fault injection: transient tool failure must be retried"}
+  {"input": "tests/fixtures_tables/synthetic_district_apy.pdf", "expected_status": "complete", "expected_plan": ["statistics", "tables"], "reference_tools": ["pypdf", "pdfplumber.pages", "pdfplumber.extract_tables"], "synthetic": true, "note": "SYNTHETIC: statistics -> tables hand-off"},
+  {"input": "tests/fixtures_tables/synthetic_mandi_prices.xlsx", "expected_status": "complete", "expected_plan": ["tables"], "reference_tools": ["openpyxl.read"], "synthetic": true},
+  {"input": "tests/fixtures_tables/synthetic_district_apy.pdf", "expected_status": "complete", "expected_plan": ["statistics", "tables"], "reference_tools": ["pypdf", "pdfplumber.pages", "pdfplumber.extract_tables", "pdfplumber.extract_tables"], "synthetic": true, "inject_tool": "pdfplumber.extract_tables", "note": "Retry the failed extraction while reusing the successful page inspection"}
 ]

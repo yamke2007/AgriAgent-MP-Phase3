@@ -1,5 +1,6 @@
 import json
 import sqlite3
+from contextlib import closing
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -12,7 +13,7 @@ def connect(path):
     return db
 
 def store(path, result):
-    with connect(path) as db:
+    with closing(connect(path)) as db, db:
         db.execute("INSERT OR IGNORE INTO sources VALUES (?,?,?,?)",(result["source"],result["source_url"],result["input_sha256"],result["input"]))
         db.execute("UPDATE sources SET input_path=?,url=CASE WHEN url='unknown' THEN ? ELSE url END WHERE source=?",(result["input"],result["source_url"],result["source"]))
         db.execute("INSERT INTO runs VALUES (?,?,?,?,?,?)",(result["run_id"],result["source"],result["started_at"],result["status"],result["agent"],json.dumps(result["errors"])))
@@ -35,7 +36,7 @@ def store(path, result):
 def dump(path, target):
     target = Path(target)
     target.mkdir(parents=True,exist_ok=True)
-    with connect(path) as db:
+    with closing(sqlite3.connect(Path(path).resolve(strict=True).as_uri() + "?mode=ro", uri=True)) as db:
         (target/"agriagent.sql").write_text("\n".join(db.iterdump()),encoding="utf-8")
         rows = [json.loads(r[0]) for r in db.execute("SELECT payload FROM observations ORDER BY id")]
         (target/"observations.json").write_text(json.dumps(rows,ensure_ascii=False,indent=2),encoding="utf-8")

@@ -1,0 +1,19 @@
+{
+  "registry_districts": 55,
+  "release_districts_matched": 52,
+  "release_districts_total": 52,
+  "release_panel_rows_matched": 1886,
+  "release_panel_rows_total": 1886,
+  "release_unmatched": [],
+  "geometry_matched": 52,
+  "geometry_total": 52,
+  "geometry_unmatched": [],
+  "registry_districts_outside_historical_geometry": [
+    "maihar",
+    "mauganj",
+    "pandhurna"
+  ],
+  "limitation": "Current code lookup by documented name aliases; no inference about historical boundary changes",
+  "source_url": "https://ramseraph.github.io/opendata/lgd/data/districts.8edd1bf95e5bfeec.parquet",
+  "input_sha256": "cd9702f372d25ff5f6732e53d96be5c4785f48f097931842027d51f2bdda4b71"
+}

@@ -13,7 +13,8 @@ LOG_COLUMNS = ["run_id","started_at","input","input_sha256","agent","status","re
 def sha(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 
-def process(path, config=None, source_url="unknown", persist=True, fault=None, manual_interventions=0, inject_tool=None):
+def process(path, config=None, source_url="unknown", persist=True, fault=None, manual_interventions=0,
+            inject_tool=None, reference_calls=None):
     cfg = json.loads((ROOT/"config.json").read_text(encoding="utf-8"))
     cfg.update(config or {})
     path = Path(path).resolve()
@@ -50,7 +51,8 @@ def process(path, config=None, source_url="unknown", persist=True, fault=None, m
         result.update(agent="+".join(out["producers"]) or out["plan"][0], source_type=out["group"],
                       trajectory=out["trajectory"], agent_trace=out["agent_trace"], handoffs=out["handoffs"],
                       agents=out["plan"], retries=out["retries"], llm_calls=out["llm_calls"],
-                      notes=out["notes"], orchestrator=out["engine"], useful_calls=out["useful_calls"])
+                      notes=out["notes"], orchestrator=out["engine"],
+                      model_usage=out["model_usage"])
         records, warnings = out["records"], out["warnings"]
         result["warnings"] = warnings
         lgd = None
@@ -90,7 +92,7 @@ def process(path, config=None, source_url="unknown", persist=True, fault=None, m
             result["errors"].append("Storage: "+str(exc))
     result["latency_seconds"] = time.perf_counter()-start
     result["tool_calls"] = len(result["trajectory"])
-    result["reference_calls"] = result.get("useful_calls",0)
+    result["reference_calls"] = reference_calls
     if persist:
         out = ROOT/cfg["output_dir"]
         out.mkdir(parents=True,exist_ok=True)

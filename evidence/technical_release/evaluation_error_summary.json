@@ -1,0 +1,12 @@
+{
+  "status_counts": {
+    "complete": 52
+  },
+  "validation_errors": {},
+  "extraction_errors": {},
+  "false_positives": 0,
+  "false_negatives": 0,
+  "unresolved_original_records": 10,
+  "retries": 0,
+  "llm_calls": 0
+}

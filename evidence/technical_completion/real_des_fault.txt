@@ -1,0 +1,13 @@
+{"run_id": "8a339a7d-c675-44bb-bfba-98df50643e3f", "agent": "tables", "status": "complete", "errors": [], "warnings": [], "latency_seconds": 18.568462700000964}
+records=52
+  plan: ['statistics', 'tables'] engine: langgraph retries: 1
+  [ERR] statistics -> pypdf                        ExtractionError: No supported production sentences; text pages=3; tables/OCR are left to the tables agent
+  [ok ]     tables -> pdfplumber.pages             list[3]
+  [ERR]     tables -> pdfplumber.extract_tables    ToolFault: injected transient failure in pdfplumber.extract_tables
+  [ok ]     tables -> pdfplumber.extract_tables    list[3]
+  hand-off: statistics -> next agent: No supported production sentences; text pages=3; tables/OCR are left to the tables agent
+    production = 1773206 tonne | wheat | dhar | 2022-23 @ page:1/table:1/row:3/col:4
+    production = 1624927 tonne | wheat | ujjain | 2022-23 @ page:1/table:1/row:4/col:4
+    production = 1388453 tonne | wheat | narmadapuram | 2022-23 @ page:1/table:1/row:5/col:4
+    production = 1385078 tonne | wheat | chhindwara | 2022-23 @ page:1/table:1/row:6/col:4
+    production = 1217446 tonne | wheat | rajgarh | 2022-23 @ page:1/table:1/row:7/col:4

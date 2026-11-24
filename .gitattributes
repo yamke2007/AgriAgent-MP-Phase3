@@ -1,2 +1,15 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Hash-verified inputs and retained course evidence require byte-for-byte checkout.
+/data/** -text whitespace=-trailing-space,cr-at-eol
+/eval/cases/** -text whitespace=-trailing-space,cr-at-eol
+/Schema/** -text whitespace=-trailing-space,cr-at-eol
+/Source_Inventory/** -text whitespace=-trailing-space,cr-at-eol
+/docs/Phase1/** -text whitespace=-trailing-space,cr-at-eol
+/docs/TA_Scope_and_Source_Selection.* -text whitespace=-trailing-space,cr-at-eol
+/docs/cleaned_source_inventory.csv -text whitespace=-trailing-space,cr-at-eol
+/docs/source_frequency_summary.csv -text whitespace=-trailing-space,cr-at-eol
+/docs/source_selection_notes.md -text whitespace=-trailing-space,cr-at-eol
+/logs/source_verification_log.md -text whitespace=-trailing-space,cr-at-eol
+*.pdf binary

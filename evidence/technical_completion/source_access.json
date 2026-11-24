@@ -1,0 +1,37 @@
+{
+  "S06": {
+    "status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "url": "https://cmhelpline.mp.gov.in/Schmedetail.aspx?Schemeid=112",
+    "response_path": "/Schmedetail.aspx",
+    "response_sha256": "94c35bb27ef193ff23118ddd78a80a8f26fb0637ffec814fc6c96731cc5b8074",
+    "bytes": 14859,
+    "html_title": "Scheme Dashboard",
+    "empty_labels": [
+      "\u092f\u094b\u091c\u0928\u093e \u0915\u092c \u0938\u0947 \u092a\u094d\u0930\u093e\u0930\u0902\u092d \u0915\u0940 \u0917\u092f\u0940",
+      "\u092a\u0926\u092d\u093f\u0939\u093f\u0924 \u0905\u0927\u093f\u0915\u093e\u0930\u0940",
+      "\u0938\u092e\u092f \u0938\u0940\u092e\u093e",
+      "\u0905\u0928\u0941\u0926\u093e\u0928 /\u090b\u0923 /\u0935\u093f\u0924\u094d\u0924\u0940\u092f \u0938\u0939\u093e\u092f\u0924\u093e /\u092a\u0947\u0902\u0936\u0928/\u0932\u093e\u092d \u0915\u0940 \u0930\u093e\u0936\u093f",
+      "\u092f\u094b\u091c\u0928\u093e \u0938\u0947 \u0938\u092e\u094d\u092c\u0902\u0927\u093f\u0924 \u0926\u0938\u094d\u0924\u093e\u0935\u0947\u091c \u0938\u0902\u0932\u0917\u094d\u0928 \u0915\u0930\u0947\u0902"
+    ]
+  },
+  "S19": {
+    "status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "url": "https://enam.gov.in/NamWebSrv/rest/getActiveState",
+    "response_path": "/NamWebSrv/rest/getActiveState",
+    "response_sha256": "3547ae3857f51973e17149bfc3a3fa2d6eda5147c4bb34ea087e759570b37361",
+    "bytes": 31378,
+    "html_title": "eNam",
+    "mp_entries": null
+  },
+  "LGD_OGD": {
+    "status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "url": "https://www.data.gov.in/resource/local-government-directory-lgd-districts",
+    "response_path": "/resource/local-government-directory-lgd-districts",
+    "response_sha256": "47618828c08a73c9b90680cf39a299e413454cfee8cd395c516c602d74dfe5f8",
+    "bytes": 1123087,
+    "html_title": "Local Government Directory (LGD) - Districts | Open Government Data (OGD) Platform India"
+  }
+}

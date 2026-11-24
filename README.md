@@ -1,4 +1,81 @@
-# AgriAgent Madhya Pradesh: Phase 2 review package
+# AgriAgent Madhya Pradesh
+
+## Technical release
+
+For the frozen technical submission, start with the [readiness report](docs/submission_readiness.md) and [file-by-file submission inventory](docs/submission_files.csv). The verified Windows setup uses Python 3.12. A clean checkout requires separately supplied corpus artifacts whose redistribution permissions are still under review. See [source rights](docs/technical_source_rights.md) before sharing files.
+
+The release builder imports district crop production, extension directory, Hindi MSP scheme, and manually transcribed Economic Survey rows into a separate SQLite file. It leaves the historical database and evidence in place. Standard ingestion writes to `output/ingest`. Release data, demo data and benchmark data have separate output paths. See [technical progress and acceptance](docs/technical_progress.md), [live technical checks](docs/live_technical_checks.md) and [source rights](docs/technical_source_rights.md).
+
+### Source-expansion and audit commands
+
+```powershell
+.venv-clean/Scripts/python.exe scripts/fetch_source_expansion.py --windows-trust
+.venv-clean/Scripts/python.exe scripts/verify_source_expansion.py --output output/source-cohort-check
+.venv-clean/Scripts/python.exe scripts/verify_source_expansion.py --direct-survey --output output/source-cohort-paired
+.venv-clean/Scripts/python.exe scripts/compare_des_provenance.py --run output/source-cohort-check --output output/des-provenance-check.json
+.venv-clean/Scripts/python.exe scripts/benchmark_real_ocr.py --source-run output/source-cohort-check --output output/real-ocr-check
+.venv-clean/Scripts/python.exe scripts/verify_survey_automation.py --output output/survey-automation-check
+.venv-clean/Scripts/python.exe scripts/verify_lgd_join.py data/source_expansion/lgd_mp_archive.csv --source-url https://ramseraph.github.io/opendata/lgd/data/districts.8edd1bf95e5bfeec.parquet --output output/lgd-join-check.json
+```
+
+The cohort checker requires the retained snapshots or exact source bytes matching the frozen hashes. See the cohort metadata for source permissions. The original M12 run was 10/17. The paired rerun kept the same 17 source cases and reached 11/17 by reading the original survey PDF directly for the same ten facts. Partial and failed inputs remain in both ledgers.
+
+```powershell
+python -m venv .venv
+.venv/Scripts/python.exe -m pip install -r requirements.txt
+.venv/Scripts/python.exe -m pip check
+.venv/Scripts/python.exe -m unittest discover -v
+.venv/Scripts/python.exe scripts/build_release.py
+.venv/Scripts/python.exe scripts/query_release.py verify
+.venv/Scripts/python.exe scripts/query_release.py q10
+.venv/Scripts/python.exe scripts/analyze_release.py
+```
+
+For OCR install Tesseract and make its executable available on PATH. Point `TESSDATA_PREFIX` at the directory containing `eng.traineddata` and `hin.traineddata`, then verify with `tesseract --list-langs`. Enable tracing for a supervised demo with your own environment variables `LANGSMITH_TRACING=true` and `LANGSMITH_API_KEY`. Local JSON traces are written independently of LangSmith.
+
+### Demonstration commands
+
+```powershell
+.venv/Scripts/python.exe run.py --config config.demo.json --input data/raw/icar_kvk.html --trace
+.venv/Scripts/python.exe run.py --config config.demo.json --input data/raw/msp_scheme.html --trace
+.venv/Scripts/python.exe run.py --config config.fault-demo.json --input tests/fixtures_tables/synthetic_district_apy.pdf --inject-tool-fault pdfplumber.extract_tables --trace
+.venv/Scripts/python.exe scripts/query_release.py all
+.venv/Scripts/python.exe scripts/db_cli.py --database output/release/agriagent.sqlite --id 1
+.venv/Scripts/python.exe eval/run_surprise.py unseen-a.pdf unseen-b.xlsx unseen-c.html --output output/instructor-run
+```
+
+The CLI exits with 2 for a partial extraction. For M17 replace ID 1 with each ID selected by the TA. Q05 traces a district observation to its original CSV line and column. Q10 traces the state figures to the Economic Survey PDF page. Capture the surprise run first and pass `--score-existing --key <key.json> --output <capture-dir>` once the TA releases the key.
+
+### Evaluation and model
+
+```powershell
+.venv/Scripts/python.exe scripts/fetch_eval_parents.py
+.venv/Scripts/python.exe eval/run_eval.py --production-db output/release/agriagent.sqlite
+.venv/Scripts/python.exe eval/run_error_eval.py
+.venv/Scripts/python.exe scripts/prepare_review_queue.py
+.venv/Scripts/python.exe scripts/package_colab.py
+```
+
+For the verified package, open `output/m18-verified/AgriAgent_M18.ipynb` in a fresh Colab session. Choose **Runtime → Change runtime type → T4 GPU**, then **Run all**. When prompted, upload the companion `output/m18-verified/agriagent-colab-inputs.zip`. It contains ten frozen inputs and training material. Held-out reference answers remain local. The notebook first installs the pinned libraries, then saves base predictions, trains QLoRA and runs adapter inference. At the end it downloads `agriagent-m18-results.zip`. Extract that ZIP into `output` so `output/m18/configuration.json` exists. Then score it locally.
+
+```powershell
+.venv/Scripts/python.exe eval/compare_adapters.py --run-dir output/m18
+```
+
+The retained Colab run measured **+0.6774 F1** on the ten frozen Agmarknet cases. [Verified M18 results](evidence/m18_release/verification.json)
+
+For the actual tables agent, follow the [Windows CPU adapter instructions](docs/live_technical_checks.md#adapter-pipeline-on-windows-cpu). The adapter applies to the Agmarknet CSV layout and only accepts a prediction that resolves to a unique input cell. In the local check it confirmed four of sixteen fields. The deterministic control extracted all sixteen. The trace records whether the adapter ran and which fields it confirmed.
+
+### Source and database maintenance
+
+- Stage new files with `run.py --config config.demo.json --input <file> --source-url <url> --trace`. Check licenses and source values, then add the input metadata and SHA-256 to the manifest before adding the file to the explicit release corpus. Supply an official LGD registry to `scripts/build_release.py --lgd-registry <registry.json>` when available.
+- Schedule the same staging command with Windows Task Scheduler using the absolute Python executable and project directory as the working directory. Run one writer per CSV automation log. The staging command records failed and partial runs for investigation.
+- Use `scripts/db_cli.py --database output/release/agriagent.sqlite --dump --dump-dir output/ta-backup` and `scripts/restore_release.py output/ta-backup/agriagent.sql output/ta-restored.sqlite`. Use fresh output directories so prior execution evidence remains intact.
+- The [production source metadata](data/production/sources.json) records the pinned download, original hash, geometry service and known terms. Retrieve the verified originals with `scripts/fetch_release_inputs.py`. With the original CSV, `scripts/prepare_query_references.py --output <new-file>` independently recomputes expected answers and `scripts/verify_release_formats.py` reproduces the workbook check. Local charts and maps are generated in `output/analysis`. The geometry layer has unverified redistribution terms.
+
+## Historical Phase 2 review package
+
+The material below describes earlier checkpoints. Current M18, source coverage, workflow metrics and acceptance status are in the technical progress and evaluator instructions linked above.
 
 Runnable multi-agent extraction (LangGraph supervisor, four specialists including a general PDF/OCR/Excel table agent) with source evidence, normalization, validation, SQLite storage and reproducible local evaluation. **Phase 2 is partial; the live/model gates are not passed.** Four specialists are implemented: KVK directory HTML, Hindi scheme HTML, structured statistics CSV with a narrow production-sentence PDF grammar, and a general table agent (PDF tables, OCR English + Hindi, Excel, HTML, any CSV). The table agent has 22 source-derived Agmarknet CSV cases (12 development and 10 held-out); the held-out references still require independent teammate verification. The original 23-source Phase 1 inventory and TA work are preserved; the original README is in `docs/Phase1/README_original.md`.
 

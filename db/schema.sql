@@ -21,3 +21,15 @@ CREATE TABLE IF NOT EXISTS attempts (
  inserted INTEGER NOT NULL, duplicates INTEGER NOT NULL
 );
 CREATE INDEX IF NOT EXISTS observation_crop_location ON observations(crop,location,period);
+CREATE VIEW IF NOT EXISTS district_crop_production AS
+SELECT o.location AS district, o.crop, CAST(o.period AS INTEGER) AS year,
+       json_extract(o.payload, '$.season') AS season,
+       MAX(CASE WHEN o.variable='area' THEN CAST(o.value AS REAL) END) AS hectares,
+       MAX(CASE WHEN o.variable='production' THEN CAST(o.value AS REAL) END) AS tonnes,
+       MAX(CASE WHEN o.variable='production' THEN o.id END) AS production_id
+FROM observations o JOIN sources s USING(source)
+WHERE o.validation_status='valid'
+  AND s.input_path='data/production/mp_crop_production_2016_2022.csv'
+  AND o.variable IN ('area','production')
+GROUP BY o.source, o.location, o.crop, o.period, json_extract(o.payload, '$.season')
+HAVING COUNT(DISTINCT o.variable)=2 AND COUNT(*)=2;

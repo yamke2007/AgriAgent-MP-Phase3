@@ -1,0 +1,849 @@
+path,recommendation,git_state,reason
+-- SQLite.sql,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+.gitattributes,include,tracked,"Code, metadata or aggregate evaluation evidence"
+.gitignore,include,tracked,"Code, metadata or aggregate evaluation evidence"
+.venv-clean/,local_only,ignored/local,"Generated, licensed or machine-specific evidence; retain locally"
+.venv-m18/,local_only,ignored/local,"Generated, licensed or machine-specific evidence; retain locally"
+.venv/,local_only,ignored/local,"Generated, licensed or machine-specific evidence; retain locally"
+AgriAgent-pre-implementation.zip,local_only,ignored/local,"Generated, licensed or machine-specific evidence; retain locally"
+agriagent/__init__.py,include,tracked,"Pipeline, reproducibility, tests or evaluation code"
+agriagent/extractors.py,include,tracked,"Pipeline, reproducibility, tests or evaluation code"
+agriagent/forecast_ocr.py,include,untracked,"Pipeline, reproducibility, tests or evaluation code"
+agriagent/llm.py,include,tracked,"Pipeline, reproducibility, tests or evaluation code"
+agriagent/model.py,include,untracked,"Pipeline, reproducibility, tests or evaluation code"
+agriagent/mp_districts.py,include,tracked,"Pipeline, reproducibility, tests or evaluation code"
+agriagent/normalization.py,include,tracked,"Pipeline, reproducibility, tests or evaluation code"
+agriagent/orchestrator.py,include,tracked,"Pipeline, reproducibility, tests or evaluation code"
+agriagent/pipeline.py,include,tracked,"Pipeline, reproducibility, tests or evaluation code"
+agriagent/public_sources.py,include,untracked,"Pipeline, reproducibility, tests or evaluation code"
+agriagent/queries.py,include,untracked,"Pipeline, reproducibility, tests or evaluation code"
+agriagent/storage.py,include,tracked,"Pipeline, reproducibility, tests or evaluation code"
+agriagent/survey_agriculture.py,include,untracked,"Pipeline, reproducibility, tests or evaluation code"
+agriagent/tables.py,include,tracked,"Pipeline, reproducibility, tests or evaluation code"
+config.demo.json,include,untracked,"Code, metadata or aggregate evaluation evidence"
+config.fault-demo.json,include,untracked,"Code, metadata or aggregate evaluation evidence"
+config.json,include,tracked,"Code, metadata or aggregate evaluation evidence"
+CONTRIBUTIONS.md,include,untracked,"Code, metadata or aggregate evaluation evidence"
+data/derived/survey_agriculture_transcription.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/manifest.csv,include,tracked,"Code, metadata or aggregate evaluation evidence"
+data/production/mp_crop_production_2016_2022.csv,review,untracked,Source or derived corpus; clear exact redistribution rights
+data/production/mp_districts.geojson,review,untracked,Source or derived corpus; clear exact redistribution rights
+data/production/sources.json,include,untracked,"Code, metadata or aggregate evaluation evidence"
+data/raw/des_apy.html,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/raw/e_mandi_manual.pdf,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/raw/evikas_calculator.html,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/raw/icar_kvk.html,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/raw/mp_economic_survey.pdf,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/raw/msp_scheme.html,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/raw/pmfby_guidelines.pdf,review,untracked,Source or derived corpus; clear exact redistribution rights
+data/source_expansion/cohort.json,include,untracked,"Code, metadata or aggregate evaluation evidence"
+data/source_expansion/lgd_archive_metadata.json,include,untracked,"Code, metadata or aggregate evaluation evidence"
+data/source_expansion/lgd_mp_archive.csv,review,untracked,Source or derived corpus; clear exact redistribution rights
+data/train/examples.jsonl,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_001_agmarknet_soyabean_2008.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_002_agmarknet_soyabean_2008.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_003_agmarknet_soyabean_2008.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_004_agmarknet_soyabean_2008.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_005_agmarknet_soyabean_2008.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_006_agmarknet_soyabean_2008.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_007_agmarknet_soyabean_2008.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_008_agmarknet_soyabean_2008.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_009_agmarknet_soyabean_2009.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_010_agmarknet_soyabean_2009.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_011_agmarknet_soyabean_2009.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_012_agmarknet_soyabean_2009.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_013_agmarknet_soyabean_2009.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_014_agmarknet_soyabean_2009.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_015_agmarknet_soyabean_2009.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_016_agmarknet_soyabean_2009.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_017_agmarknet_soyabean_2010.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_018_agmarknet_soyabean_2010.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_019_agmarknet_soyabean_2010.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_020_agmarknet_soyabean_2010.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_021_agmarknet_soyabean_2010.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_022_agmarknet_soyabean_2010.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_023_agmarknet_soyabean_2010.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_024_agmarknet_soyabean_2010.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_025_agmarknet_wheat_2008.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_026_agmarknet_wheat_2008.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_027_agmarknet_wheat_2008.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_028_agmarknet_wheat_2008.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_029_agmarknet_wheat_2008.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_030_agmarknet_wheat_2008.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_031_agmarknet_wheat_2008.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_032_agmarknet_wheat_2008.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_033_agmarknet_wheat_2009.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_034_agmarknet_wheat_2009.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_035_agmarknet_wheat_2009.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_036_agmarknet_wheat_2009.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_037_agmarknet_wheat_2009.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_038_agmarknet_wheat_2009.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_039_agmarknet_wheat_2009.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_040_agmarknet_wheat_2009.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_041_agmarknet_wheat_2010.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_042_agmarknet_wheat_2010.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_043_agmarknet_wheat_2010.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_044_agmarknet_wheat_2010.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_045_agmarknet_wheat_2010.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_046_agmarknet_wheat_2010.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_047_agmarknet_wheat_2010.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_048_agmarknet_wheat_2010.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_049_agmarknet_maize_2008.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_050_agmarknet_maize_2008.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_051_agmarknet_maize_2008.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_052_agmarknet_maize_2008.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_053_agmarknet_maize_2008.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_054_agmarknet_maize_2008.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_055_agmarknet_maize_2008.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_056_agmarknet_maize_2008.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_057_agmarknet_maize_2009.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_058_agmarknet_maize_2009.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_059_agmarknet_maize_2009.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_060_agmarknet_maize_2009.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_061_agmarknet_maize_2009.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_062_agmarknet_maize_2009.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_063_agmarknet_maize_2009.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_064_agmarknet_maize_2009.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_065_agmarknet_maize_2010.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_066_agmarknet_maize_2010.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_067_agmarknet_maize_2010.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_068_agmarknet_maize_2010.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_069_agmarknet_maize_2010.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_070_agmarknet_maize_2010.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_071_agmarknet_maize_2010.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/raw/train_072_agmarknet_maize_2010.csv,review,tracked,Source or derived corpus; clear exact redistribution rights
+data/train/README.md,review,tracked,Source or derived corpus; clear exact redistribution rights
+db/-- SQLite.sql,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+db/agriagent.sqlite,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+db/dictionary.md,include,tracked,"Code, metadata or aggregate evaluation evidence"
+db/dump/agriagent.sql,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+db/dump/observations.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+db/queries_expected.json,review,untracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+db/schema.sql,include,tracked,"Code, metadata or aggregate evaluation evidence"
+docs/agents/advisory.md,include,tracked,Technical documentation or source metadata
+docs/agents/directory.md,include,tracked,Technical documentation or source metadata
+docs/agents/excluded_personal.md,include,tracked,Technical documentation or source metadata
+docs/agents/fertilizer.md,include,tracked,Technical documentation or source metadata
+docs/agents/insurance.md,include,tracked,Technical documentation or source metadata
+docs/agents/machinery.md,include,tracked,Technical documentation or source metadata
+docs/agents/market.md,include,tracked,Technical documentation or source metadata
+docs/agents/procurement.md,include,tracked,Technical documentation or source metadata
+docs/agents/scheme.md,include,tracked,Technical documentation or source metadata
+docs/agents/service_directory.md,include,tracked,Technical documentation or source metadata
+docs/agents/statistics.md,include,tracked,Technical documentation or source metadata
+docs/agents/supervisor.md,include,tracked,Technical documentation or source metadata
+docs/agents/tables.md,include,tracked,Technical documentation or source metadata
+docs/challenge.md,include,tracked,Technical documentation or source metadata
+docs/cleaned_source_inventory.csv,include,tracked,Technical documentation or source metadata
+docs/demo_guide.md,include,tracked,Technical documentation or source metadata
+docs/evaluation_protocol.pdf,local_only,tracked,Course material; share only via an approved course channel
+docs/git_review_and_merge.md,include,tracked,Technical documentation or source metadata
+docs/live_technical_checks.md,include,untracked,Technical documentation or source metadata
+docs/Phase1/Agent_Tool_Plan.md,review,tracked,"Confirm course/team materials, member privacy and rights"
+docs/Phase1/Crop_and_Stage_Scope.md,review,tracked,"Confirm course/team materials, member privacy and rights"
+docs/Phase1/Milestones_and_Timeline.md,review,tracked,"Confirm course/team materials, member privacy and rights"
+docs/Phase1/Phase1_Evaluation_Mapping.md,review,tracked,"Confirm course/team materials, member privacy and rights"
+docs/Phase1/Phase1_Report.md,review,tracked,"Confirm course/team materials, member privacy and rights"
+docs/Phase1/Problem_Statement.md,review,tracked,"Confirm course/team materials, member privacy and rights"
+docs/Phase1/README_original.md,review,tracked,"Confirm course/team materials, member privacy and rights"
+docs/Phase1/Source_Analysis.md,review,tracked,"Confirm course/team materials, member privacy and rights"
+docs/Phase1/source_schema_mapping.md,review,tracked,"Confirm course/team materials, member privacy and rights"
+docs/Phase1/Team_Info.md,review,tracked,"Confirm course/team materials, member privacy and rights"
+docs/phase2_implementation_status.md,include,tracked,Technical documentation or source metadata
+docs/source_agent_map.csv,include,tracked,Technical documentation or source metadata
+docs/source_frequency_summary.csv,include,tracked,Technical documentation or source metadata
+docs/source_selection_notes.md,include,tracked,Technical documentation or source metadata
+docs/submission_files.csv,include,untracked,Technical documentation or source metadata
+docs/submission_readiness.md,include,untracked,Technical documentation or source metadata
+docs/TA_Scope_and_Source_Selection.md,review,tracked,"Confirm course/team materials, member privacy and rights"
+docs/TA_Scope_and_Source_Selection.pdf,local_only,tracked,Course material; share only via an approved course channel
+docs/technical_acceptance_audit.md,include,untracked,Technical documentation or source metadata
+docs/technical_progress.md,include,untracked,Technical documentation or source metadata
+docs/technical_source_rights.md,include,untracked,Technical documentation or source metadata
+docs/viva_briefs.md,include,tracked,Technical documentation or source metadata
+eval/__init__.py,include,tracked,"Pipeline, reproducibility, tests or evaluation code"
+eval/adapter_comparison.csv,include,tracked,"Code, metadata or aggregate evaluation evidence"
+eval/agent_metrics.py,include,tracked,"Pipeline, reproducibility, tests or evaluation code"
+eval/case_index.json,include,tracked,"Code, metadata or aggregate evaluation evidence"
+eval/cases/directory_01.html,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/directory_02.html,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/directory_03.html,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/directory_04.html,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/directory_05.html,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/directory_06.html,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/directory_07.html,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/directory_08.html,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/directory_09.html,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/directory_10.html,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/scheme_01.html,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/scheme_02.html,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/scheme_03.html,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/scheme_04.html,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/scheme_05.html,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/scheme_06.html,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/scheme_07.html,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/scheme_08.html,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/scheme_09.html,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/scheme_10.html,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/statistics_01.csv,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/statistics_02.csv,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/statistics_03.csv,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/statistics_04.csv,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/statistics_05.csv,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/statistics_06.csv,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/statistics_07.csv,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/statistics_08.csv,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/statistics_09.csv,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/statistics_10.csv,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/tables_01_agmarknet_soyabean_2012.csv,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/tables_02_agmarknet_soyabean_2014.csv,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/tables_03_agmarknet_soyabean_2015.csv,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/tables_04_agmarknet_soyabean_2016.csv,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/tables_05_agmarknet_soyabean_2016.csv,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/tables_06_agmarknet_wheat_2012.csv,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/tables_07_agmarknet_wheat_2014.csv,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/tables_08_agmarknet_wheat_2015.csv,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/tables_09_agmarknet_wheat_2015.csv,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/tables_10_agmarknet_maize_2012.csv,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/tables_11_agmarknet_maize_2014.csv,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/tables_12_agmarknet_maize_2015.csv,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/tables_13_agmarknet_soyabean_2011.csv,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/tables_14_agmarknet_soyabean_2013.csv,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/tables_15_agmarknet_soyabean_2017.csv,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/tables_16_agmarknet_wheat_2011.csv,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/tables_17_agmarknet_wheat_2013.csv,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/tables_18_agmarknet_wheat_2013.csv,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/tables_19_agmarknet_wheat_2017.csv,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/tables_20_agmarknet_maize_2011.csv,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/tables_21_agmarknet_maize_2013.csv,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/cases/tables_22_agmarknet_maize_2017.csv,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/compare_adapters.py,include,tracked,"Pipeline, reproducibility, tests or evaluation code"
+eval/contamination.py,include,tracked,"Pipeline, reproducibility, tests or evaluation code"
+eval/contamination_report.json,review,tracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+eval/error_cases/index.json,include,tracked,"Code, metadata or aggregate evaluation evidence"
+eval/error_results.json,review,tracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+eval/heldout.py,include,untracked,"Pipeline, reproducibility, tests or evaluation code"
+eval/infer_adapter.py,include,tracked,"Pipeline, reproducibility, tests or evaluation code"
+eval/m18_cases.json,include,untracked,"Code, metadata or aggregate evaluation evidence"
+eval/matching.py,include,tracked,"Pipeline, reproducibility, tests or evaluation code"
+eval/phase2_metrics.csv,include,tracked,"Code, metadata or aggregate evaluation evidence"
+eval/README.md,include,tracked,"Code, metadata or aggregate evaluation evidence"
+eval/reference/directory_01.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/directory_02.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/directory_03.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/directory_04.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/directory_05.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/directory_06.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/directory_07.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/directory_08.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/directory_09.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/directory_10.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/scheme_01.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/scheme_02.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/scheme_03.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/scheme_04.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/scheme_05.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/scheme_06.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/scheme_07.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/scheme_08.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/scheme_09.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/scheme_10.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/statistics_01.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/statistics_02.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/statistics_03.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/statistics_04.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/statistics_05.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/statistics_06.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/statistics_07.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/statistics_08.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/statistics_09.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/statistics_10.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/tables_01.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/tables_02.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/tables_03.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/tables_04.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/tables_05.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/tables_06.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/tables_07.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/tables_08.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/tables_09.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/tables_10.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/tables_11.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/tables_12.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/tables_13.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/tables_14.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/tables_15.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/tables_16.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/tables_17.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/tables_18.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/tables_19.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/tables_20.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/tables_21.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/reference/tables_22.json,review,tracked,Evaluation rows or expected outputs; confirm rights for source-derived values and excerpts
+eval/requirements-colab.txt,include,untracked,"Code, metadata or aggregate evaluation evidence"
+eval/results.json,review,tracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+eval/run_error_eval.py,include,tracked,"Pipeline, reproducibility, tests or evaluation code"
+eval/run_eval.py,include,tracked,"Pipeline, reproducibility, tests or evaluation code"
+eval/run_surprise.py,include,untracked,"Pipeline, reproducibility, tests or evaluation code"
+eval/scoring.py,include,tracked,"Pipeline, reproducibility, tests or evaluation code"
+eval/source_checks.py,include,untracked,"Pipeline, reproducibility, tests or evaluation code"
+eval/tables_check_sheet.csv,review,tracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+eval/train_lora_colab.py,include,tracked,"Pipeline, reproducibility, tests or evaluation code"
+eval/train_release_adapter.py,include,untracked,"Pipeline, reproducibility, tests or evaluation code"
+eval/workflow_cases.json,include,tracked,"Code, metadata or aggregate evaluation evidence"
+eval/workflow_results.json,review,tracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/audit_report.json,review,tracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/clean_extraction_report.json,review,tracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/environment_report.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+evidence/final_submission/laptop-verification.json,review,untracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/final_submission/regression.txt,include,untracked,"Code, metadata or aggregate evaluation evidence"
+evidence/hindi_ocr_benchmark.csv,review,tracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/m18_release/adapter_comparison.csv,include,untracked,"Code, metadata or aggregate evaluation evidence"
+evidence/m18_release/case_scores.csv,include,untracked,"Code, metadata or aggregate evaluation evidence"
+evidence/m18_release/hashes.json,include,untracked,"Code, metadata or aggregate evaluation evidence"
+evidence/m18_release/phase2_metrics.csv,include,untracked,"Code, metadata or aggregate evaluation evidence"
+evidence/m18_release/query_recheck.json,review,untracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/m18_release/training_log.json,review,untracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/m18_release/unittest.txt,review,untracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/m18_release/verification.json,include,untracked,"Code, metadata or aggregate evaluation evidence"
+evidence/package_inventory.json,review,tracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/phase1_baseline.json,review,tracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/source_expansion/des_provenance.json,review,untracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/source_expansion/lgd_join.json,review,untracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/source_expansion/m18_preflight.json,review,untracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/source_expansion/production_automation.csv,review,untracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/source_expansion/production_report.json,review,untracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/source_expansion/query_recheck.json,review,untracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/source_expansion/real_ocr_and_fault.json,review,untracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/source_expansion/survey_automation.json,review,untracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/source_expansion/unittest.txt,review,untracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/survey_text.txt,review,tracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/technical_completion/adapter_application_cli.txt,review,untracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/technical_completion/adapter_application_run.json,review,untracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/technical_completion/adapter_pipeline_check.json,include,untracked,"Code, metadata or aggregate evaluation evidence"
+evidence/technical_completion/agent_aggregation_check.json,include,untracked,"Code, metadata or aggregate evaluation evidence"
+evidence/technical_completion/deterministic_control_cli.txt,review,untracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/technical_completion/deterministic_control_run.json,review,untracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/technical_completion/fresh_ocr-languages.txt,local_only,untracked,"Historical raw data, database payloads or machine-specific evidence"
+evidence/technical_completion/fresh_original-queries.json,review,untracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/technical_completion/fresh_pip-check.txt,include,untracked,"Code, metadata or aggregate evaluation evidence"
+evidence/technical_completion/fresh_pip-freeze.txt,include,untracked,"Code, metadata or aggregate evaluation evidence"
+evidence/technical_completion/fresh_python-version.txt,review,untracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/technical_completion/fresh_rebuilt-queries.json,review,untracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/technical_completion/fresh_regression.txt,review,untracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/technical_completion/fresh_restore.txt,review,untracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/technical_completion/fresh_restored-queries.json,review,untracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/technical_completion/lgd_archive_recheck.json,review,untracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/technical_completion/m12_paired.json,review,untracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/technical_completion/m12_paired_automation.csv,review,untracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/technical_completion/phase2_benchmark_automation.csv,review,untracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/technical_completion/phase2_cases.json,review,untracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/technical_completion/phase2_errors.json,include,untracked,"Code, metadata or aggregate evaluation evidence"
+evidence/technical_completion/phase2_local_metrics.csv,review,untracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/technical_completion/phase2_metrics.csv,include,untracked,"Code, metadata or aggregate evaluation evidence"
+evidence/technical_completion/phase2_workflows.json,review,untracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/technical_completion/preservation.csv,include,untracked,"Code, metadata or aggregate evaluation evidence"
+evidence/technical_completion/provenance_rehearsal.txt,review,untracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/technical_completion/real_des_fault.txt,review,untracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/technical_completion/reproducibility.json,review,untracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/technical_completion/source_access.json,review,untracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/technical_completion/surprise_rehearsal.json,review,untracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/technical_release/adapter_status.csv,review,untracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/technical_release/analysis_findings.json,review,untracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/technical_release/evaluation_error_summary.json,review,untracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/technical_release/format_checks.json,review,untracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/technical_release/phase2_metrics.csv,review,untracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/technical_release/query_results.json,review,untracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/technical_release/release_build.json,review,untracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/technical_release/reviewer_queue.csv,review,untracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/technical_release/robustness_results.json,review,untracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/technical_release/unittest.txt,review,untracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/technical_release/workflow_results.json,review,untracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/test_report.json,review,tracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+evidence/tool_benchmarks.csv,review,tracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+logs/automation_log.csv,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/phase1_progress_log.md,review,tracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+logs/source_verification_log.md,review,tracked,Evidence content and privacy approval before sharing; prefer published aggregate summary
+logs/traces/-- SQLite.sql,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/002d9d8d-68f1-4468-9ca8-f373b4a07d5f.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/00cf316f-5b1e-4de4-8e26-dbbde0cfb072.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/01a0051f-fe06-49e4-a0d6-37587d4274ba.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/0246c15b-700a-4472-a555-f6ce74300a05.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/02796724-1938-4862-9d24-f382c44615be.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/02e178b7-734c-42ee-b944-2a72dc80e340.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/03059fe9-c52a-414b-92db-f70bac8b2428.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/03328e76-8982-4492-bd5d-d7fa20123a16.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/056e4b6e-7796-4de6-8bc1-b01e353cba7c.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/06289e4b-bfce-4e3e-87f0-7ef06befdd80.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/06c9c056-fd3d-4246-8944-b362779ff349.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/08275bcf-0d65-44b1-b9bc-69fe12b6c897.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/0c52365d-89f6-4c85-bcf8-ab7291646f3e.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/0caeb707-7322-48e7-a0a8-ac49b404df2a.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/0cf1d573-d005-4c97-8e44-f5b9dd46454c.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/0d2d47fd-a846-4327-951c-bf7b8c3a1a21.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/0dc2d4d8-c77d-43aa-8f23-abb6903d75d1.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/0eb01532-6837-463f-8aa0-b9d98cff5098.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/1018a11f-b4e3-447f-86b0-e800a048a085.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/106d9fe9-994a-4c69-837c-1f21df58e2a1.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/12169830-688b-4742-accb-48a4f048219c.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/134f9c78-1113-4829-a37e-e171a21c388a.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/136758ad-aa0f-4c18-8638-aca011496335.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/152c10b0-149e-4799-80a7-983735f7e65c.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/15d869b4-fecf-4267-8854-a850647494cd.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/17aff3d1-a1d1-434b-afcd-89eea1171b27.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/180a8ff5-2d28-472d-a176-0f5075019c01.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/187c0fcc-f0f8-4bc9-b54b-152ff8c9690f.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/18c591a6-21fd-4a99-a9e9-f9b2cc2dd6eb.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/19e42c2e-0775-47f5-b236-b2410b194672.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/19eb8053-376c-40c4-bea4-052ea47e4d0c.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/1ae1641f-ba7e-494d-b1ca-d4e39bfa835f.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/1b390370-30de-4ec6-ad1f-f0c8648bbeb3.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/1be8656a-ffb4-4f19-951e-2a3012e7d0bd.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/1c28ab39-0052-4285-9452-5dcff732a8ca.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/1d147f44-0021-4615-9a1a-2cc942d0046f.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/1eeb92cc-ab9b-4387-8834-09708e2f06d4.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/2119b932-0016-4720-a6c6-2c166c83f56f.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/213fe367-8408-4284-96e0-e76a2f2615b1.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/21938ab1-0838-48df-8dd9-dc3015b7680b.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/21ab4d8a-3803-4915-83f5-2e19899a3818.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/21f4d0c6-d738-43b2-a84e-d4d616ccebfb.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/220c54e9-8071-4132-9378-fbf553356ec7.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/22a19a41-3971-4535-8f50-4d59ba61ff25.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/231714b7-e8f2-449f-bd8f-23b36c2cf1c9.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/232bbe5f-7e3e-4c8a-ae68-363945477038.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/24330b1a-0ba3-447e-9892-6579930e881f.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/245afd5c-4c87-4a50-9861-4473d3072bb8.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/259ba6d4-3c04-487b-86ba-52b786655982.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/279794c6-87e2-4446-a678-e0a57b2ef45e.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/27dfefb7-c853-4bee-a790-f0be0167c186.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/285b5ab1-7f6d-4983-abe9-dabf38a1b048.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/28e26a73-ffeb-4cac-a3c1-68b4a44a618e.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/29f86fa2-3fed-4c86-a30e-a2f455dd49fb.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/2b7e459f-9556-4c8e-8021-f9f16941223c.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/2b83bb61-84c4-4e45-9993-5d7378603d9a.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/2be26e5f-9613-4b4a-8b26-9a3c1023b5cd.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/2ca89df0-9c39-4d7c-8e5f-a653bb444d66.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/2ccf147d-0fb0-481a-8824-e28d2cb60c64.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/2d3ce8dc-145d-47ce-ab49-70a55eedba7c.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/2d6b1042-65fc-47a6-9f42-4a3f973531f9.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/2dbd3074-cac5-4a1d-b38e-9850dd20992e.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/2e521750-551a-4fc6-a0b1-d21cce33f2a4.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/2f18e591-f6e3-4ea9-a47b-4d943713dc47.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/2f2e45eb-c7be-4e82-9938-e162b67b4787.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/33947894-9631-4ed5-bbd2-c0480266d08f.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/3395ebc2-1d9e-49ef-bbf7-52b30b035265.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/33a4950d-3f8c-4459-9729-4fe189c6f5e4.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/34194f1f-80f0-4808-a1e3-a71fc0263a07.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/34b8cd80-ecec-4e7d-9b02-c43002187d49.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/34eafc73-198b-4a5a-80c4-189d263e60eb.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/353450db-1105-4728-b93a-66ba676150b1.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/371a2a2e-8d2f-4f91-bd8d-51951401c4b9.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/37909bbf-3642-4b8a-85be-a928b5396a43.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/38f79140-b776-49ea-8b17-9532d5933bde.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/396e36ce-cd13-48fa-ade1-dd2e98a941a8.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/39cbe07c-db10-469d-8f10-634741f99b60.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/3aab1033-c53e-4a6a-8ebe-43c049fc0926.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/3c424c8d-70f6-485d-894c-26b7dcff4cef.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/3c5a9ae2-40fd-4230-8db1-54dd04ca2bb9.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/3c80fc68-2ac0-43e1-aaf4-5158d2afa4b2.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/3d69e4ce-c762-4150-92fc-b68ee123f6dc.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/3d9c0728-37aa-4d31-8327-d418658dffba.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/3eb107b1-7dc6-4683-9b9a-d192e9eeb8c5.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/3ed391d7-9bc4-4e0e-8b3a-cfea3a948e78.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/3ef36d33-9a0f-41bd-81a5-0c9a0d1cda09.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/3f244ae4-7d1a-47db-8a3d-250613bc448b.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/3f746260-a6df-421b-90bc-2ecfa979602b.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/4222ecba-0f2b-43d5-b2c7-95e87d229d6f.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/429cae5c-9358-48e7-9547-7cdbc4a1118e.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/4319eff0-e387-4f6c-9ffd-f32a71833686.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/43949d4a-941c-431f-bf63-36a1e0abab9b.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/439b7dec-12b2-416b-b055-3d7a060e0b95.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/44a30d26-e8ca-4889-9ef8-9f1860659c8a.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/44ff2cdc-04f4-4192-8d3b-55cf792e019f.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/461fdbbd-3856-4ff5-b58f-2d75241f6498.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/469dc98f-6911-489c-b3a7-6dc286da1777.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/47a4e766-fc1b-4c41-ac1e-e2250e193b39.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/47bdaef8-4de3-425b-8bd7-f356bc7c2942.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/47cc885a-5437-4e20-b226-8f3f93c89ba1.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/497e4e68-1ee9-47b0-8b4e-76a90ebaf76e.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/4ae23e49-746d-456b-a6c3-2c25969be012.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/4b9b4fc0-82d5-4f7a-a3a3-6856f8d81b08.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/4c7048b7-739e-4df0-9d0c-10e3925254ff.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/4d171a32-7c67-4e36-96d4-cc058834a329.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/4d1ad8ec-84bc-49b2-8480-278c3e211570.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/4f6ca221-2e98-4288-ae42-c63a915a5697.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/4fa3f455-623e-4c82-9211-09ea2aefdace.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/4ff53627-45a5-45ea-bded-8b4e0a73b026.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/50eea666-a444-46f2-870f-66735e90ec6b.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/51887191-483d-4a46-bc0b-1bf3b8e79585.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/51d5ef5a-1113-4ff5-a130-4dbe404345d7.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/52b2d1e2-651d-49ad-9b84-9bc38e34db9a.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/53cef636-d80c-42f2-ab94-15b0c2dbe469.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/5477ef19-deaa-4056-ab4b-ad9b31e88137.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/560a2ee7-7bf6-4eed-8448-03ffe3d02579.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/56768482-e74f-427f-a122-d64fb664cfd6.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/57b86c9a-9708-46aa-95eb-2a033fcf94e5.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/589f9ede-4a11-4099-bbc0-a40a1437149a.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/58cc8273-8c7e-471d-9718-564b02139746.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/593686c4-0040-474c-8b70-87d99cc55870.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/593e4822-cdc1-4495-afa7-82432b094c74.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/5a2a3b4f-5291-40fe-bd55-787560a307ae.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/5ad27426-c61d-4de0-861e-a2c6a62a95a5.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/5b120727-e15a-43dc-8876-7fc7b29f8fbc.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/5b40d042-8fa6-4efc-944d-9d0208df0575.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/5bb0df24-f6d9-4fc4-8ccc-1ac21d2ab8f0.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/5cc483fa-54a8-4b09-9ff7-5ed5682946d5.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/5daf2411-6f81-47bc-bb99-78d5c8a1fc11.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/5e5245d4-a3aa-452b-9b18-7f62ac23d590.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/5ecdcca5-59d1-4d0a-adc8-4b9b8fb4bcd4.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/605ea81e-7223-4133-b620-5371cae6fb06.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/60d2467c-b849-4e98-82df-a3ea0374959b.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/628606b3-cae7-4235-8ccd-675d556b3c41.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/62a151a8-4185-429b-bb5c-875745741199.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/62ed467c-31a7-4e99-abc6-17a4c2cda3e4.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/63577815-565b-498f-9d92-94e723698787.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/648448e0-6e5e-4164-a2ca-8bacd0f6059c.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/64b818df-a40e-43e0-9805-23ef31f65de2.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/67c59f7a-9aa4-4558-9017-932c2593ef78.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/680e71c4-03d4-4dc5-9a65-5a416e7c61b7.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/68887f71-d205-4f11-8d61-45a93df1b0df.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/6a1acb87-d706-4ccc-912d-586396a1cc0c.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/6a342635-063f-4585-a503-9d0789f62a72.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/6a55e3b6-59b7-4b02-b56b-83c6c29ea6a4.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/6a85c8c2-d20c-43ae-97f6-a70860838a1b.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/6b5716a3-c698-49c1-8e28-5d22b656a7f5.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/6bbd980d-e2b8-4db4-a544-61b7c25075f1.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/6c50da31-4e1c-4022-afac-423091f19529.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/6c820e04-8d7d-43f5-9619-9fc39591e998.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/6c97210e-9145-41e1-bee8-096410542306.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/6cc2077a-ebee-454f-833d-2a05811ad685.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/7160d2a2-2817-42d9-8941-54ddb9b2bac7.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/7281e0d3-88aa-42de-b12d-c38b50bcf4ae.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/72a38711-ef53-4fd2-9c46-7f6eca041b10.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/737e55bd-c7cb-4ada-8042-66784cde4eec.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/73924cd3-64c4-4b79-858e-07dae084dd18.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/73e9e281-9854-43d0-a301-52a3421fa964.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/73ef9f92-955e-40db-a79a-0645430d0cb7.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/754c0266-42a5-4c34-a3e7-865e9dd7c358.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/756849d9-0582-4a16-8869-923b533a27db.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/76f4640e-2d06-4d3e-a310-07f2116348ab.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/76fdea36-81c4-45a1-acb1-baa8f4ebc239.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/76fec771-0d7b-47e2-a4f8-6be331a0aeef.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/776aacd2-a184-45e0-b064-6380db69393f.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/776ce48a-3f28-4e04-9967-1da8de9d08d5.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/7774732d-d33c-433a-9aaa-1c5d721b10e8.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/777e6799-80f5-4721-bb67-a3c16e7ba650.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/7810b957-8745-4092-b124-13334132d4ec.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/78d8ac74-b1bf-4bbb-8cfb-2dfee0da6187.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/79091b85-7aaa-4045-b60e-a9514e70fbf9.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/797f31a7-78c4-41fe-806f-0e939e95b289.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/7997279a-3187-47bc-97cb-6d49c2f63985.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/7a031f8d-526b-4846-95f4-370fea9aa8bf.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/7abbee4f-727b-49be-86fb-930d4c263bce.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/7b8bec2f-a28c-44c6-8a5d-121e30c74166.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/7c5c896b-4699-400c-b3b4-7b938bdd80e9.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/7c5cf2dd-491f-4a53-8382-02ff3914733a.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/7dfa1bb4-b3f1-427a-9f23-c8b9d9f3700e.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/7e7393f8-0c8f-4fdc-a21d-7ad066b494cb.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/7f7ec576-f5f2-4a7c-8bb7-bbc0812f9d45.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/7fbb849e-f1f0-4365-9e1e-f09cf56259f9.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/7fc6ef62-9fbe-46fd-8a9d-623c81627c6a.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/809a8c5e-a2df-4a31-8400-9899072e0d15.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/80a34b5f-4786-4a7c-a46e-2b9481018579.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/80e0c044-4dea-4799-bd9b-f38d02e1eec5.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/8234e12d-94cd-4c9b-8179-c3dd6f43da4d.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/826c7344-3281-4692-a900-69c22e8a33c2.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/82c29f8a-0ada-4ab3-a939-6972adc0ef65.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/830c4bd5-2503-4f3e-a1cd-8ba349336541.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/84752eb7-04ed-4743-a451-dc71279b3c47.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/853e90b7-5f5e-4796-90e7-8b9f2d3384ea.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/874aa599-4019-49ae-8f85-8cdc19a10e4f.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/879514f9-8927-4ce8-ae1e-4a42fbf8e3a6.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/87edfb16-84d3-45d1-9890-8de610175732.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/889894ae-c769-465e-8dc7-7dc5cde31b5a.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/88f8c7c5-4da9-4d44-a023-bb2646a14645.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/891e4fb6-1846-4bc1-9235-b2d6cc0f8664.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/89f78d39-881e-4309-9aaa-c6f11f5018a1.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/8a0edb58-64c0-4b7d-a55d-571aa87db7a2.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/8aeac4de-1a1e-4647-b101-b3fa662b6c48.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/8aeca1bc-ed8f-4aec-90bb-a1cfa4b8d656.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/8bc20f65-8c42-4537-bb79-8bbb1364a3eb.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/8c09f535-1ad3-42eb-966d-4cc4e27a823f.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/8c228b69-ae9f-4f68-82b9-7373b3104371.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/8d08cee4-85fc-49de-9d4e-8e05bc6fbaa4.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/8d1d7dc2-480b-4d9f-82b8-1db89e54cbae.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/8d57b1a9-9cc5-4571-b5f7-9f9ac562e6d1.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/8e91c008-7356-4d74-8a63-a0ead1e2ae09.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/8f7e32b9-1985-4fa1-902c-0a3f3424f3c0.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/8f9b7154-d6a5-4d17-9c11-5723edd66346.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/8fed8d61-6775-41a5-86b3-8725d222f3e1.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/9011eeff-8f04-43db-a8f8-2ddbd199b8e6.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/9022820d-42c2-4221-ba91-f2182dfa4572.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/90aa8076-298a-4699-98c1-32f4e58597cf.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/90e09268-cc5b-40c7-8e9d-ae5dd14232f9.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/91178eb9-6cc3-4be2-8949-11f27e411e41.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/9185957e-5166-4be1-8b9f-9303d56f445f.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/91f776d2-e585-44f5-8cf4-3a1bdfdf3803.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/924acb58-8680-44aa-b144-c88c6abadc70.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/92a89c5f-b1c4-4d69-a2b5-d0fb1046e050.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/92d4050d-0ba3-4a0e-94c0-e8cf1080cbef.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/94219213-4e02-46d6-8cc5-60ad43b31121.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/9479dcbe-6c6d-4477-82f0-6a841120e78c.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/956e8c89-466b-410a-9e3b-d2e27085d01f.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/957b39b1-e2c7-45a9-a5c9-2fd216d33bd4.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/95a7f234-7a6d-4334-9f7e-1fdbb45b9eb5.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/95c1d7a8-ebd6-43e6-9563-0e52b013fc82.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/97002d90-a919-40f8-9358-7a0383d208ba.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/970ca23c-e935-4b34-a37d-a3180abae791.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/97c61364-6caa-417a-9da7-74b6fad3375e.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/98b07a9b-ba06-40d8-92ad-5f5954bd21c7.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/993d58c8-fd4e-4aa4-9772-485e1727c779.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/99770217-3025-4eba-bb69-0c3f16e15475.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/9a48a2ab-e166-44df-bf2a-f99f41d899d8.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/9a62baab-dbcf-4179-90bc-82df8c60e8df.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/9a70cc15-597e-4382-9b45-8b2da77dfaef.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/9ad8d682-f304-4cb7-8b8f-5d069aa657a3.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/9c0a99a8-3da1-48b1-9e42-8453111613cf.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/9c12059f-df1f-4181-8805-5e1954458fa9.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/9c9eb56e-e4c9-44f0-b82b-c0d4188de1a5.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/9cf42c3f-2426-4779-8dbb-34f4cb2febc1.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/9d1aa47d-10f7-4eee-a252-f08714393cce.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/9d37405b-0a1f-43bf-aa03-064ca60b0d5f.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/9d3a5dd8-f54e-4853-849f-8cad01f024b9.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/9d648dd1-0b9a-4e74-86c1-e1f7b39ff553.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/9e1375ec-8d15-4bce-aa46-b2b0e5129f49.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/9e55eed2-67ef-4ac3-89a5-4c7f78a6cda6.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/9ff215af-d0a1-4c53-afa2-52dfbdf4d3f1.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/9ffe87e2-46dc-4b6f-be6a-36d796c55a09.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/a0a6c725-1bb6-4d23-aff3-3fe84376c84a.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/a0d80235-1f41-48cd-8645-148e49e95664.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/a10b5e92-ac05-4e20-90ca-af986dfd1edc.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/a1156f90-cede-420c-a1b7-639a075619a3.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/a1587fe7-f9f6-4a1a-a191-e0c246161776.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/a2c67b99-0fa9-4a29-b795-33bddd62c9be.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/a33bbe5a-2e5e-4d76-8bf9-dbc59bca0538.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/a3f7119c-6d85-4ecd-85ea-f2a6ea859953.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/a4724da9-e59b-459d-82ac-0cf32fab6e5a.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/a5c68ff8-1cdd-4112-96e9-2b26e7fe564d.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/a797b6d2-831a-456a-ac62-ee1ecc60bee2.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/a83d1ffc-866f-44c8-817e-c00475700482.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/a84a0535-b02a-4f14-924f-41d8c5d79ab9.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/a8925bde-1ed4-4c4d-960e-9428890b30df.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/a919e5da-e7aa-4f37-9549-b3926bef9128.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/a93dc5de-863b-4442-9681-8a3d44458033.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/a97cfb31-64b3-44ea-ae9e-2b66f0d33e61.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/aa21c46c-3bb5-4aef-86be-21df0e25a563.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/aa457d8d-e783-4a43-8a02-d2a5f8109403.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/ab2208cd-93c1-43b4-bc58-6dfa0158feb6.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/abbd58a7-a918-48a3-8561-ddd4c8cdffb8.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/acb2af1e-481f-4501-88c0-f7f9662a2eba.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/accf8a0d-2d31-4bda-bbb2-5ae04fa585c7.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/ad167ec4-40d4-40be-88d8-9687e7d9c64a.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/ad430048-ca98-46b2-bca7-1200321f5a24.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/add0212f-dc9c-48c0-926a-82f14787fee5.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/ae0eb084-6b92-4757-a8b4-233472e37f3c.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/ae45cfa8-6ec2-4a51-9bc4-7580e70a73d0.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/ae53a0c7-503e-4e30-8a5c-2b73708c5eef.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/ae82a4d4-c70a-4576-bc3e-3b32d55a9616.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/af7c6501-a688-4258-b81e-caacc7c9bc79.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/af7f8336-c2b8-413e-9537-ea0ba6051475.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/afee0467-43f9-4e22-b0cd-34a5a04cbafc.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/b1da0f11-d10b-4457-8396-9acaf3dd56b2.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/b1df5622-4235-4fee-933e-858f157600aa.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/b22bff98-4ddf-4539-9442-7d695d30cae8.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/b2ccd172-582b-413b-90d2-d6f0a7b14b7e.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/b3adcd82-ee19-43b2-8bec-6c400e6173a5.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/b3f54708-a32d-4e9f-839f-b4682ea1a81b.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/b4cb6d01-40f1-4959-a779-32f23cc6e51b.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/b4d425ec-1e7c-42a6-963b-b955723a83cc.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/b4f7dd6a-d11f-43da-a7cc-c800e3c7722a.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/b55ee366-f14c-404f-939d-48767660b112.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/b56e3e3d-f2e1-422f-847d-4876cc6eff92.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/b61dc493-4ff6-4aef-b7c3-ffcd536351c6.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/b641d09a-70a7-4023-b954-134f59663633.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/b646c37e-4bb1-4098-b908-18b96bcb3ffc.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/b6b5fca5-adcb-4022-879e-9370ec742ecb.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/b7cdc4ab-7a5c-4f28-92eb-d66b71e0fe3e.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/b87edb68-3a33-4213-aa0f-00802d120d56.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/b9caa0e9-42cb-4a68-bca4-d1780d7c3f02.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/ba00e51a-4378-4729-9b5d-71692abc3ac3.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/bb490b8f-e6f9-4284-9de9-38fe5d57d7fb.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/bb5002e2-4b51-4780-a29b-16b4b4ea7067.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/bc10e0c0-526a-4bdd-b910-44e33ee37232.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/bc4e18c5-0c07-46aa-92fe-29f568a6bdfe.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/bc56f06f-00b2-43cd-9d1a-c8bb2f2a7bd8.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/bc6358ff-7daf-44e5-a1e8-1d4cdfb62fbb.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/bcafcc83-b8ca-4719-9417-d4d7fbe7faf1.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/bd191a00-901d-40bb-bcf9-67f063b69c28.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/bdbdb392-6bf9-4ad1-96db-ef16e9677f0a.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/bdef52fa-7920-4245-b497-784472041c4c.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/bf6ab72f-62fc-4973-889f-c9770c9a1cc5.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/c090e9bc-0714-486b-9856-b48707bee9ed.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/c18914d0-5dab-4767-ba66-4ba1aaef6937.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/c21c67f5-86a8-4a2a-8c89-17f3e7ebe542.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/c5349e1b-ab16-4355-9b37-2a69be39e399.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/c5c0da04-c7ee-4de4-9a9f-0af17724c74a.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/c5c9643c-8af5-4efe-aea0-b1b457781011.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/c6235fae-fd98-4763-a4df-44f58dedf8d3.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/c66433a8-2530-41b0-8d4c-664a680e2700.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/c77295c7-7b7f-4311-904b-6b5ae172defe.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/c8e6ac76-f7ca-4ec7-9ce8-5a202545ac62.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/ca331e33-c3af-4346-b0e9-0df89fcd7736.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/ca79df56-484a-4cd8-9438-af263841fc54.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/cac918c3-b205-4771-ab5b-76a1f3245c68.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/cadffce0-178a-4888-8c25-22b741691c0f.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/cb15f407-1781-4fbc-ba85-59f1e692d78c.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/cc4bbb02-8b82-43fd-a180-abeb530729b3.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/cf212184-2758-415a-9d12-16584a5253de.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/d02f3cd2-dc08-47d8-b7a0-2ba2ad0d96a8.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/d0a4f84b-5918-4c71-8eeb-76977595d7a2.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/d1edcdbc-89ee-4d2e-ae98-c1db802ef176.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/d2477f27-2475-4d65-b1f6-522cdcd49745.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/d261f39f-6bd2-448c-b50a-42f49fe7ebd8.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/d3569a46-1d4b-4f84-9994-ecc2f18fe196.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/d3cdb1b8-d707-4e4a-a0a2-72b080a495ce.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/d4041c82-d5f5-468f-88e6-fdc8e46a3fc0.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/d48fba51-3483-4734-8f0f-3013a67e9fa7.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/d52d8101-61b7-437b-9c92-b60903ebf062.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/d627a04b-1942-4ecc-b37d-147fae0f37a6.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/d68b55ea-bf05-4529-bbb6-fae06fa09ae5.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/d83b0fc6-21cf-43ab-8818-1407a7b02012.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/d841ab64-20d9-4875-a027-65e31c0f8c8f.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/d8494a10-2cd0-43af-af7f-86c3e310142b.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/d9244871-638b-4158-bae9-cbb764e7e8be.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/d965019d-a1b6-477b-91c7-19a9f8270f97.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/d9ab6b6e-20b0-44ff-9b01-0c2f61319e90.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/db0fe9ae-a416-454f-8272-6a333ff02b89.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/db81b49e-dac0-4b97-9ed8-a96a95e21f6a.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/dbb23633-a4ec-449c-b3ca-541a63d28617.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/ddd0fa7b-7959-406c-a3eb-a62582e68997.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/de1f6271-17bb-4387-8974-58dc038a153a.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/de4d8ab3-c467-4671-bc19-07b1153d1983.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/de5d3c06-5913-4445-b291-9e0f029dc01d.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/e00c3582-7eb9-48ec-8d6a-704fddd3e41c.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/e06c48f0-1574-4df4-8483-9882f7c3644e.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/e0ce3ec8-47a4-4ed6-81dd-3165f48c48b8.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/e1089e39-24c6-4f96-95da-beefda16ed49.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/e165519a-d50e-4316-8907-c1202411a625.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/e23d9ccc-c396-4027-b128-04dbce1887a6.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/e4104987-b230-47a9-a236-338260f35e9b.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/e49eb533-b368-49e2-bbc2-f84c39e28f53.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/e54af377-e63b-4e3f-bcd9-2d6ad890debc.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/e60ac32e-49cc-4492-9520-df181ed6dfc8.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/e69b4ddf-06f6-4f8a-bf20-c0c688e7c7a1.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/e72e34f9-6eaf-49b4-8c77-bf84dc020d65.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/e7ac03fe-a9e4-4c59-8d84-f35ff5659f3a.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/e891ca84-e6b9-4cfe-8746-589db6b66a5c.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/e92e5fee-6c78-40bb-9f3c-e99701222e65.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/ecc34423-e015-4811-9595-6f261ce24f08.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/ed95839b-e7a3-4147-8a61-a02f5510b942.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/edae9508-2df7-4fb7-94a4-7898ad6288f8.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/ee65da76-abbe-4dad-988d-6057ed1aaf10.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/ee821f1d-df55-4497-af33-cabcfebfbbf3.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/eeb763f4-1b86-4b8b-8883-60d093725877.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/ef8a1f6d-3778-473a-8c8b-30875783e007.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/ef93fa65-79e7-444c-95de-5541c59b9605.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/eff5418d-1df5-48f2-9aa6-4a01f48a0f78.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/f02f2b27-c399-40fc-9366-ce8d85e514a9.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/f0556741-0859-479b-83da-3ba9807f56e1.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/f0cea53f-89a9-4454-b2f5-45836477cbeb.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/f20a98a1-e11f-4d80-b0a4-80fed9063782.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/f2e9f9a3-9211-434e-8a5f-4d9fde2d7cdb.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/f34edc18-bec3-4993-a4b5-9db1e47e2924.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/f355c237-d21b-4fb4-be7d-204bb2908f0c.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/f3750160-73d2-451d-881a-d4e88eeaac58.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/f393d523-23bb-4f12-a650-f245554d00a4.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/f3b854b6-56d8-4999-83ad-3c343eef6206.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/f51bf4d5-e315-4f81-adab-679232877a3e.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/f5d13763-6ab4-4971-bafa-a7d8378b043d.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/f631346f-f424-45dc-9ce4-863204e68080.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/f64dc97b-8c76-4f44-ac1e-addd266f332f.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/f67d5ac1-3c0b-4dc3-887c-c4acd63f1eba.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/f757e089-8714-4099-8611-2a6f68be809f.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/f7739da6-5047-4884-856a-394d44609598.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/f827d5f2-9b45-4e72-ae4d-4c975c7abf1e.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/f92327b8-b0bf-4c6e-b05d-c6c0436c919f.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/f9f929d8-a7da-407e-89c9-b6e9a20f053d.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/fc98a169-70d7-429f-a3f8-704c77db6f41.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/fcb10af5-97cf-45e2-bb3d-e7c9e15cd8ff.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/fda438fe-0842-4eab-9196-389ef0cdcf96.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/fe8eaed6-40e4-4e58-a62d-a3065e2db19e.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/fe9837c8-62d5-4c22-9fdc-eb379a944a2d.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/ff0476c7-1fac-416a-b655-86ff5d2a8605.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+logs/traces/ff7b94e9-2495-4769-82d4-041f5b8ab26b.json,local_only,tracked,"Historical raw data, database payloads or machine-specific evidence"
+Official_Requirements/AgriAgent — Phase 2 Demonstration  Evaluation Detailed Protocols_ (2).pdf,local_only,ignored/local,Course material; share only via an approved course channel
+Official_Requirements/AgriAgent_Project_Methodology (2).pdf,local_only,ignored/local,Course material; share only via an approved course channel
+Official_Requirements/PHASE III- Eval details-v2.pdf,local_only,ignored/local,Course material; share only via an approved course channel
+output/,local_only,ignored/local,"Generated, licensed or machine-specific evidence; retain locally"
+output/agriagent-m18-results.zip,local_only,ignored/local,"Generated, licensed or machine-specific evidence; retain locally"
+output/analysis/,local_only,ignored/local,"Generated, licensed or machine-specific evidence; retain locally"
+output/colab-release/,local_only,ignored/local,"Generated, licensed or machine-specific evidence; retain locally"
+output/colab/,local_only,ignored/local,"Generated, licensed or machine-specific evidence; retain locally"
+output/lgd-mp-original.xlsx,local_only,ignored/local,"Generated, licensed or machine-specific evidence; retain locally"
+output/lgd-mp-registry.json,local_only,ignored/local,"Generated, licensed or machine-specific evidence; retain locally"
+output/lgd-mp.csv,local_only,ignored/local,"Generated, licensed or machine-specific evidence; retain locally"
+output/m18-gpu-ready/,local_only,ignored/local,"Generated, licensed or machine-specific evidence; retain locally"
+output/m18-preflight/,local_only,ignored/local,"Generated, licensed or machine-specific evidence; retain locally"
+output/m18-verified/,local_only,ignored/local,"Generated, licensed or machine-specific evidence; retain locally"
+output/m18/,local_only,ignored/local,"Generated, licensed or machine-specific evidence; retain locally"
+output/m18/adapter/,local_only,ignored/local,"Generated, licensed or machine-specific evidence; retain locally"
+output/personal-backup/,local_only,ignored/local,"Generated, licensed or machine-specific evidence; retain locally"
+output/personal-restored.sqlite,local_only,ignored/local,"Generated, licensed or machine-specific evidence; retain locally"
+output/release-before-byte-recovery/,local_only,ignored/local,"Generated, licensed or machine-specific evidence; retain locally"
+output/release/,local_only,ignored/local,"Generated, licensed or machine-specific evidence; retain locally"
+output/verification/phase3-fresh-venv/,local_only,ignored/local,"Generated, licensed or machine-specific evidence; retain locally"
+output/verification/portable-working-copy/,local_only,ignored/local,"Generated, licensed or machine-specific evidence; retain locally"
+output/verification/qwen-989aa79/,local_only,ignored/local,"Generated, licensed or machine-specific evidence; retain locally"
+README.md,include,tracked,"Code, metadata or aggregate evaluation evidence"
+requirements.txt,include,tracked,"Code, metadata or aggregate evaluation evidence"
+run.py,include,tracked,"Code, metadata or aggregate evaluation evidence"
+Schema/data_dictionary.md,include,tracked,Technical documentation or source metadata
+Schema/database_schema.md,include,tracked,Technical documentation or source metadata
+scripts/analyze_release.py,include,untracked,"Pipeline, reproducibility, tests or evaluation code"
+scripts/audit_project.py,include,tracked,"Pipeline, reproducibility, tests or evaluation code"
+scripts/benchmark_hindi_ocr.py,include,tracked,"Pipeline, reproducibility, tests or evaluation code"
+scripts/benchmark_real_ocr.py,include,untracked,"Pipeline, reproducibility, tests or evaluation code"
+scripts/benchmark_tools.py,include,tracked,"Pipeline, reproducibility, tests or evaluation code"
+scripts/build_agmarknet_training.py,include,tracked,"Pipeline, reproducibility, tests or evaluation code"
+scripts/build_metadata.py,include,tracked,"Pipeline, reproducibility, tests or evaluation code"
+scripts/build_release.py,include,untracked,"Pipeline, reproducibility, tests or evaluation code"
+scripts/build_training_set.py,include,tracked,"Pipeline, reproducibility, tests or evaluation code"
+scripts/compare_des_provenance.py,include,untracked,"Pipeline, reproducibility, tests or evaluation code"
+scripts/db_cli.py,include,tracked,"Pipeline, reproducibility, tests or evaluation code"
+scripts/fetch_eval_parents.py,include,untracked,"Pipeline, reproducibility, tests or evaluation code"
+scripts/fetch_release_inputs.py,include,untracked,"Pipeline, reproducibility, tests or evaluation code"
+scripts/fetch_source_expansion.py,include,untracked,"Pipeline, reproducibility, tests or evaluation code"
+scripts/fetch_sources.py,include,tracked,"Pipeline, reproducibility, tests or evaluation code"
+scripts/import_lgd.py,include,tracked,"Pipeline, reproducibility, tests or evaluation code"
+scripts/package_colab.py,include,untracked,"Pipeline, reproducibility, tests or evaluation code"
+scripts/package_project.py,include,tracked,"Pipeline, reproducibility, tests or evaluation code"
+scripts/prepare_cases.py,include,tracked,"Pipeline, reproducibility, tests or evaluation code"
+scripts/prepare_query_references.py,include,untracked,"Pipeline, reproducibility, tests or evaluation code"
+scripts/prepare_release_corpus.py,include,untracked,"Pipeline, reproducibility, tests or evaluation code"
+scripts/prepare_review_queue.py,include,untracked,"Pipeline, reproducibility, tests or evaluation code"
+scripts/prepare_table_cases.py,include,tracked,"Pipeline, reproducibility, tests or evaluation code"
+scripts/query_release.py,include,untracked,"Pipeline, reproducibility, tests or evaluation code"
+scripts/restore_release.py,include,untracked,"Pipeline, reproducibility, tests or evaluation code"
+scripts/run_verification.py,include,tracked,"Pipeline, reproducibility, tests or evaluation code"
+scripts/update_status.py,include,tracked,"Pipeline, reproducibility, tests or evaluation code"
+scripts/verify_lgd_join.py,include,untracked,"Pipeline, reproducibility, tests or evaluation code"
+scripts/verify_m18_preflight.py,include,untracked,"Pipeline, reproducibility, tests or evaluation code"
+scripts/verify_release_formats.py,include,untracked,"Pipeline, reproducibility, tests or evaluation code"
+scripts/verify_source_expansion.py,include,untracked,"Pipeline, reproducibility, tests or evaluation code"
+scripts/verify_survey_automation.py,include,untracked,"Pipeline, reproducibility, tests or evaluation code"
+scripts/write_review_docs.py,include,tracked,"Pipeline, reproducibility, tests or evaluation code"
+Source_Inventory/MP_Source_Inventory.xlsx,review,tracked,"Confirm course/team materials, member privacy and rights"
+Source_Inventory/source_inventory.csv,include,tracked,"Code, metadata or aggregate evaluation evidence"
+tests/__init__.py,include,tracked,"Pipeline, reproducibility, tests or evaluation code"
+tests/fixtures_tables/synthetic_agmarknet.csv,include,tracked,Synthetic test input
+tests/fixtures_tables/synthetic_district_apy.pdf,include,tracked,Synthetic test input
+tests/fixtures_tables/synthetic_mandi_prices.xlsx,include,tracked,Synthetic test input
+tests/fixtures_tables/synthetic_prices.html,include,tracked,Synthetic test input
+tests/fixtures_tables/synthetic_scan_en.png,include,tracked,Synthetic test input
+tests/fixtures_tables/synthetic_scan_hi.png,include,tracked,Synthetic test input
+tests/make_table_fixtures.py,include,tracked,"Pipeline, reproducibility, tests or evaluation code"
+tests/test_project.py,include,tracked,"Pipeline, reproducibility, tests or evaluation code"
+tests/test_release.py,include,untracked,"Pipeline, reproducibility, tests or evaluation code"
+tests/test_source_expansion.py,include,untracked,"Pipeline, reproducibility, tests or evaluation code"
+tests/test_surprise.py,include,untracked,"Pipeline, reproducibility, tests or evaluation code"
+tests/test_upgrades.py,include,tracked,"Pipeline, reproducibility, tests or evaluation code"

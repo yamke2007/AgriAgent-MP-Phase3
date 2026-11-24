@@ -33,6 +33,8 @@ def crop(value):
 # Hindi names and renamed districts -> current English name (lower case). Unknown
 # spellings are still kept exactly as written (no speculative correction).
 DISTRICT_ALIASES = {"मध्य प्रदेश": "madhya pradesh", "mp": "madhya pradesh", "m.p.": "madhya pradesh",
+    "agar-malwa": "agar malwa", "khandwa (east nimar)": "khandwa",
+    "khargone (west nimar)": "khargone", "nimach": "neemuch", "nivari": "niwari",
     "hoshangabad": "narmadapuram", "होशंगाबाद": "narmadapuram", "नर्मदापुरम": "narmadapuram",
     "east nimar": "khandwa", "west nimar": "khargone", "narsimhapur": "narsinghpur", "badwani": "barwani",
     "इंदौर": "indore", "भोपाल": "bhopal", "उज्जैन": "ujjain", "जबलपुर": "jabalpur", "ग्वालियर": "gwalior",
@@ -76,7 +78,11 @@ UNITS = {"tonne": ("tonne", Decimal(1)), "tonnes": ("tonne", Decimal(1)),
          "ha": ("hectare", Decimal(1)), "hectares": ("hectare", Decimal(1)),
          "'000 hectare": ("hectare", Decimal(1000)), "thousand hectare": ("hectare", Decimal(1000)),
          "kg/hectare": ("kg/hectare", Decimal(1)), "tonne/hectare": ("kg/hectare", Decimal(1000)),
-         "quintal/hectare": ("kg/hectare", Decimal(100)), "bales": ("bales", Decimal(1))}
+         "quintal/hectare": ("kg/hectare", Decimal(100)), "bales": ("bales", Decimal(1)),
+         "INR": ("INR", Decimal(1)), "lakh INR": ("INR", Decimal(100000)),
+         "day": ("day", Decimal(1)), "month": ("month", Decimal(1)),
+         "mm": ("mm", Decimal(1)), "degree C": ("degree C", Decimal(1)),
+         "million hectares": ("hectare", Decimal(1000000)), "million tonnes": ("tonne", Decimal(1000000))}
 
 def number(value):
     return Decimal(text(value).replace(",", ""))
@@ -107,7 +113,8 @@ def validate(record, lgd=None):
         try:
             n = number(record["value"])
             growth_percent = record.get("unit") in ("percent", "%") and record.get("variable", "").endswith("_growth")
-            if not n.is_finite() or n < (-100 if growth_percent else 0) or n > Decimal("1e14"):
+            lower = -100 if growth_percent or record.get("unit") == "degree C" else 0
+            if not n.is_finite() or n < lower or n > Decimal("1e14"):
                 errors.append("implausible:value")
             if record["value_kind"] == "integer" and n != n.to_integral_value():
                 errors.append("invalid:integer")

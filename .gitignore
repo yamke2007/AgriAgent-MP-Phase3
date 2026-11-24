@@ -1,7 +1,39 @@
 __pycache__/
 *.pyc
-.venv/
+.venv*/
+venv/
 .phase2-verify-venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.cache/
+.huggingface/
+.local/
+
+# Local configuration and credentials
 .env
+.env.*
+!.env.example
+*.local.json
+credentials.json
+secrets.json
+*.pem
+*.key
+*.pfx
+*.har
+
+# Generated outputs, model weights, and local backups
 output/
 *.zip
+*.7z
+*.tar.gz
+*.safetensors
+pytorch_model*.bin
+*.gguf
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite-journal
+
+# Course materials supplied separately
+/Official_Requirements/

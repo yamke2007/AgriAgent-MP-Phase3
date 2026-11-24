@@ -1,0 +1,133 @@
+{
+  "cases": 52,
+  "per_agent": {
+    "directory": {
+      "n_cases": 10,
+      "tp": 30,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "M3": 1.0,
+      "M4": 1.0,
+      "M6": 1.0,
+      "M7": 1.0,
+      "M8": 1.0,
+      "M9": 1.0,
+      "M10": 1.0
+    },
+    "scheme": {
+      "n_cases": 10,
+      "tp": 10,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "M3": 1.0,
+      "M4": 1.0,
+      "M6": 1.0,
+      "M7": 1.0,
+      "M8": 1.0,
+      "M9": 1.0,
+      "M10": 1.0
+    },
+    "statistics": {
+      "n_cases": 10,
+      "tp": 10,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "M3": 1.0,
+      "M4": 1.0,
+      "M6": 1.0,
+      "M7": 1.0,
+      "M8": 1.0,
+      "M9": 1.0,
+      "M10": 1.0
+    },
+    "tables": {
+      "n_cases": 22,
+      "tp": 352,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "M3": 1.0,
+      "M4": 1.0,
+      "M6": 1.0,
+      "M7": 1.0,
+      "M8": 1.0,
+      "M9": 1.0,
+      "M10": 1.0
+    }
+  },
+  "method": "Pool counts per agent, report group/overall separately, then average the four agent metrics equally.",
+  "pooled_source_and_language_scopes": {
+    "end_to_end": {
+      "cases": 52,
+      "tp": 402,
+      "fp": 0,
+      "fn": 0,
+      "M3": 1.0,
+      "M4": 1.0,
+      "M6": 1.0,
+      "M7": 1.0,
+      "M8": 1.0,
+      "M9": 1.0,
+      "M10": 1.0
+    },
+    "Document": {
+      "cases": 20,
+      "tp": 40,
+      "fp": 0,
+      "fn": 0,
+      "M3": 1.0,
+      "M4": 1.0,
+      "M6": 1.0,
+      "M7": 1.0,
+      "M8": 1.0,
+      "M9": 1.0,
+      "M10": 1.0
+    },
+    "language:en": {
+      "cases": 42,
+      "tp": 392,
+      "fp": 0,
+      "fn": 0,
+      "M3": 1.0,
+      "M4": 1.0,
+      "M6": 1.0,
+      "M7": 1.0,
+      "M8": 1.0,
+      "M9": 1.0,
+      "M10": 1.0
+    },
+    "language:hi": {
+      "cases": 10,
+      "tp": 10,
+      "fp": 0,
+      "fn": 0,
+      "M3": 1.0,
+      "M4": 1.0,
+      "M6": 1.0,
+      "M7": 1.0,
+      "M8": 1.0,
+      "M9": 1.0,
+      "M10": 1.0
+    },
+    "Database": {
+      "cases": 32,
+      "tp": 362,
+      "fp": 0,
+      "fn": 0,
+      "M3": 1.0,
+      "M4": 1.0,
+      "M6": 1.0,
+      "M7": 1.0,
+      "M8": 1.0,
+      "M9": 1.0,
+      "M10": 1.0
+    }
+  }
+}

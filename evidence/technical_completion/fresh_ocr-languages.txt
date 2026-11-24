@@ -1,0 +1,4 @@
+List of available languages in "C:\Users\Y SAI KRISHNA REDDY\Downloads\AI_PROJECT_MadhyaPradesh-main\output\tessdata/" (3):
+eng
+hin
+osd

@@ -2,13 +2,13 @@
 retries, local-model header mapping, and the new evaluation helpers.
 Fixtures in tests/fixtures_tables/ are SYNTHETIC (made by make_table_fixtures.py)."""
 import json
+import io
 import os
 import shutil
 import tempfile
-import threading
 import unittest
-from http.server import BaseHTTPRequestHandler, HTTPServer
 from pathlib import Path
+from unittest.mock import patch
 
 from agriagent import llm
 from agriagent.pipeline import ROOT, process
@@ -89,26 +89,22 @@ class UpgradeTests(unittest.TestCase):
         self.assertEqual(r["status"], "failed")
 
     def test_model_header_mapping(self):
-        class H(BaseHTTPRequestHandler):
-            def log_message(self, *a):
-                pass
+        def model_server(req, timeout):
+            if isinstance(req, str):
+                self.assertTrue(req.endswith("/api/tags"))
+                response = io.BytesIO(b'{"models":[]}')
+                response.status = 200
+                return response
+            self.assertTrue(req.full_url.endswith("/api/chat"))
+            self.assertEqual(json.loads(req.data)["format"], "json")
+            return io.BytesIO(json.dumps({"message": {"content": json.dumps({"3": "modal_price"})}}).encode())
 
-            def do_GET(self):
-                self.send_response(200); self.end_headers(); self.wfile.write(b'{"models":[]}')
-
-            def do_POST(self):
-                self.rfile.read(int(self.headers["Content-Length"]))
-                body = json.dumps({"message": {"content": json.dumps({"3": "modal_price"})}}).encode()
-                self.send_response(200); self.end_headers(); self.wfile.write(body)
-        srv = HTTPServer(("127.0.0.1", 0), H)
-        threading.Thread(target=srv.serve_forever, daemon=True).start()
-        self.addCleanup(srv.shutdown)
-        os.environ["AGRIAGENT_LLM"] = "on"
-        llm.URL = f"http://127.0.0.1:{srv.server_port}"
-        llm._state.clear()
         p = Path(self.temp.name) / "bhav.csv"
         p.write_text("District,Commodity,Date,Bhav (Rs/Qtl)\nIndore,Soyabean,14/10/2024,4400\n", encoding="utf-8")
-        r = process(p, self.cfg)
+        with patch.dict(os.environ, {"AGRIAGENT_LLM": "on"}), patch(
+            "agriagent.llm.urllib.request.urlopen", side_effect=model_server
+        ):
+            r = process(p, self.cfg)
         self.assertIn("llm.header_mapping", [t["tool"] for t in r["trajectory"]])
         self.assertEqual(r["records"][0]["column_mapped_by"], "model")
         self.assertEqual((r["records"][0]["variable"], r["records"][0]["value"]), ("modal_price", "4400"))

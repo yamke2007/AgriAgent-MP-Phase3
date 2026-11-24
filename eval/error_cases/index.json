@@ -14,10 +14,10 @@
     "why": "The genuine Phase 1 CSV is inventory metadata, not crop statistics; the generic table route must reject it without inventing observations."
   },
   {
-    "case_id": "unsupported_manual_pdf",
+    "case_id": "manual_pdf_excludes_prices",
     "input": "data/raw/e_mandi_manual.pdf",
-    "expected_status": "failed",
-    "error_contains": "No supported production sentences",
+    "expected_status": "partial",
+    "allowed_variables": ["mandi_date_entry_format", "mandi_workflow_portal"],
     "why": "The genuine e-Mandi workflow manual must not be interpreted as market price data."
   },
   {

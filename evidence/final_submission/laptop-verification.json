@@ -1,0 +1,136 @@
+{
+  "des": {
+    "path": "output/personal-test/runs/f160f8ee-5580-49a2-a6c9-b4e0c265fcba.json",
+    "run_id": "f160f8ee-5580-49a2-a6c9-b4e0c265fcba",
+    "seconds": 4.656147399975453,
+    "status": "complete",
+    "records": 52,
+    "errors": [],
+    "retries": 0,
+    "storage": {
+      "inserted": 52,
+      "duplicates": 0
+    }
+  },
+  "sampled_values": [
+    {
+      "district": "dhar",
+      "production_tonnes": 1773206,
+      "locator": "page:1/table:1/row:3/col:4"
+    },
+    {
+      "district": "ujjain",
+      "production_tonnes": 1624927,
+      "locator": "page:1/table:1/row:4/col:4"
+    },
+    {
+      "district": "narmadapuram",
+      "production_tonnes": 1388453,
+      "locator": "page:1/table:1/row:5/col:4"
+    },
+    {
+      "district": "chhindwara",
+      "production_tonnes": 1385078,
+      "locator": "page:1/table:1/row:6/col:4"
+    },
+    {
+      "district": "rajgarh",
+      "production_tonnes": 1217446,
+      "locator": "page:1/table:1/row:7/col:4"
+    }
+  ],
+  "fault": {
+    "path": "output/personal-fault/runs/d16df8b6-12c7-4c38-a3d7-00a0b8907b13.json",
+    "run_id": "d16df8b6-12c7-4c38-a3d7-00a0b8907b13",
+    "seconds": 7.7254130999790505,
+    "status": "complete",
+    "records": 52,
+    "errors": [],
+    "retries": 1,
+    "storage": {
+      "inserted": 52,
+      "duplicates": 0
+    }
+  },
+  "additional_fault_runs": [
+    {
+      "path": "output/personal-fault/runs/274258db-ff9e-4662-82e2-0059833cad32.json",
+      "run_id": "274258db-ff9e-4662-82e2-0059833cad32",
+      "seconds": 3.813177900039591,
+      "status": "complete",
+      "records": 52,
+      "errors": [],
+      "retries": 1,
+      "storage": {
+        "inserted": 0,
+        "duplicates": 52
+      }
+    }
+  ],
+  "remote_langsmith": {
+    "status": "reported_by_owner",
+    "local_handoff_and_retry_verified": true,
+    "remote_trace_artifact_supplied": false
+  },
+  "official_lgd": {
+    "registry_districts": 55,
+    "release_districts_matched": 52,
+    "release_districts_total": 52,
+    "release_panel_rows_matched": 1886,
+    "release_panel_rows_total": 1886,
+    "release_unmatched": [],
+    "geometry_matched": 52,
+    "geometry_total": 52,
+    "geometry_unmatched": [],
+    "registry_districts_outside_historical_geometry": [
+      "maihar",
+      "mauganj",
+      "pandhurna"
+    ],
+    "limitation": "Current code lookup by documented name aliases; no inference about historical boundary changes",
+    "csv_sha256": "25df6b9398202cae5bcd9606e13c4c4367378b08dfc83e112db69935fe8d76cc",
+    "workbook_sha256": "de80636f4e688522666536c7c0b967f3f93c3373b41b9a5dfb309587ad428bb7",
+    "registry_sha256": "efec4b302748368c921185755aeef8f0f6e867c2c906e6856c513d07893551df",
+    "source_url": "https://lgdirectory.gov.in/downloadDirectory.do"
+  },
+  "adapter": {
+    "path": "output/personal-adapter/runs/32cad689-3ae2-4189-9176-0f55773651da.json",
+    "run_id": "32cad689-3ae2-4189-9176-0f55773651da",
+    "seconds": 276.77539900003467,
+    "status": "partial",
+    "records": 4,
+    "errors": [],
+    "retries": 0,
+    "storage": {
+      "inserted": 4,
+      "duplicates": 0
+    },
+    "tp_fp_fn": [
+      4,
+      0,
+      12
+    ],
+    "hashes": {
+      "model_path": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+      "adapter_path": "589b4c8bce67b16b82bfb102b887d9f754db875151bc008378c4e7e2e867571d"
+    },
+    "usage": [
+      {
+        "input_tokens": 347,
+        "generated_tokens": 292
+      }
+    ]
+  },
+  "backup": {
+    "sql_sha256": "bac34396f5f7d14db40c47c7d088d2ac4311f58b158d5e9b326a1fe716e85677",
+    "restored_observations": 3980,
+    "release_queries_passed": 10,
+    "restored_queries_passed": 10
+  },
+  "protected_files_matching": 33,
+  "manifest": {
+    "rows": 135,
+    "missing": [],
+    "hash_mismatches": []
+  }
+}
